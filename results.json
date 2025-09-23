@@ -199,15 +199,15 @@
       {
         "date": "2025-05-07",
         "starters": [
-          "danger zone",
-          "fred",
-          "go hogs",
           "sweet virginia",
-          "ambush"
+          "go hogs",
+          "ambush",
+          "fred",
+          "danger zone"
         ],
         "results": [
           {
-            "boat": "danger zone",
+            "boat": "sweet virginia",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -215,23 +215,23 @@
             "aliasesUsed": []
           },
           {
-            "boat": "fred",
-            "pos": 2,
-            "novices": 0,
-            "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
-          },
-          {
             "boat": "go hogs",
-            "pos": 3,
+            "pos": 2,
             "novices": 1,
             "status": "FIN",
-            "score": 2,
+            "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "sweet virginia",
+            "boat": "ambush",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -239,7 +239,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "danger zone",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -337,8 +337,8 @@
         "date": "2025-05-14",
         "starters": [
           "danger zone",
-          "go hogs",
-          "sweet virginia"
+          "sweet virginia",
+          "go hogs"
         ],
         "results": [
           {
@@ -350,19 +350,19 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "sweet virginia",
             "pos": 2,
-            "novices": 1,
+            "novices": 2,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "sweet virginia",
+            "boat": "go hogs",
             "pos": 3,
-            "novices": 2,
+            "novices": 1,
             "status": "FIN",
-            "score": 1,
+            "score": 2,
             "aliasesUsed": []
           }
         ],
@@ -430,10 +430,10 @@
         "date": "2025-05-21",
         "starters": [
           "danger zone",
-          "ambush",
-          "go hogs",
           "scooter",
           "sweet virginia",
+          "go hogs",
+          "ambush",
           "wizard",
           "j-80"
         ],
@@ -447,15 +447,15 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "scooter",
             "pos": 2,
-            "novices": 0,
+            "novices": 4,
             "status": "FIN",
-            "score": 2,
+            "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "sweet virginia",
             "pos": 3,
             "novices": 1,
             "status": "FIN",
@@ -463,19 +463,19 @@
             "aliasesUsed": []
           },
           {
-            "boat": "scooter",
+            "boat": "go hogs",
             "pos": 4,
-            "novices": 4,
+            "novices": 1,
             "status": "FIN",
-            "score": 2,
+            "score": 3,
             "aliasesUsed": []
           },
           {
-            "boat": "sweet virginia",
+            "boat": "ambush",
             "pos": 5,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
-            "score": 4,
+            "score": 5,
             "aliasesUsed": []
           },
           {
@@ -622,17 +622,17 @@
       {
         "date": "2025-05-28",
         "starters": [
-          "fred",
-          "go hogs",
           "dandelion",
-          "dawg",
-          "ambush"
+          "go hogs",
+          "ambush",
+          "fred",
+          "dawg"
         ],
         "results": [
           {
-            "boat": "fred",
+            "boat": "dandelion",
             "pos": 1,
-            "novices": 2,
+            "novices": 0,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
@@ -646,27 +646,27 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dandelion",
+            "boat": "ambush",
             "pos": 3,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
-            "score": 3,
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": 4,
+            "novices": 2,
+            "status": "FIN",
+            "score": 2,
             "aliasesUsed": []
           },
           {
             "boat": "dawg",
-            "pos": 4,
+            "pos": 5,
             "novices": 0,
             "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "ambush",
-            "pos": 5,
-            "novices": 1,
-            "status": "FIN",
-            "score": 4,
+            "score": 5,
             "aliasesUsed": []
           }
         ],
@@ -750,22 +750,22 @@
       {
         "date": "2025-06-04",
         "starters": [
-          "danger zone",
           "go hogs",
+          "ambush",
           "dawg",
-          "ambush"
+          "danger zone"
         ],
         "results": [
           {
-            "boat": "danger zone",
+            "boat": "go hogs",
             "pos": 1,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "ambush",
             "pos": 2,
             "novices": 1,
             "status": "FIN",
@@ -781,11 +781,11 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "danger zone",
             "pos": 4,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
-            "score": 3,
+            "score": 4,
             "aliasesUsed": []
           }
         ],
@@ -900,24 +900,24 @@
       {
         "date": "2025-06-18",
         "starters": [
-          "danger zone",
-          "go hogs",
-          "dandelion",
-          "dawg",
           "sweet virginia",
-          "wizard"
+          "dandelion",
+          "go hogs",
+          "wizard",
+          "dawg",
+          "danger zone"
         ],
         "results": [
           {
-            "boat": "danger zone",
+            "boat": "sweet virginia",
             "pos": 1,
-            "novices": 0,
+            "novices": 2,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "dandelion",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -925,7 +925,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dandelion",
+            "boat": "go hogs",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -933,7 +933,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "wizard",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -941,15 +941,15 @@
             "aliasesUsed": []
           },
           {
-            "boat": "sweet virginia",
+            "boat": "dawg",
             "pos": 5,
-            "novices": 2,
+            "novices": 0,
             "status": "FIN",
-            "score": 3,
+            "score": 5,
             "aliasesUsed": []
           },
           {
-            "boat": "wizard",
+            "boat": "danger zone",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
@@ -1021,25 +1021,17 @@
       {
         "date": "2025-07-02",
         "starters": [
-          "danger zone",
           "go hogs",
           "ambush",
-          "fred",
+          "danger zone",
           "dandelion",
-          "dawg"
+          "dawg",
+          "fred"
         ],
         "results": [
           {
-            "boat": "danger zone",
-            "pos": 1,
-            "novices": 0,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
             "boat": "go hogs",
-            "pos": 2,
+            "pos": 1,
             "novices": 1,
             "status": "FIN",
             "score": 1,
@@ -1047,14 +1039,22 @@
           },
           {
             "boat": "ambush",
-            "pos": 3,
+            "pos": 2,
             "novices": 1,
             "status": "FIN",
-            "score": 2,
+            "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "fred",
+            "boat": "danger zone",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -1062,7 +1062,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dandelion",
+            "boat": "dawg",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1070,7 +1070,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "fred",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
@@ -1398,18 +1398,18 @@
       {
         "date": "2025-07-23",
         "starters": [
-          "danger zone",
           "go hogs",
           "ambush",
-          "scooter",
+          "danger zone",
           "j-80",
           "wizard",
-          "max",
-          "itch"
+          "scooter",
+          "itch",
+          "max"
         ],
         "results": [
           {
-            "boat": "danger zone",
+            "boat": "go hogs",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -1417,7 +1417,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "ambush",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1425,7 +1425,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "danger zone",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -1433,7 +1433,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "scooter",
+            "boat": "j-80",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -1441,7 +1441,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "wizard",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1449,7 +1449,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "wizard",
+            "boat": "scooter",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
@@ -1457,7 +1457,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "max",
+            "boat": "itch",
             "pos": 7,
             "novices": 0,
             "status": "FIN",
@@ -1465,7 +1465,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "itch",
+            "boat": "max",
             "pos": 8,
             "novices": 0,
             "status": "FIN",
@@ -1529,18 +1529,18 @@
       {
         "date": "2025-07-30",
         "starters": [
-          "fred",
-          "go hogs",
-          "dawg",
           "sweet virginia",
+          "go hogs",
           "ambush",
-          "wizard"
+          "wizard",
+          "fred",
+          "dawg"
         ],
         "results": [
           {
-            "boat": "fred",
+            "boat": "sweet virginia",
             "pos": 1,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
@@ -1554,7 +1554,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "ambush",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -1562,7 +1562,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "sweet virginia",
+            "boat": "wizard",
             "pos": 4,
             "novices": 1,
             "status": "FIN",
@@ -1570,7 +1570,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "fred",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1578,11 +1578,11 @@
             "aliasesUsed": []
           },
           {
-            "boat": "wizard",
+            "boat": "dawg",
             "pos": 6,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
-            "score": 5,
+            "score": 6,
             "aliasesUsed": []
           }
         ],
@@ -1687,13 +1687,13 @@
       {
         "date": "2025-08-06",
         "starters": [
-          "sweet virginia",
           "fred",
+          "sweet virginia",
           "scooter"
         ],
         "results": [
           {
-            "boat": "sweet virginia",
+            "boat": "fred",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -1701,7 +1701,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "fred",
+            "boat": "sweet virginia",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1755,16 +1755,16 @@
       {
         "date": "2025-08-13",
         "starters": [
-          "itch",
-          "ambush",
           "go hogs",
-          "dawg"
+          "ambush",
+          "dawg",
+          "itch"
         ],
         "results": [
           {
-            "boat": "itch",
+            "boat": "go hogs",
             "pos": 1,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
@@ -1778,15 +1778,15 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "dawg",
             "pos": 3,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
-            "score": 2,
+            "score": 3,
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "itch",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -1851,18 +1851,18 @@
       {
         "date": "2025-08-20",
         "starters": [
-          "danger zone",
-          "fred",
+          "scooter",
           "itch",
           "go hogs",
-          "dawg",
-          "scooter",
           "ambush",
-          "j-80"
+          "fred",
+          "j-80",
+          "dawg",
+          "danger zone"
         ],
         "results": [
           {
-            "boat": "danger zone",
+            "boat": "scooter",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -1870,7 +1870,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "fred",
+            "boat": "itch",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1878,23 +1878,23 @@
             "aliasesUsed": []
           },
           {
-            "boat": "itch",
-            "pos": 3,
-            "novices": 0,
-            "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
-          },
-          {
             "boat": "go hogs",
-            "pos": 4,
+            "pos": 3,
             "novices": 1,
             "status": "FIN",
-            "score": 3,
+            "score": 2,
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "ambush",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1902,7 +1902,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "scooter",
+            "boat": "j-80",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
@@ -1910,7 +1910,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "dawg",
             "pos": 7,
             "novices": 0,
             "status": "FIN",
@@ -1918,7 +1918,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "danger zone",
             "pos": 8,
             "novices": 0,
             "status": "FIN",
@@ -2037,13 +2037,13 @@
       {
         "date": "2025-08-27",
         "starters": [
-          "sweet virginia",
           "go hogs",
-          "j-80"
+          "j-80",
+          "sweet virginia"
         ],
         "results": [
           {
-            "boat": "sweet virginia",
+            "boat": "go hogs",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -2051,7 +2051,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "j-80",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -2059,7 +2059,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "sweet virginia",
             "pos": 3,
             "novices": 0,
             "status": "FIN",

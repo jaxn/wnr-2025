@@ -16,64 +16,23 @@ import sys
 # Message structure
 Message = namedtuple('Message', ['timestamp', 'author', 'text', 'raw_line'])
 
-# Boat aliases mapping - comprehensive
-BOAT_ALIASES = {
-    'scalded dawg': 'dawg',
-    'scalded dog': 'dawg', 
-    'dawg': 'dawg',
-    'dog': 'dawg',
-    'psycho killer': 'j-80',
-    'psychokiller': 'j-80',
-    'psyco killer': 'j-80',  # common misspelling
-    'psycho': 'j-80',
-    'j-80': 'j-80',
-    'j80': 'j-80',
-    'caper': 'max',
-    'max': 'max',
-    'fast freddy': 'fred',
-    'fast freddie': 'fred',
-    'freddy': 'fred', 
-    'freddie': 'fred',
-    'fred': 'fred',
-    '509': 'fred',
-    'danger zone': 'danger zone',  # NOT aliased to j-80
-    'zone': 'danger zone',
-    'dandelion': 'dandelion',  # Not a club boat
-    'go hogs': 'go hogs',
-    'gohogs': 'go hogs',
-    'go hogs go': 'go hogs',
-    'go hogs go go': 'go hogs',
-    'gohogso': 'go hogs',
-    'hogs': 'go hogs',
-    'ambush': 'ambush',
-    'sweet virginia': 'sweet virginia',
-    'wizard': 'wizard',
-    'itch': 'itch',
-    'scooter': 'scooter',
-    'beat it': 'beat it',
-    'beatit': 'beat it'
-}
-
-# Author to boat mapping
-AUTHOR_TO_BOAT = {
-    'george heintz': 'go hogs',
-    'sam beckman': 'danger zone',
-    'jackson': 'ambush', 
-    'david curtze': 'scooter',
-    'max sadler': 'max',
-    'jeremy odom': 'sweet virginia',
-    'fred bartrom': 'fred',
-    'alicia noble': 'wizard',
-    'kate': 'itch',
-    'robby': 'dandelion',
-    'chris berkey': 'beat it',
-    'paul heinz': 'go hogs',
-    'bill elders': 'itch'
-}
+def load_boat_mappings(boats_json_path: str = 'boats.json') -> Tuple[Dict[str, str], Dict[str, str]]:
+    """Load boat aliases and author-to-boat mappings from JSON file"""
+    try:
+        with open(boats_json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data['boat_aliases'], data['author_to_boat']
+    except FileNotFoundError:
+        print(f"Warning: {boats_json_path} not found. Using empty mappings.")
+        return {}, {}
+    except (KeyError, json.JSONDecodeError) as e:
+        print(f"Error loading {boats_json_path}: {e}")
+        return {}, {}
 
 class EnhancedChatParser:
-    def __init__(self, chat_file_path: str):
+    def __init__(self, chat_file_path: str, boats_json_path: str = 'boats.json'):
         self.chat_file_path = chat_file_path
+        self.boat_aliases, self.author_to_boat = load_boat_mappings(boats_json_path)
         self.messages: List[Message] = []
         self.weekly_races: Dict[str, List[Message]] = defaultdict(list)
         self.series_data = {
@@ -174,8 +133,8 @@ class EnhancedChatParser:
         original = re.sub(r'\s+', ' ', original)  # Normalize whitespace
         
         # Check for aliases
-        if original in BOAT_ALIASES:
-            normalized = BOAT_ALIASES[original]
+        if original in self.boat_aliases:
+            normalized = self.boat_aliases[original]
             aliases_used = [boat_name] if boat_name.lower() != normalized else []
             return normalized, aliases_used
         
@@ -253,7 +212,7 @@ class EnhancedChatParser:
             # Pattern: "X ahead" followed by "Y behind" in same message or nearby
             sentences = re.split(r'[.!?]', text)
             
-            author_boat = AUTHOR_TO_BOAT.get(msg.author.lower(), None)
+            author_boat = self.author_to_boat.get(msg.author.lower(), None)
             
             for sentence in sentences:
                 sentence = sentence.strip()
@@ -299,7 +258,7 @@ class EnhancedChatParser:
             novice_matches = re.findall(novice_pattern, text_lower)
             
             if novice_matches:
-                boat = AUTHOR_TO_BOAT.get(msg.author.lower(), 'UNKNOWN')
+                boat = self.author_to_boat.get(msg.author.lower(), 'UNKNOWN')
                 claims.append({
                     'type': 'novice',
                     'boat': boat,
@@ -312,7 +271,7 @@ class EnhancedChatParser:
             # Look for DSQ/DNF mentions
             if 'dsq' in text_lower or 'dnf' in text_lower:
                 penalty_type = 'DSQ' if 'dsq' in text_lower else 'DNF'
-                boat = AUTHOR_TO_BOAT.get(msg.author.lower(), 'UNKNOWN')
+                boat = self.author_to_boat.get(msg.author.lower(), 'UNKNOWN')
                 claims.append({
                     'type': 'penalty',
                     'boat': boat,
