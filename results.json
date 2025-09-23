@@ -2,15 +2,15 @@
   "series": {
     "boats_seen": [
       "ambush",
+      "caper",
       "dandelion",
       "danger zone",
-      "dawg",
       "fred",
-      "go hogs",
+      "go hogs go",
       "itch",
       "itch in front gog hogs go",
-      "j-80",
-      "max",
+      "psycho killer",
+      "scalded dawg",
       "scooter",
       "sweet virginia",
       "wizard"
@@ -20,11 +20,11 @@
         "date": "2025-04-09",
         "starters": [
           "danger zone",
-          "dawg",
-          "j-80",
+          "scalded dawg",
+          "psycho killer",
           "scooter",
           "ambush",
-          "go hogs",
+          "go hogs go",
           "fred"
         ],
         "results": [
@@ -37,7 +37,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "scalded dawg",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -45,7 +45,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "psycho killer",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -69,7 +69,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
@@ -89,7 +89,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "danger zone",
-            "boat_behind": "dawg",
+            "boat_behind": "scalded dawg",
             "text": "Scalded dog behind",
             "author": "Sam Beckman",
             "timestamp": "2025-04-09 07:56 PM",
@@ -100,7 +100,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Ambush ahead",
             "author": "George Heintz",
             "timestamp": "2025-04-09 07:57 PM",
@@ -108,7 +108,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "fred",
             "text": "Fast Freddy behind",
             "author": "George Heintz",
@@ -129,23 +129,21 @@
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Go hogs go behind",
             "author": "Jackson",
             "timestamp": "2025-04-09 10:24 PM",
-            "aliases_used": [
-              "go hogs go"
-            ]
+            "aliases_used": []
           },
           {
             "type": "complete_finish_order",
             "finish_order": [
               "danger zone",
-              "dawg",
-              "j-80",
+              "scalded dawg",
+              "psycho killer",
               "scooter",
               "ambush",
-              "go hogs",
+              "go hogs go",
               "fred"
             ],
             "text": "Psyco Killer ahead, Ambush behind.  3 novices on board. 1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy",
@@ -158,11 +156,11 @@
       {
         "date": "2025-04-30",
         "starters": [
-          "go hogs"
+          "go hogs go"
         ],
         "results": [
           {
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -173,8 +171,8 @@
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "Go hogs go Behind Fred Ahead of Itch",
             "author": "Paul Heinz",
             "timestamp": "2025-04-30 08:03 PM",
@@ -184,14 +182,12 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "Go hogs go Behind Fred Ahead of Itch",
             "author": "Paul Heinz",
             "timestamp": "2025-04-30 08:03 PM",
-            "aliases_used": [
-              "go hogs go"
-            ]
+            "aliases_used": []
           }
         ],
         "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
@@ -199,15 +195,15 @@
       {
         "date": "2025-05-07",
         "starters": [
-          "sweet virginia",
-          "go hogs",
           "ambush",
           "fred",
-          "danger zone"
+          "go hogs go",
+          "danger zone",
+          "sweet virginia"
         ],
         "results": [
           {
-            "boat": "sweet virginia",
+            "boat": "ambush",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -215,23 +211,23 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "fred",
             "pos": 2,
-            "novices": 1,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "ambush",
-            "pos": 3,
             "novices": 0,
             "status": "FIN",
-            "score": 3,
+            "score": 2,
             "aliasesUsed": []
           },
           {
-            "boat": "fred",
+            "boat": "go hogs go",
+            "pos": 3,
+            "novices": 1,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -239,7 +235,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "danger zone",
+            "boat": "sweet virginia",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -289,7 +285,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "fred",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Fast Freddy Ahead",
             "author": "George Heintz",
             "timestamp": "2025-05-07 07:59 PM",
@@ -299,7 +295,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "danger zone",
             "text": "Danger Zone behind 1 Novice",
             "author": "George Heintz",
@@ -308,7 +304,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "Fast Freddy Ahead. Danger Zone behind 1 Novice.",
             "author": "George Heintz",
@@ -336,33 +332,33 @@
       {
         "date": "2025-05-14",
         "starters": [
+          "go hogs go",
           "danger zone",
-          "sweet virginia",
-          "go hogs"
+          "sweet virginia"
         ],
         "results": [
           {
-            "boat": "danger zone",
+            "boat": "go hogs go",
             "pos": 1,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
             "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
             "aliasesUsed": []
           },
           {
             "boat": "sweet virginia",
-            "pos": 2,
+            "pos": 3,
             "novices": 2,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "go hogs",
-            "pos": 3,
-            "novices": 1,
-            "status": "FIN",
-            "score": 2,
             "aliasesUsed": []
           }
         ],
@@ -395,8 +391,8 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "Heintz GoHogs - 1 Novice Dawg Ahead Fast Freddy Behind",
             "author": "George Heintz",
             "timestamp": "2025-05-14 08:31 PM",
@@ -406,8 +402,8 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "Heintz GoHogs - 1 Novice Dawg Ahead Fast Freddy Behind",
             "author": "George Heintz",
             "timestamp": "2025-05-14 08:31 PM",
@@ -417,7 +413,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "Heintz GoHogs - 1 Novice Dawg Ahead Fast Freddy Behind.",
             "author": "George Heintz",
@@ -429,17 +425,17 @@
       {
         "date": "2025-05-21",
         "starters": [
-          "danger zone",
+          "psycho killer",
           "scooter",
-          "sweet virginia",
-          "go hogs",
           "ambush",
           "wizard",
-          "j-80"
+          "go hogs go",
+          "danger zone",
+          "sweet virginia"
         ],
         "results": [
           {
-            "boat": "danger zone",
+            "boat": "psycho killer",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -455,31 +451,31 @@
             "aliasesUsed": []
           },
           {
-            "boat": "sweet virginia",
+            "boat": "ambush",
             "pos": 3,
-            "novices": 1,
-            "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "go hogs",
-            "pos": 4,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
             "score": 3,
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
-            "pos": 5,
+            "boat": "wizard",
+            "pos": 4,
             "novices": 0,
             "status": "FIN",
-            "score": 5,
+            "score": 4,
             "aliasesUsed": []
           },
           {
-            "boat": "wizard",
+            "boat": "go hogs go",
+            "pos": 5,
+            "novices": 1,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
@@ -487,19 +483,19 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "sweet virginia",
             "pos": 7,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
-            "score": 7,
+            "score": 6,
             "aliasesUsed": []
           }
         ],
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "GoHogs 1 novice Dawg ahead Fast Freddy Behind",
             "author": "George Heintz",
             "timestamp": "2025-05-21 07:51 PM",
@@ -509,8 +505,8 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "GoHogs 1 novice Dawg ahead Fast Freddy Behind",
             "author": "George Heintz",
             "timestamp": "2025-05-21 07:51 PM",
@@ -520,7 +516,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "GoHogs 1 novice Dawg ahead Fast Freddy Behind",
             "author": "George Heintz",
@@ -564,13 +560,11 @@
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "j-80",
+            "boat_behind": "psycho killer",
             "text": "Psycho Killer behind",
             "author": "Jackson",
             "timestamp": "2025-05-21 08:16 PM",
-            "aliases_used": [
-              "psycho killer"
-            ]
+            "aliases_used": []
           },
           {
             "type": "relative_position",
@@ -622,51 +616,51 @@
       {
         "date": "2025-05-28",
         "starters": [
-          "dandelion",
-          "go hogs",
           "ambush",
+          "scalded dawg",
           "fred",
-          "dawg"
+          "dandelion",
+          "go hogs go"
         ],
         "results": [
           {
-            "boat": "dandelion",
-            "pos": 1,
-            "novices": 0,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "go hogs",
-            "pos": 2,
-            "novices": 1,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
             "boat": "ambush",
-            "pos": 3,
+            "pos": 1,
             "novices": 1,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 2,
+            "novices": 0,
             "status": "FIN",
             "score": 2,
             "aliasesUsed": []
           },
           {
             "boat": "fred",
-            "pos": 4,
+            "pos": 3,
             "novices": 2,
             "status": "FIN",
-            "score": 2,
+            "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
-            "pos": 5,
+            "boat": "dandelion",
+            "pos": 4,
             "novices": 0,
             "status": "FIN",
-            "score": 5,
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 5,
+            "novices": 1,
+            "status": "FIN",
+            "score": 4,
             "aliasesUsed": []
           }
         ],
@@ -683,13 +677,11 @@
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "dawg",
+            "boat_behind": "scalded dawg",
             "text": "(1 novice) Scalded Dawg behind",
             "author": "Jackson",
             "timestamp": "2025-05-28 08:39 PM",
-            "aliases_used": [
-              "scalded dawg"
-            ]
+            "aliases_used": []
           },
           {
             "type": "novice",
@@ -701,17 +693,19 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "dawg",
-            "boat_behind": "go hogs",
+            "boat_ahead": "scalded dawg",
+            "boat_behind": "go hogs go",
             "text": "Dawg ahead Wizard just behind",
             "author": "George Heintz",
             "timestamp": "2025-05-28 09:22 PM",
-            "aliases_used": []
+            "aliases_used": [
+              "dawg"
+            ]
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "dawg",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "scalded dawg",
             "text": "Dawg ahead Wizard just behind",
             "author": "George Heintz",
             "timestamp": "2025-05-28 09:22 PM",
@@ -721,7 +715,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "GoHogs. Dawg ahead Wizard just behind. 1 novice.",
             "author": "George Heintz",
@@ -750,14 +744,14 @@
       {
         "date": "2025-06-04",
         "starters": [
-          "go hogs",
           "ambush",
-          "dawg",
+          "scalded dawg",
+          "go hogs go",
           "danger zone"
         ],
         "results": [
           {
-            "boat": "go hogs",
+            "boat": "ambush",
             "pos": 1,
             "novices": 1,
             "status": "FIN",
@@ -765,19 +759,19 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "scalded dawg",
             "pos": 2,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
-            "score": 1,
+            "score": 2,
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "go hogs go",
             "pos": 3,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
-            "score": 3,
+            "score": 2,
             "aliasesUsed": []
           },
           {
@@ -792,17 +786,19 @@
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "dawg",
-            "boat_behind": "go hogs",
+            "boat_ahead": "scalded dawg",
+            "boat_behind": "go hogs go",
             "text": "Dawg ahead Scooter behind",
             "author": "George Heintz",
             "timestamp": "2025-06-04 08:28 PM",
-            "aliases_used": []
+            "aliases_used": [
+              "dawg"
+            ]
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "dawg",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "scalded dawg",
             "text": "Dawg ahead Scooter behind",
             "author": "George Heintz",
             "timestamp": "2025-06-04 08:28 PM",
@@ -812,7 +808,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "GoHogs. Dawg ahead Scooter behind. 1 novice.",
             "author": "George Heintz",
@@ -838,11 +834,13 @@
           {
             "type": "relative_position",
             "boat_ahead": "danger zone",
-            "boat_behind": "dawg",
+            "boat_behind": "scalded dawg",
             "text": "Dawg behind",
             "author": "Sam Beckman",
             "timestamp": "2025-06-04 09:37 PM",
-            "aliases_used": []
+            "aliases_used": [
+              "dawg"
+            ]
           }
         ],
         "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
@@ -851,7 +849,7 @@
         "date": "2025-06-11",
         "starters": [
           "ambush",
-          "j-80"
+          "psycho killer"
         ],
         "results": [
           {
@@ -863,7 +861,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "psycho killer",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -874,19 +872,17 @@
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "j-80",
+            "boat_ahead": "psycho killer",
             "boat_behind": "ambush",
             "text": "Psycho Killer ahead Ambush Fred behind",
             "author": "Jackson",
             "timestamp": "2025-06-11 08:22 PM",
-            "aliases_used": [
-              "psycho killer"
-            ]
+            "aliases_used": []
           },
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "j-80",
+            "boat_behind": "psycho killer",
             "text": "Psycho Killer ahead Ambush Fred behind",
             "author": "Jackson",
             "timestamp": "2025-06-11 08:22 PM",
@@ -900,24 +896,24 @@
       {
         "date": "2025-06-18",
         "starters": [
-          "sweet virginia",
-          "dandelion",
-          "go hogs",
+          "scalded dawg",
           "wizard",
-          "dawg",
-          "danger zone"
+          "dandelion",
+          "go hogs go",
+          "danger zone",
+          "sweet virginia"
         ],
         "results": [
           {
-            "boat": "sweet virginia",
+            "boat": "scalded dawg",
             "pos": 1,
-            "novices": 2,
+            "novices": 0,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "dandelion",
+            "boat": "wizard",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -925,7 +921,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "dandelion",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -933,7 +929,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "wizard",
+            "boat": "go hogs go",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -941,7 +937,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "danger zone",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -949,28 +945,30 @@
             "aliasesUsed": []
           },
           {
-            "boat": "danger zone",
+            "boat": "sweet virginia",
             "pos": 6,
-            "novices": 0,
+            "novices": 2,
             "status": "FIN",
-            "score": 6,
+            "score": 4,
             "aliasesUsed": []
           }
         ],
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "dawg",
-            "boat_behind": "go hogs",
+            "boat_ahead": "scalded dawg",
+            "boat_behind": "go hogs go",
             "text": "Dawg ahead scooter behind",
             "author": "George Heintz",
             "timestamp": "2025-06-18 08:09 PM",
-            "aliases_used": []
+            "aliases_used": [
+              "dawg"
+            ]
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "dawg",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "scalded dawg",
             "text": "Dawg ahead scooter behind",
             "author": "George Heintz",
             "timestamp": "2025-06-18 08:09 PM",
@@ -1021,16 +1019,16 @@
       {
         "date": "2025-07-02",
         "starters": [
-          "go hogs",
           "ambush",
+          "go hogs go",
           "danger zone",
+          "scalded dawg",
           "dandelion",
-          "dawg",
           "fred"
         ],
         "results": [
           {
-            "boat": "go hogs",
+            "boat": "ambush",
             "pos": 1,
             "novices": 1,
             "status": "FIN",
@@ -1038,7 +1036,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "go hogs go",
             "pos": 2,
             "novices": 1,
             "status": "FIN",
@@ -1054,7 +1052,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dandelion",
+            "boat": "scalded dawg",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -1062,7 +1060,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "dandelion",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1091,13 +1089,11 @@
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "dawg",
+            "boat_behind": "scalded dawg",
             "text": "Scalded Dawg behind",
             "author": "Jackson",
             "timestamp": "2025-07-02 07:45 PM",
-            "aliases_used": [
-              "scalded dawg"
-            ]
+            "aliases_used": []
           },
           {
             "type": "novice",
@@ -1109,7 +1105,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "dandelion",
             "text": "Dandelion Behind",
             "author": "George Heintz",
@@ -1118,7 +1114,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "GoHogs. Scooter in Front. Dandelion Behind. 1 Novice",
             "author": "George Heintz",
@@ -1146,14 +1142,14 @@
       {
         "date": "2025-07-09",
         "starters": [
-          "fred",
           "itch",
+          "fred",
           "scooter",
-          "go hogs"
+          "go hogs go"
         ],
         "results": [
           {
-            "boat": "fred",
+            "boat": "itch",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -1161,7 +1157,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "itch",
+            "boat": "fred",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1177,7 +1173,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "pos": 4,
             "novices": 1,
             "status": "DSQ",
@@ -1188,7 +1184,7 @@
         "evidence": [
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "Go hogs DSQ. Missed a buoy on top end.  Thats what we get for following Scooter.  At least we had 1 Novice.",
             "author": "George Heintz",
@@ -1196,7 +1192,7 @@
           },
           {
             "type": "penalty",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "penalty_type": "DSQ",
             "text": "Go hogs DSQ. Missed a buoy on top end.  Thats what we get for following Scooter.  At least we had 1 Novice.",
             "author": "George Heintz",
@@ -1214,7 +1210,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "scooter",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Itch ahead go hogs go behind",
             "author": "David Curtze",
             "timestamp": "2025-07-09 10:02 PM",
@@ -1256,7 +1252,7 @@
           "scooter",
           "wizard",
           "itch in front gog hogs go",
-          "go hogs",
+          "go hogs go",
           "danger zone",
           "ambush",
           "fred"
@@ -1287,7 +1283,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "pos": 4,
             "novices": 1,
             "status": "FIN",
@@ -1349,14 +1345,12 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "ambush",
             "text": "Go hogs go ahead Ambush - (double handed with 1 novice) Sweet Virginia",
             "author": "Jackson",
             "timestamp": "2025-07-16 09:20 PM",
-            "aliases_used": [
-              "go hogs go"
-            ]
+            "aliases_used": []
           },
           {
             "type": "novice",
@@ -1369,7 +1363,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "scooter",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Scooter ahead, Ambush behind",
             "author": "George Heintz",
             "timestamp": "2025-07-16 09:24 PM",
@@ -1377,7 +1371,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "ambush",
             "text": "Scooter ahead, Ambush behind",
             "author": "George Heintz",
@@ -1386,7 +1380,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "For Go Hogs.  Scooter ahead, Ambush behind. 1 Novice.",
             "author": "George Heintz",
@@ -1398,18 +1392,18 @@
       {
         "date": "2025-07-23",
         "starters": [
-          "go hogs",
           "ambush",
+          "go hogs go",
           "danger zone",
-          "j-80",
           "wizard",
+          "psycho killer",
           "scooter",
           "itch",
-          "max"
+          "caper"
         ],
         "results": [
           {
-            "boat": "go hogs",
+            "boat": "ambush",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -1417,7 +1411,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "go hogs go",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1433,7 +1427,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "wizard",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -1441,7 +1435,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "wizard",
+            "boat": "psycho killer",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1465,7 +1459,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "max",
+            "boat": "caper",
             "pos": 8,
             "novices": 0,
             "status": "FIN",
@@ -1477,13 +1471,11 @@
           {
             "type": "relative_position",
             "boat_ahead": "scooter",
-            "boat_behind": "max",
+            "boat_behind": "caper",
             "text": "Caper behind",
             "author": "David Curtze",
             "timestamp": "2025-07-23 08:24 PM",
-            "aliases_used": [
-              "caper"
-            ]
+            "aliases_used": []
           },
           {
             "type": "relative_position",
@@ -1514,8 +1506,8 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "j-80",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "psycho killer",
             "text": "For Go Hogs Psycho in front  - Danger Zone behind",
             "author": "George Heintz",
             "timestamp": "2025-07-23 09:47 PM",
@@ -1529,24 +1521,24 @@
       {
         "date": "2025-07-30",
         "starters": [
-          "sweet virginia",
-          "go hogs",
           "ambush",
-          "wizard",
+          "scalded dawg",
           "fred",
-          "dawg"
+          "wizard",
+          "go hogs go",
+          "sweet virginia"
         ],
         "results": [
           {
-            "boat": "sweet virginia",
+            "boat": "ambush",
             "pos": 1,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "scalded dawg",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1554,7 +1546,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "fred",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -1570,7 +1562,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "fred",
+            "boat": "go hogs go",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1578,23 +1570,25 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "sweet virginia",
             "pos": 6,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
-            "score": 6,
+            "score": 5,
             "aliasesUsed": []
           }
         ],
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "dawg",
+            "boat_ahead": "scalded dawg",
             "boat_behind": "ambush",
             "text": "Dawg ahead Ambush [insert name here] behind",
             "author": "Jackson",
             "timestamp": "2025-07-30 08:22 PM",
-            "aliases_used": []
+            "aliases_used": [
+              "dawg"
+            ]
           },
           {
             "type": "relative_position",
@@ -1608,7 +1602,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "sweet virginia",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "- wizard ahead - sweet Virginia (1 novice) - go hogs behind <This message was edited>",
             "author": "Jeremy Odom",
             "timestamp": "2025-07-30 08:23 PM",
@@ -1636,7 +1630,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "sweet virginia",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Sweet Virginia Ahead Flying Scot behind",
             "author": "George Heintz",
             "timestamp": "2025-07-30 08:51 PM",
@@ -1644,7 +1638,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "sweet virginia",
             "text": "Sweet Virginia Ahead Flying Scot behind",
             "author": "George Heintz",
@@ -1687,13 +1681,13 @@
       {
         "date": "2025-08-06",
         "starters": [
+          "scooter",
           "fred",
-          "sweet virginia",
-          "scooter"
+          "sweet virginia"
         ],
         "results": [
           {
-            "boat": "fred",
+            "boat": "scooter",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -1701,7 +1695,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "sweet virginia",
+            "boat": "fred",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1709,7 +1703,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "scooter",
+            "boat": "sweet virginia",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -1755,22 +1749,22 @@
       {
         "date": "2025-08-13",
         "starters": [
-          "go hogs",
           "ambush",
-          "dawg",
-          "itch"
+          "scalded dawg",
+          "itch",
+          "go hogs go"
         ],
         "results": [
           {
-            "boat": "go hogs",
+            "boat": "ambush",
             "pos": 1,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
             "score": 1,
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "scalded dawg",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1778,7 +1772,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "itch",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -1786,11 +1780,11 @@
             "aliasesUsed": []
           },
           {
-            "boat": "itch",
+            "boat": "go hogs go",
             "pos": 4,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
-            "score": 4,
+            "score": 3,
             "aliasesUsed": []
           }
         ],
@@ -1807,7 +1801,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "dawg",
+            "boat_behind": "scalded dawg",
             "text": "Ambush Dawg behind",
             "author": "Jackson",
             "timestamp": "2025-08-13 07:39 PM",
@@ -1817,8 +1811,8 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "GoHogs Dawg ahead Scooter behind 1 novice",
             "author": "George Heintz",
             "timestamp": "2025-08-13 07:52 PM",
@@ -1828,8 +1822,8 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "go hogs",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "go hogs go",
             "text": "GoHogs Dawg ahead Scooter behind 1 novice",
             "author": "George Heintz",
             "timestamp": "2025-08-13 07:52 PM",
@@ -1839,7 +1833,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "GoHogs Dawg ahead Scooter behind 1 novice",
             "author": "George Heintz",
@@ -1851,18 +1845,18 @@
       {
         "date": "2025-08-20",
         "starters": [
+          "psycho killer",
           "scooter",
-          "itch",
-          "go hogs",
           "ambush",
+          "itch",
+          "scalded dawg",
           "fred",
-          "j-80",
-          "dawg",
+          "go hogs go",
           "danger zone"
         ],
         "results": [
           {
-            "boat": "scooter",
+            "boat": "psycho killer",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -1870,7 +1864,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "itch",
+            "boat": "scooter",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -1878,15 +1872,15 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "ambush",
             "pos": 3,
-            "novices": 1,
+            "novices": 0,
             "status": "FIN",
-            "score": 2,
+            "score": 3,
             "aliasesUsed": []
           },
           {
-            "boat": "ambush",
+            "boat": "itch",
             "pos": 4,
             "novices": 0,
             "status": "FIN",
@@ -1894,7 +1888,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "fred",
+            "boat": "scalded dawg",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
@@ -1902,7 +1896,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "fred",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
@@ -1910,11 +1904,11 @@
             "aliasesUsed": []
           },
           {
-            "boat": "dawg",
+            "boat": "go hogs go",
             "pos": 7,
-            "novices": 0,
+            "novices": 1,
             "status": "FIN",
-            "score": 7,
+            "score": 6,
             "aliasesUsed": []
           },
           {
@@ -1929,19 +1923,17 @@
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "j-80",
+            "boat_ahead": "psycho killer",
             "boat_behind": "ambush",
             "text": "Psycho Killer ahead Ambush Itch behind",
             "author": "Jackson",
             "timestamp": "2025-08-20 07:40 PM",
-            "aliases_used": [
-              "psycho killer"
-            ]
+            "aliases_used": []
           },
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "j-80",
+            "boat_behind": "psycho killer",
             "text": "Psycho Killer ahead Ambush Itch behind",
             "author": "Jackson",
             "timestamp": "2025-08-20 07:40 PM",
@@ -1961,16 +1953,18 @@
           {
             "type": "relative_position",
             "boat_ahead": "danger zone",
-            "boat_behind": "dawg",
+            "boat_behind": "scalded dawg",
             "text": "Dawg behind",
             "author": "Sam Beckman",
             "timestamp": "2025-08-20 07:52 PM",
-            "aliases_used": []
+            "aliases_used": [
+              "dawg"
+            ]
           },
           {
             "type": "relative_position",
             "boat_ahead": "itch",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Itch ahead Fast Freddy behind 1 novice",
             "author": "George Heintz",
             "timestamp": "2025-08-20 07:57 PM",
@@ -1978,7 +1972,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "fred",
             "text": "Itch ahead Fast Freddy behind 1 novice",
             "author": "George Heintz",
@@ -1989,7 +1983,7 @@
           },
           {
             "type": "novice",
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "count": 1,
             "text": "GoHogs. Itch ahead Fast Freddy behind 1 novice",
             "author": "George Heintz",
@@ -2023,7 +2017,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "scooter",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Team Itch  1nv Ambush ahead go hogs go behind",
             "author": "David Curtze",
             "timestamp": "2025-08-20 08:23 PM",
@@ -2037,13 +2031,13 @@
       {
         "date": "2025-08-27",
         "starters": [
-          "go hogs",
-          "j-80",
+          "psycho killer",
+          "go hogs go",
           "sweet virginia"
         ],
         "results": [
           {
-            "boat": "go hogs",
+            "boat": "psycho killer",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -2051,7 +2045,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "go hogs go",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -2070,8 +2064,8 @@
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
-            "boat_behind": "j-80",
+            "boat_ahead": "go hogs go",
+            "boat_behind": "psycho killer",
             "text": "Psycho in front Dang3r Zone behind",
             "author": "George Heintz",
             "timestamp": "2025-08-27 09:14 PM",
@@ -2105,14 +2099,14 @@
       {
         "date": "2025-09-10",
         "starters": [
-          "j-80",
+          "psycho killer",
           "danger zone",
-          "go hogs",
+          "go hogs go",
           "ambush"
         ],
         "results": [
           {
-            "boat": "j-80",
+            "boat": "psycho killer",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
@@ -2128,7 +2122,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "go hogs",
+            "boat": "go hogs go",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
@@ -2155,7 +2149,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "j-80",
+            "boat_ahead": "psycho killer",
             "boat_behind": "danger zone",
             "text": "Psychokiller ahead, hogs behind",
             "author": "Sam Beckman",
@@ -2167,7 +2161,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "danger zone",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Psychokiller ahead, hogs behind",
             "author": "Sam Beckman",
             "timestamp": "2025-09-10 07:32 PM",
@@ -2186,7 +2180,7 @@
           {
             "type": "relative_position",
             "boat_ahead": "danger zone",
-            "boat_behind": "go hogs",
+            "boat_behind": "go hogs go",
             "text": "Go Hogs Danger Zone ahead",
             "author": "George Heintz",
             "timestamp": "2025-09-10 08:24 PM",
@@ -2196,7 +2190,7 @@
           },
           {
             "type": "relative_position",
-            "boat_ahead": "go hogs",
+            "boat_ahead": "go hogs go",
             "boat_behind": "ambush",
             "text": "Ambush behind",
             "author": "George Heintz",
@@ -2210,7 +2204,7 @@
         "date": "2025-09-17",
         "starters": [
           "ambush",
-          "j-80"
+          "psycho killer"
         ],
         "results": [
           {
@@ -2222,7 +2216,7 @@
             "aliasesUsed": []
           },
           {
-            "boat": "j-80",
+            "boat": "psycho killer",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
@@ -2233,19 +2227,17 @@
         "evidence": [
           {
             "type": "relative_position",
-            "boat_ahead": "j-80",
+            "boat_ahead": "psycho killer",
             "boat_behind": "ambush",
             "text": "Psycho Killer ahead Ambush Fred or Caper behind (not sure how that played out)",
             "author": "Jackson",
             "timestamp": "2025-09-17 07:29 PM",
-            "aliases_used": [
-              "psycho killer"
-            ]
+            "aliases_used": []
           },
           {
             "type": "relative_position",
             "boat_ahead": "ambush",
-            "boat_behind": "j-80",
+            "boat_behind": "psycho killer",
             "text": "Psycho Killer ahead Ambush Fred or Caper behind (not sure how that played out)",
             "author": "Jackson",
             "timestamp": "2025-09-17 07:29 PM",

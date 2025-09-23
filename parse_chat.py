@@ -140,19 +140,19 @@ class EnhancedChatParser:
         
         # Check for partial matches for boats with common misspellings
         if 'psyco' in original or 'psycho' in original:
-            return 'j-80', [boat_name]
+            return 'psycho killer', [boat_name]
         elif 'danger' in original and 'zone' in original:
             return 'danger zone', [boat_name] if original != 'danger zone' else []
         elif 'go hogs' in original or 'gohogs' in original or (original == 'hogs' and 'go' not in original):
-            return 'go hogs', [boat_name] if original != 'go hogs' else []
+            return 'go hogs go', [boat_name] if original != 'go hogs go' else []
         elif 'fast fred' in original or original == 'fred':
             return 'fred', [boat_name] if original != 'fred' else []
         elif 'sweet virginia' in original:
             return 'sweet virginia', [boat_name] if original != 'sweet virginia' else []
         elif original == 'max' or 'caper' in original:
-            return 'max', [boat_name] if original != 'max' else []
+            return 'caper', [boat_name] if original != 'caper' else []
         elif 'dawg' in original or original == 'dog':
-            return 'dawg', [boat_name] if original != 'dawg' else []
+            return 'scalded dawg', [boat_name] if original != 'scalded dawg' else []
         elif 'dandelion' in original:
             return 'dandelion', [boat_name] if original != 'dandelion' else []
         
