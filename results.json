@@ -1,0 +1,2681 @@
+{
+  "series": {
+    "boats_seen": [
+      "- club j22",
+      "scooter ahead go hogs go or danger-zone",
+      "dawg ahead wizard just",
+      "re going to be left",
+      "psycho in front dang3r zone",
+      "t know who finished",
+      "itch in front gog hogs go",
+      "danger zone",
+      "psycho killer ahead ambush itch",
+      "- max",
+      "519",
+      "itch ahead go hogs go",
+      "psycho killer ahead ambush fred",
+      "max",
+      "gohogs dawg ahead scooter",
+      "- itch ahead - sweet virginia - ambush",
+      "not so fast frediie",
+      "dog ahead fast freddy",
+      "- go hogs",
+      "ambush",
+      "psycho",
+      "go hogs danger zone",
+      "heintz gohogs - 1 novice dawg ahead fast freddy",
+      "sweet virginia ahead flying scot",
+      "j-80",
+      "go hogs go behind fred",
+      "heintz gohogs - 1 novice dawg",
+      "for go hogs psycho in front  - danger zone",
+      "go hogs",
+      "psycho killer ahead ambush fred or caper",
+      "wizard",
+      "not sure who was",
+      "dandelion",
+      "scooter",
+      "dandelion closely",
+      "sweet virginia",
+      "dawg finished",
+      "club boat",
+      "- itch",
+      "gohogs 1 novice dawg ahead fast freddy",
+      "dawg",
+      "ambush dawg",
+      "team itch  1nv ambush ahead go hogs go",
+      "fred",
+      "gohogs 1 novice dawg",
+      "jeromy",
+      "gohogs dawg",
+      "itch",
+      "wizard - 1 novice sweet virginia",
+      "no one",
+      "1st to laha ambush",
+      "danger zone ahead ambush sweet virginia",
+      "dawg ahead scooter",
+      "not sure who",
+      "itch ahead fast freddy",
+      "psycho killer ahead scooter",
+      "- wizard",
+      "- max ahead - sweet virginia -",
+      "team itch  1nv ambush",
+      "fast freddie j22 finish behind scooter",
+      "fast freddie j22 finish",
+      "finished"
+    ],
+    "weeks": [
+      {
+        "date": "2025-03-26",
+        "starters": [],
+        "results": [],
+        "evidence": [],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-04-02",
+        "starters": [],
+        "results": [],
+        "evidence": [],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-04-09",
+        "starters": [
+          "j-80",
+          "re going to be left",
+          "scooter",
+          "dawg",
+          "go hogs",
+          "fred",
+          "ambush"
+        ],
+        "results": [
+          {
+            "boat": "ambush",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "j-80",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "re going to be left",
+            "pos": 6,
+            "novices": 0,
+            "status": "FIN",
+            "score": 6,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": 7,
+            "novices": 0,
+            "status": "FIN",
+            "score": 7,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "re going to be left",
+            "position_type": "behind_reporter",
+            "text": "We have 5 already, but will take one if they’re going to be left behind",
+            "author": "James ODell",
+            "timestamp": "2025-04-09 05:16 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "behind_reporter",
+            "text": "Scalded dog behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-04-09 07:56 PM",
+            "aliases_used": [
+              "scalded dog"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "ambush",
+            "position_type": "ahead_of_reporter",
+            "text": "Ambush ahead",
+            "author": "George Heintz",
+            "timestamp": "2025-04-09 07:57 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "fred",
+            "position_type": "behind_reporter",
+            "text": "Fast Freddy behind",
+            "author": "George Heintz",
+            "timestamp": "2025-04-09 07:57 PM",
+            "aliases_used": [
+              "fast freddy"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "scooter",
+            "position_type": "ahead_of_reporter",
+            "text": "Scooter ahead",
+            "author": "Jackson",
+            "timestamp": "2025-04-09 10:24 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "go hogs",
+            "position_type": "behind_reporter",
+            "text": "Go hogs go behind",
+            "author": "Jackson",
+            "timestamp": "2025-04-09 10:24 PM",
+            "aliases_used": [
+              "go hogs go"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "j-80",
+            "position_type": "ahead_of_reporter",
+            "text": "Psyco Killer ahead, Ambush behind",
+            "author": "David Curtze",
+            "timestamp": "2025-04-09 10:42 PM",
+            "aliases_used": [
+              "psyco killer"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "ambush",
+            "position_type": "behind_reporter",
+            "text": "Psyco Killer ahead, Ambush behind",
+            "author": "David Curtze",
+            "timestamp": "2025-04-09 10:42 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 3,
+            "text": "Psyco Killer ahead, Ambush behind.  3 novices on board. 1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy",
+            "author": "David Curtze",
+            "timestamp": "2025-04-09 10:42 PM",
+            "boat": "scooter"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-04-16",
+        "starters": [
+          "fred"
+        ],
+        "results": [
+          {
+            "boat": "fred",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "fred",
+            "position_type": "behind_reporter",
+            "text": "Fred behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-04-16 06:59 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-04-23",
+        "starters": [],
+        "results": [],
+        "evidence": [],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-04-30",
+        "starters": [
+          "fast freddie j22 finish behind scooter",
+          "fast freddie j22 finish",
+          "go hogs go behind fred",
+          "go hogs"
+        ],
+        "results": [
+          {
+            "boat": "fast freddie j22 finish",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fast freddie j22 finish behind scooter",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs go behind fred",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "fast freddie j22 finish behind scooter",
+            "position_type": "ahead_of_reporter",
+            "text": "Fast Freddie J22 Finish Behind Scooter Ahead Go Hog Go",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-04-30 06:48 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "fast freddie j22 finish",
+            "position_type": "behind_reporter",
+            "text": "Fast Freddie J22 Finish Behind Scooter Ahead Go Hog Go",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-04-30 06:48 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "go hogs go behind fred",
+            "position_type": "ahead_of_reporter",
+            "text": "Go hogs go Behind Fred Ahead of Itch",
+            "author": "Paul Heinz",
+            "timestamp": "2025-04-30 08:03 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "go hogs",
+            "position_type": "behind_reporter",
+            "text": "Go hogs go Behind Fred Ahead of Itch",
+            "author": "Paul Heinz",
+            "timestamp": "2025-04-30 08:03 PM",
+            "aliases_used": [
+              "go hogs go"
+            ]
+          },
+          {
+            "type": "relative_position",
+            "boat_ahead": "go hogs go behind fred",
+            "boat_behind": "itch",
+            "text": "Go hogs go Behind Fred Ahead of Itch",
+            "author": "Paul Heinz",
+            "timestamp": "2025-04-30 08:03 PM"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-05-07",
+        "starters": [
+          "j-80",
+          "scooter ahead go hogs go or danger-zone",
+          "scooter",
+          "danger zone ahead ambush sweet virginia",
+          "danger zone",
+          "psycho killer ahead scooter",
+          "dawg",
+          "fred",
+          "dog ahead fast freddy",
+          "ambush"
+        ],
+        "results": [
+          {
+            "boat": "ambush",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone ahead ambush sweet virginia",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dog ahead fast freddy",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": 6,
+            "novices": 0,
+            "status": "FIN",
+            "score": 6,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "j-80",
+            "pos": 7,
+            "novices": 0,
+            "status": "FIN",
+            "score": 7,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer ahead scooter",
+            "pos": 8,
+            "novices": 0,
+            "status": "FIN",
+            "score": 8,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": 9,
+            "novices": 0,
+            "status": "FIN",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter ahead go hogs go or danger-zone",
+            "pos": 10,
+            "novices": 0,
+            "status": "FIN",
+            "score": 10,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "novice",
+            "count": 3,
+            "text": "Scooters in with Mark S at helm and 3 novices",
+            "author": "David Curtze",
+            "timestamp": "2025-05-07 12:47 PM",
+            "boat": "scooter"
+          },
+          {
+            "type": "placement",
+            "boat": "danger zone",
+            "position_type": "ahead_of_reporter",
+            "text": "Danger Zone ahead Ambush Sweet Virginia behind",
+            "author": "Jackson",
+            "timestamp": "2025-05-07 07:28 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "danger zone ahead ambush sweet virginia",
+            "position_type": "behind_reporter",
+            "text": "Danger Zone ahead Ambush Sweet Virginia behind",
+            "author": "Jackson",
+            "timestamp": "2025-05-07 07:28 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "ambush",
+            "position_type": "ahead_of_reporter",
+            "text": "Ambush ahead Sweet Virginia",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-05-07 07:35 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "ambush",
+            "position_type": "behind_reporter",
+            "text": "Ambush behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-05-07 07:49 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "fred",
+            "position_type": "ahead_of_reporter",
+            "text": "Fast Freddy Ahead",
+            "author": "George Heintz",
+            "timestamp": "2025-05-07 07:59 PM",
+            "aliases_used": [
+              "fast freddy"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "danger zone",
+            "position_type": "behind_reporter",
+            "text": "Danger Zone behind 1 Novice",
+            "author": "George Heintz",
+            "timestamp": "2025-05-07 07:59 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Fast Freddy Ahead. Danger Zone behind 1 Novice.",
+            "author": "George Heintz",
+            "timestamp": "2025-05-07 07:59 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "Scooter: Dog ahead Fast Freddy behind 2 novices",
+            "author": "Chris Dupont",
+            "timestamp": "2025-05-07 08:04 PM",
+            "aliases_used": [
+              "dog"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "dog ahead fast freddy",
+            "position_type": "behind_reporter",
+            "text": "Scooter: Dog ahead Fast Freddy behind 2 novices",
+            "author": "Chris Dupont",
+            "timestamp": "2025-05-07 08:04 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 2,
+            "text": "Scooter: Dog ahead Fast Freddy behind 2 novices",
+            "author": "Chris Dupont",
+            "timestamp": "2025-05-07 08:04 PM",
+            "boat": "UNKNOWN"
+          },
+          {
+            "type": "placement",
+            "boat": "j-80",
+            "position_type": "ahead_of_reporter",
+            "text": "Dawg: Psycho Killer ahead Scooter behind",
+            "author": "~ Serena Whitworth Pigue",
+            "timestamp": "2025-05-07 08:25 PM",
+            "aliases_used": [
+              "psycho killer"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "psycho killer ahead scooter",
+            "position_type": "behind_reporter",
+            "text": "Dawg: Psycho Killer ahead Scooter behind",
+            "author": "~ Serena Whitworth Pigue",
+            "timestamp": "2025-05-07 08:25 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "scooter",
+            "position_type": "ahead_of_reporter",
+            "text": "Fast Freddie (1 novice) Scooter ahead Go Hogs Go or Danger-zone behind",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-05-07 09:48 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "scooter ahead go hogs go or danger-zone",
+            "position_type": "behind_reporter",
+            "text": "Fast Freddie (1 novice) Scooter ahead Go Hogs Go or Danger-zone behind",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-05-07 09:48 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Fast Freddie (1 novice) Scooter ahead Go Hogs Go or Danger-zone behind",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-05-07 09:48 PM",
+            "boat": "UNKNOWN"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-05-14",
+        "starters": [
+          "jeromy",
+          "heintz gohogs - 1 novice dawg ahead fast freddy",
+          "heintz gohogs - 1 novice dawg",
+          "- club j22"
+        ],
+        "results": [
+          {
+            "boat": "- club j22",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "heintz gohogs - 1 novice dawg",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "heintz gohogs - 1 novice dawg ahead fast freddy",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "jeromy",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "jeromy",
+            "position_type": "behind_reporter",
+            "text": "Jeromy behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-05-14 07:41 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "- club j22",
+            "position_type": "behind_reporter",
+            "text": "- sweet Virginia (2 novices) - club j22 behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-05-14 07:48 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 2,
+            "text": "- sweet Virginia (2 novices) - club j22 behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-05-14 07:48 PM",
+            "boat": "sweet virginia"
+          },
+          {
+            "type": "placement",
+            "boat": "heintz gohogs - 1 novice dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "Heintz GoHogs - 1 Novice Dawg Ahead Fast Freddy Behind",
+            "author": "George Heintz",
+            "timestamp": "2025-05-14 08:31 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "heintz gohogs - 1 novice dawg ahead fast freddy",
+            "position_type": "behind_reporter",
+            "text": "Heintz GoHogs - 1 Novice Dawg Ahead Fast Freddy Behind",
+            "author": "George Heintz",
+            "timestamp": "2025-05-14 08:31 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Heintz GoHogs - 1 Novice Dawg Ahead Fast Freddy Behind.",
+            "author": "George Heintz",
+            "timestamp": "2025-05-14 08:31 PM",
+            "boat": "go hogs"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-05-21",
+        "starters": [
+          "j-80",
+          "- club j22",
+          "no one",
+          "sweet virginia",
+          "dawg finished",
+          "not sure who",
+          "club boat",
+          "- wizard",
+          "danger zone",
+          "gohogs 1 novice dawg ahead fast freddy",
+          "gohogs 1 novice dawg",
+          "finished"
+        ],
+        "results": [
+          {
+            "boat": "- club j22",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "- wizard",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "club boat",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg finished",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "finished",
+            "pos": 6,
+            "novices": 0,
+            "status": "FIN",
+            "score": 6,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "gohogs 1 novice dawg",
+            "pos": 7,
+            "novices": 0,
+            "status": "FIN",
+            "score": 7,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "gohogs 1 novice dawg ahead fast freddy",
+            "pos": 8,
+            "novices": 0,
+            "status": "FIN",
+            "score": 8,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "j-80",
+            "pos": 9,
+            "novices": 0,
+            "status": "FIN",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "no one",
+            "pos": 10,
+            "novices": 0,
+            "status": "FIN",
+            "score": 10,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "not sure who",
+            "pos": 11,
+            "novices": 0,
+            "status": "FIN",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 12,
+            "novices": 0,
+            "status": "FIN",
+            "score": 12,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "finished",
+            "position_type": "behind_reporter",
+            "text": "Wayfair, finished behind danger zone, ahead of San Juan 24",
+            "author": "James ODell",
+            "timestamp": "2025-05-21 07:50 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg finished",
+            "position_type": "behind_reporter",
+            "text": "Dawg finished behind J80 in front of j22 Hog",
+            "author": "James ODell",
+            "timestamp": "2025-05-21 07:50 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "gohogs 1 novice dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "GoHogs 1 novice Dawg ahead Fast Freddy Behind",
+            "author": "George Heintz",
+            "timestamp": "2025-05-21 07:51 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "gohogs 1 novice dawg ahead fast freddy",
+            "position_type": "behind_reporter",
+            "text": "GoHogs 1 novice Dawg ahead Fast Freddy Behind",
+            "author": "George Heintz",
+            "timestamp": "2025-05-21 07:51 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "GoHogs 1 novice Dawg ahead Fast Freddy Behind",
+            "author": "George Heintz",
+            "timestamp": "2025-05-21 07:51 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "placement",
+            "boat": "- club j22",
+            "position_type": "ahead_of_reporter",
+            "text": "- Club j22 ahead - Sweet Virginia (1 novice) - wizard behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-05-21 07:53 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "- wizard",
+            "position_type": "behind_reporter",
+            "text": "- Club j22 ahead - Sweet Virginia (1 novice) - wizard behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-05-21 07:53 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "- Club j22 ahead - Sweet Virginia (1 novice) - wizard behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-05-21 07:53 PM",
+            "boat": "sweet virginia"
+          },
+          {
+            "type": "placement",
+            "boat": "no one",
+            "position_type": "ahead_of_reporter",
+            "text": "No one ahead",
+            "author": "Jackson",
+            "timestamp": "2025-05-21 08:16 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "j-80",
+            "position_type": "behind_reporter",
+            "text": "Psycho Killer behind",
+            "author": "Jackson",
+            "timestamp": "2025-05-21 08:16 PM",
+            "aliases_used": [
+              "psycho killer"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "not sure who",
+            "position_type": "ahead_of_reporter",
+            "text": "Club Boat behind, not sure who ahead 4 novice",
+            "author": "David Curtze",
+            "timestamp": "2025-05-21 08:31 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "club boat",
+            "position_type": "behind_reporter",
+            "text": "Club Boat behind, not sure who ahead 4 novice",
+            "author": "David Curtze",
+            "timestamp": "2025-05-21 08:31 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 4,
+            "text": "Club Boat behind, not sure who ahead 4 novice",
+            "author": "David Curtze",
+            "timestamp": "2025-05-21 08:31 PM",
+            "boat": "scooter"
+          },
+          {
+            "type": "placement",
+            "boat": "sweet virginia",
+            "position_type": "ahead_of_reporter",
+            "text": "Sweet Virginia ahead Wizard (2novices) Danger zone behind",
+            "author": "Alicia Noble",
+            "timestamp": "2025-05-21 09:12 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "danger zone",
+            "position_type": "behind_reporter",
+            "text": "Sweet Virginia ahead Wizard (2novices) Danger zone behind",
+            "author": "Alicia Noble",
+            "timestamp": "2025-05-21 09:12 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-05-28",
+        "starters": [
+          "dandelion",
+          "no one",
+          "dawg ahead wizard just",
+          "dawg",
+          "go hogs"
+        ],
+        "results": [
+          {
+            "boat": "dandelion",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg ahead wizard just",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "no one",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "no one",
+            "position_type": "ahead_of_reporter",
+            "text": "No one ahead",
+            "author": "Jackson",
+            "timestamp": "2025-05-28 08:39 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "behind_reporter",
+            "text": "(1 novice) Scalded Dawg behind",
+            "author": "Jackson",
+            "timestamp": "2025-05-28 08:39 PM",
+            "aliases_used": [
+              "scalded dawg"
+            ]
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "No one ahead. Ambush. (1 novice) Scalded Dawg behind",
+            "author": "Jackson",
+            "timestamp": "2025-05-28 08:39 PM",
+            "boat": "ambush"
+          },
+          {
+            "type": "placement",
+            "boat": "go hogs",
+            "position_type": "behind_reporter",
+            "text": "Hogs behind us, we had a novice",
+            "author": "James ODell",
+            "timestamp": "2025-05-28 08:42 PM",
+            "aliases_used": [
+              "hogs"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "Dawg ahead Wizard just behind",
+            "author": "George Heintz",
+            "timestamp": "2025-05-28 09:22 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg ahead wizard just",
+            "position_type": "behind_reporter",
+            "text": "Dawg ahead Wizard just behind",
+            "author": "George Heintz",
+            "timestamp": "2025-05-28 09:22 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "GoHogs. Dawg ahead Wizard just behind. 1 novice.",
+            "author": "George Heintz",
+            "timestamp": "2025-05-28 09:22 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "placement",
+            "boat": "dandelion",
+            "position_type": "ahead_of_reporter",
+            "text": "dandelion ahead - 2 novice",
+            "author": "Fred Bartrom",
+            "timestamp": "2025-05-28 10:01 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 2,
+            "text": "dandelion ahead - 2 novice",
+            "author": "Fred Bartrom",
+            "timestamp": "2025-05-28 10:01 PM",
+            "boat": "fred"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-06-04",
+        "starters": [
+          "dawg ahead scooter",
+          "dawg",
+          "no one"
+        ],
+        "results": [
+          {
+            "boat": "dawg",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg ahead scooter",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "no one",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "Dawg ahead Scooter behind",
+            "author": "George Heintz",
+            "timestamp": "2025-06-04 08:28 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg ahead scooter",
+            "position_type": "behind_reporter",
+            "text": "Dawg ahead Scooter behind",
+            "author": "George Heintz",
+            "timestamp": "2025-06-04 08:28 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "GoHogs. Dawg ahead Scooter behind. 1 novice.",
+            "author": "George Heintz",
+            "timestamp": "2025-06-04 08:28 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "placement",
+            "boat": "no one",
+            "position_type": "ahead_of_reporter",
+            "text": "No one ahead Ambush (1 novice) Danger Zone",
+            "author": "Jackson",
+            "timestamp": "2025-06-04 08:39 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "No one ahead Ambush (1 novice) Danger Zone",
+            "author": "Jackson",
+            "timestamp": "2025-06-04 08:39 PM",
+            "boat": "ambush"
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "behind_reporter",
+            "text": "Dawg behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-06-04 09:37 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-06-11",
+        "starters": [
+          "not so fast frediie",
+          "j-80",
+          "psycho killer ahead ambush fred"
+        ],
+        "results": [
+          {
+            "boat": "j-80",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "not so fast frediie",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer ahead ambush fred",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "j-80",
+            "position_type": "ahead_of_reporter",
+            "text": "Psycho Killer ahead Ambush Fred behind",
+            "author": "Jackson",
+            "timestamp": "2025-06-11 08:22 PM",
+            "aliases_used": [
+              "psycho killer"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "psycho killer ahead ambush fred",
+            "position_type": "behind_reporter",
+            "text": "Psycho Killer ahead Ambush Fred behind",
+            "author": "Jackson",
+            "timestamp": "2025-06-11 08:22 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "not so fast frediie",
+            "position_type": "ahead_of_reporter",
+            "text": "Not so fast Frediie Ahead of Sweet Virginia",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-06-11 08:50 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "relative_position",
+            "boat_ahead": "not so fast frediie",
+            "boat_behind": "sweet virginia",
+            "text": "Not so fast Frediie Ahead of Sweet Virginia",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-06-11 08:50 PM"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-06-18",
+        "starters": [
+          "dandelion closely",
+          "dawg ahead scooter",
+          "sweet virginia",
+          "dawg",
+          "wizard"
+        ],
+        "results": [
+          {
+            "boat": "dandelion closely",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg ahead scooter",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "Dawg ahead scooter behind",
+            "author": "George Heintz",
+            "timestamp": "2025-06-18 08:09 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg ahead scooter",
+            "position_type": "behind_reporter",
+            "text": "Dawg ahead scooter behind",
+            "author": "George Heintz",
+            "timestamp": "2025-06-18 08:09 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "sweet virginia",
+            "position_type": "behind_reporter",
+            "text": "Sweet Virginia behind club j22 i think",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-06-18 08:34 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 2,
+            "text": "Sweet Virginia behind club j22 i think. We had 2 novices",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-06-18 08:34 PM",
+            "boat": "sweet virginia"
+          },
+          {
+            "type": "placement",
+            "boat": "wizard",
+            "position_type": "behind_reporter",
+            "text": "Wizard behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-06-18 08:55 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dandelion closely",
+            "position_type": "behind_reporter",
+            "text": "Dandelion closely behind fast Freddie",
+            "author": "Robby",
+            "timestamp": "2025-06-18 09:59 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-06-25",
+        "starters": [],
+        "results": [],
+        "evidence": [],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-07-02",
+        "starters": [
+          "fred",
+          "t know who finished",
+          "dandelion",
+          "dawg"
+        ],
+        "results": [
+          {
+            "boat": "dandelion",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "t know who finished",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "fred",
+            "position_type": "behind_reporter",
+            "text": "Fred behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-07-02 07:43 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "behind_reporter",
+            "text": "Scalded Dawg behind",
+            "author": "Jackson",
+            "timestamp": "2025-07-02 07:45 PM",
+            "aliases_used": [
+              "scalded dawg"
+            ]
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "1 novice :)",
+            "author": "Jackson",
+            "timestamp": "2025-07-02 08:30 PM",
+            "boat": "ambush"
+          },
+          {
+            "type": "placement",
+            "boat": "dandelion",
+            "position_type": "behind_reporter",
+            "text": "Dandelion Behind",
+            "author": "George Heintz",
+            "timestamp": "2025-07-02 08:57 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "GoHogs. Scooter in Front. Dandelion Behind. 1 Novice",
+            "author": "George Heintz",
+            "timestamp": "2025-07-02 08:57 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "placement",
+            "boat": "t know who finished",
+            "position_type": "ahead_of_reporter",
+            "text": "Don’t know who finished ahead",
+            "author": "Mark Smith",
+            "timestamp": "2025-07-02 08:59 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 2,
+            "text": "Scooter then Go Hogs Go. Don’t know who finished ahead. 2 novices.",
+            "author": "Mark Smith",
+            "timestamp": "2025-07-02 08:59 PM",
+            "boat": "UNKNOWN"
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Dandelion. Wizard. Max. Wizard had 1 novice",
+            "author": "Alicia Noble",
+            "timestamp": "2025-07-02 09:16 PM",
+            "boat": "wizard"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-07-09",
+        "starters": [
+          "itch",
+          "itch ahead go hogs go",
+          "finished"
+        ],
+        "results": [
+          {
+            "boat": "finished",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch ahead go hogs go",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Go hogs DSQ. Missed a buoy on top end.  Thats what we get for following Scooter.  At least we had 1 Novice.",
+            "author": "George Heintz",
+            "timestamp": "2025-07-09 08:57 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "penalty",
+            "penalty_type": "DSQ",
+            "text": "Go hogs DSQ. Missed a buoy on top end.  Thats what we get for following Scooter.  At least we had 1 Novice.",
+            "author": "George Heintz",
+            "timestamp": "2025-07-09 08:57 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "placement",
+            "boat": "itch",
+            "position_type": "ahead_of_reporter",
+            "text": "Itch ahead go hogs go behind",
+            "author": "David Curtze",
+            "timestamp": "2025-07-09 10:02 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "itch ahead go hogs go",
+            "position_type": "behind_reporter",
+            "text": "Itch ahead go hogs go behind",
+            "author": "David Curtze",
+            "timestamp": "2025-07-09 10:02 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "penalty",
+            "penalty_type": "DSQ",
+            "text": "Itch ahead go hogs go behind. 1 nv. Scooter and go hogs  missed a mark. Dsq? Consider last and 2nd to last.  If max also missed the mark, then last, 2nd to last and 3rd to last. Thuse marks move around so much,  you never know where they are.",
+            "author": "David Curtze",
+            "timestamp": "2025-07-09 10:02 PM",
+            "boat": "scooter"
+          },
+          {
+            "type": "placement",
+            "boat": "finished",
+            "position_type": "behind_reporter",
+            "text": "finished behind us",
+            "author": "Fred Bartrom",
+            "timestamp": "2025-07-09 11:35 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "penalty",
+            "penalty_type": "DNF",
+            "text": "Anyone that didn’t sail the course should be scored DNF, the rules are very clear on this point.",
+            "author": "James ODell",
+            "timestamp": "2025-07-09 11:47 PM",
+            "boat": "UNKNOWN"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-07-16",
+        "starters": [
+          "scooter",
+          "itch in front gog hogs go",
+          "danger zone",
+          "go hogs",
+          "fred",
+          "ambush"
+        ],
+        "results": [
+          {
+            "boat": "ambush",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": 6,
+            "novices": 0,
+            "status": "FIN",
+            "score": 6,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "fred",
+            "position_type": "behind_reporter",
+            "text": "Fred behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-07-16 07:57 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "danger zone",
+            "position_type": "behind_reporter",
+            "text": "Danger zone behind",
+            "author": "Alicia Noble",
+            "timestamp": "2025-07-16 08:07 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "itch in front gog hogs go",
+            "position_type": "behind_reporter",
+            "text": "Itch in front gog hogs go behind",
+            "author": "David Curtze",
+            "timestamp": "2025-07-16 08:29 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "go hogs",
+            "position_type": "ahead_of_reporter",
+            "text": "Go hogs go ahead Ambush - (double handed with 1 novice) Sweet Virginia",
+            "author": "Jackson",
+            "timestamp": "2025-07-16 09:20 PM",
+            "aliases_used": [
+              "go hogs go"
+            ]
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Go hogs go ahead Ambush - (double handed with 1 novice) Sweet Virginia",
+            "author": "Jackson",
+            "timestamp": "2025-07-16 09:20 PM",
+            "boat": "ambush"
+          },
+          {
+            "type": "placement",
+            "boat": "scooter",
+            "position_type": "ahead_of_reporter",
+            "text": "Scooter ahead, Ambush behind",
+            "author": "George Heintz",
+            "timestamp": "2025-07-16 09:24 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "ambush",
+            "position_type": "behind_reporter",
+            "text": "Scooter ahead, Ambush behind",
+            "author": "George Heintz",
+            "timestamp": "2025-07-16 09:24 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "For Go Hogs.  Scooter ahead, Ambush behind. 1 Novice.",
+            "author": "George Heintz",
+            "timestamp": "2025-07-16 09:24 PM",
+            "boat": "go hogs"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-07-23",
+        "starters": [
+          "itch",
+          "scooter",
+          "for go hogs psycho in front  - danger zone",
+          "max",
+          "wizard"
+        ],
+        "results": [
+          {
+            "boat": "for go hogs psycho in front  - danger zone",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "max",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "max",
+            "position_type": "behind_reporter",
+            "text": "Caper behind",
+            "author": "David Curtze",
+            "timestamp": "2025-07-23 08:24 PM",
+            "aliases_used": [
+              "caper"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "scooter",
+            "position_type": "behind_reporter",
+            "text": "Scooter behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-07-23 08:25 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "wizard",
+            "position_type": "behind_reporter",
+            "text": "Wizard behind (I think, it was close)",
+            "author": "Jackson",
+            "timestamp": "2025-07-23 09:29 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "itch",
+            "position_type": "behind_reporter",
+            "text": "Ambush in front, Itch behind",
+            "author": "Alicia Noble",
+            "timestamp": "2025-07-23 09:32 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "for go hogs psycho in front  - danger zone",
+            "position_type": "behind_reporter",
+            "text": "For Go Hogs Psycho in front  - Danger Zone behind",
+            "author": "George Heintz",
+            "timestamp": "2025-07-23 09:47 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-07-30",
+        "starters": [
+          "sweet virginia ahead flying scot",
+          "wizard - 1 novice sweet virginia",
+          "sweet virginia",
+          "- wizard",
+          "519",
+          "dawg",
+          "- go hogs",
+          "not sure who was"
+        ],
+        "results": [
+          {
+            "boat": "- go hogs",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "- wizard",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "519",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "not sure who was",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 6,
+            "novices": 0,
+            "status": "FIN",
+            "score": 6,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia ahead flying scot",
+            "pos": 7,
+            "novices": 0,
+            "status": "FIN",
+            "score": 7,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard - 1 novice sweet virginia",
+            "pos": 8,
+            "novices": 0,
+            "status": "FIN",
+            "score": 8,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "Dawg ahead Ambush [insert name here] behind",
+            "author": "Jackson",
+            "timestamp": "2025-07-30 08:22 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "- wizard",
+            "position_type": "ahead_of_reporter",
+            "text": "- wizard ahead - sweet Virginia (1 novice) - go hogs behind <This message was edited>",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-07-30 08:23 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "- go hogs",
+            "position_type": "behind_reporter",
+            "text": "- wizard ahead - sweet Virginia (1 novice) - go hogs behind <This message was edited>",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-07-30 08:23 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "- wizard ahead - sweet Virginia (1 novice) - go hogs behind <This message was edited>",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-07-30 08:23 PM",
+            "boat": "sweet virginia"
+          },
+          {
+            "type": "placement",
+            "boat": "519",
+            "position_type": "behind_reporter",
+            "text": "519 behind ambush",
+            "author": "Fred Bartrom",
+            "timestamp": "2025-07-30 08:24 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "sweet virginia",
+            "position_type": "ahead_of_reporter",
+            "text": "Sweet Virginia Ahead Flying Scot behind",
+            "author": "George Heintz",
+            "timestamp": "2025-07-30 08:51 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "sweet virginia ahead flying scot",
+            "position_type": "behind_reporter",
+            "text": "Sweet Virginia Ahead Flying Scot behind",
+            "author": "George Heintz",
+            "timestamp": "2025-07-30 08:51 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "not sure who was",
+            "position_type": "ahead_of_reporter",
+            "text": "Not sure who was ahead",
+            "author": "Alicia Noble",
+            "timestamp": "2025-07-30 08:53 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "wizard - 1 novice sweet virginia",
+            "position_type": "behind_reporter",
+            "text": "Wizard - 1 novice Sweet Virginia behind",
+            "author": "Alicia Noble",
+            "timestamp": "2025-07-30 08:53 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Not sure who was ahead. Wizard - 1 novice Sweet Virginia behind",
+            "author": "Alicia Noble",
+            "timestamp": "2025-07-30 08:53 PM",
+            "boat": "wizard"
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "Dawg ahead of ambush, one novice",
+            "author": "James ODell",
+            "timestamp": "2025-07-30 08:56 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "relative_position",
+            "boat_ahead": "dawg",
+            "boat_behind": "ambush",
+            "text": "Dawg ahead of ambush, one novice",
+            "author": "James ODell",
+            "timestamp": "2025-07-30 08:56 PM"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-08-06",
+        "starters": [
+          "fred",
+          "- itch ahead - sweet virginia - ambush",
+          "- itch"
+        ],
+        "results": [
+          {
+            "boat": "- itch",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "- itch ahead - sweet virginia - ambush",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "fred",
+            "position_type": "ahead_of_reporter",
+            "text": "Fast Freddy ahead Scooter then  Itch",
+            "author": "David Curtze",
+            "timestamp": "2025-08-06 07:53 PM",
+            "aliases_used": [
+              "fast freddy"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "- itch",
+            "position_type": "ahead_of_reporter",
+            "text": "- itch ahead - sweet Virginia - ambush behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-08-06 08:00 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "- itch ahead - sweet virginia - ambush",
+            "position_type": "behind_reporter",
+            "text": "- itch ahead - sweet Virginia - ambush behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-08-06 08:00 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-08-13",
+        "starters": [
+          "ambush dawg",
+          "gohogs dawg ahead scooter",
+          "gohogs dawg",
+          "itch"
+        ],
+        "results": [
+          {
+            "boat": "ambush dawg",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "gohogs dawg",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "gohogs dawg ahead scooter",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "itch",
+            "position_type": "ahead_of_reporter",
+            "text": "Itch ahead",
+            "author": "Jackson",
+            "timestamp": "2025-08-13 07:39 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "ambush dawg",
+            "position_type": "behind_reporter",
+            "text": "Ambush Dawg behind",
+            "author": "Jackson",
+            "timestamp": "2025-08-13 07:39 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "gohogs dawg",
+            "position_type": "ahead_of_reporter",
+            "text": "GoHogs Dawg ahead Scooter behind 1 novice",
+            "author": "George Heintz",
+            "timestamp": "2025-08-13 07:52 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "gohogs dawg ahead scooter",
+            "position_type": "behind_reporter",
+            "text": "GoHogs Dawg ahead Scooter behind 1 novice",
+            "author": "George Heintz",
+            "timestamp": "2025-08-13 07:52 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "GoHogs Dawg ahead Scooter behind 1 novice",
+            "author": "George Heintz",
+            "timestamp": "2025-08-13 07:52 PM",
+            "boat": "go hogs"
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-08-20",
+        "starters": [
+          "j-80",
+          "itch",
+          "no one",
+          "itch ahead fast freddy",
+          "danger zone",
+          "psycho killer ahead ambush itch",
+          "dawg",
+          "team itch  1nv ambush",
+          "team itch  1nv ambush ahead go hogs go",
+          "psycho"
+        ],
+        "results": [
+          {
+            "boat": "danger zone",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dawg",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch ahead fast freddy",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "j-80",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "no one",
+            "pos": 6,
+            "novices": 0,
+            "status": "FIN",
+            "score": 6,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho",
+            "pos": 7,
+            "novices": 0,
+            "status": "FIN",
+            "score": 7,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer ahead ambush itch",
+            "pos": 8,
+            "novices": 0,
+            "status": "FIN",
+            "score": 8,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "team itch  1nv ambush",
+            "pos": 9,
+            "novices": 0,
+            "status": "FIN",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "team itch  1nv ambush ahead go hogs go",
+            "pos": 10,
+            "novices": 0,
+            "status": "FIN",
+            "score": 10,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "j-80",
+            "position_type": "ahead_of_reporter",
+            "text": "Psycho Killer ahead Ambush Itch behind",
+            "author": "Jackson",
+            "timestamp": "2025-08-20 07:40 PM",
+            "aliases_used": [
+              "psycho killer"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "psycho killer ahead ambush itch",
+            "position_type": "behind_reporter",
+            "text": "Psycho Killer ahead Ambush Itch behind",
+            "author": "Jackson",
+            "timestamp": "2025-08-20 07:40 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "no one",
+            "position_type": "ahead_of_reporter",
+            "text": "No one ahead",
+            "author": "Sam Beckman",
+            "timestamp": "2025-08-20 07:52 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "dawg",
+            "position_type": "behind_reporter",
+            "text": "Dawg behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-08-20 07:52 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "danger zone",
+            "position_type": "ahead_of_reporter",
+            "text": "Danger Zone ahead, Dawg, Psycho behind",
+            "author": "Iain Montgomery",
+            "timestamp": "2025-08-20 07:55 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "psycho",
+            "position_type": "behind_reporter",
+            "text": "Danger Zone ahead, Dawg, Psycho behind",
+            "author": "Iain Montgomery",
+            "timestamp": "2025-08-20 07:55 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "itch",
+            "position_type": "ahead_of_reporter",
+            "text": "Itch ahead Fast Freddy behind 1 novice",
+            "author": "George Heintz",
+            "timestamp": "2025-08-20 07:57 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "itch ahead fast freddy",
+            "position_type": "behind_reporter",
+            "text": "Itch ahead Fast Freddy behind 1 novice",
+            "author": "George Heintz",
+            "timestamp": "2025-08-20 07:57 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "GoHogs. Itch ahead Fast Freddy behind 1 novice",
+            "author": "George Heintz",
+            "timestamp": "2025-08-20 07:57 PM",
+            "boat": "go hogs"
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "1 novice on Dawg",
+            "author": "Iain Montgomery",
+            "timestamp": "2025-08-20 07:58 PM",
+            "boat": "UNKNOWN"
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Finished last (1 novice)",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-08-20 08:19 PM",
+            "boat": "sweet virginia"
+          },
+          {
+            "type": "placement",
+            "boat": "team itch  1nv ambush",
+            "position_type": "ahead_of_reporter",
+            "text": "Team Itch  1nv Ambush ahead go hogs go behind",
+            "author": "David Curtze",
+            "timestamp": "2025-08-20 08:23 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "team itch  1nv ambush ahead go hogs go",
+            "position_type": "behind_reporter",
+            "text": "Team Itch  1nv Ambush ahead go hogs go behind",
+            "author": "David Curtze",
+            "timestamp": "2025-08-20 08:23 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-08-27",
+        "starters": [
+          "itch",
+          "psycho in front dang3r zone",
+          "- max ahead - sweet virginia -",
+          "danger zone",
+          "- max"
+        ],
+        "results": [
+          {
+            "boat": "- max",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "- max ahead - sweet virginia -",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho in front dang3r zone",
+            "pos": 5,
+            "novices": 0,
+            "status": "FIN",
+            "score": 5,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "psycho in front dang3r zone",
+            "position_type": "behind_reporter",
+            "text": "Psycho in front Dang3r Zone behind",
+            "author": "George Heintz",
+            "timestamp": "2025-08-27 09:14 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "danger zone",
+            "position_type": "ahead_of_reporter",
+            "text": "Danger zone ahead, Itch behind",
+            "author": "James ODell",
+            "timestamp": "2025-08-27 09:18 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "itch",
+            "position_type": "behind_reporter",
+            "text": "Danger zone ahead, Itch behind",
+            "author": "James ODell",
+            "timestamp": "2025-08-27 09:18 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "- max",
+            "position_type": "ahead_of_reporter",
+            "text": "- max ahead - sweet Virginia - behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-08-27 09:23 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "- max ahead - sweet virginia -",
+            "position_type": "behind_reporter",
+            "text": "- max ahead - sweet Virginia - behind",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-08-27 09:23 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-09-03",
+        "starters": [
+          "1st to laha ambush"
+        ],
+        "results": [
+          {
+            "boat": "1st to laha ambush",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "1st to laha ambush",
+            "position_type": "behind_reporter",
+            "text": "Fast Freddie: 1st to LaHa Ambush behind",
+            "author": "Brian Dougherty",
+            "timestamp": "2025-09-03 09:50 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-09-10",
+        "starters": [
+          "j-80",
+          "go hogs",
+          "ambush",
+          "go hogs danger zone"
+        ],
+        "results": [
+          {
+            "boat": "ambush",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs danger zone",
+            "pos": 3,
+            "novices": 0,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "j-80",
+            "pos": 4,
+            "novices": 0,
+            "status": "FIN",
+            "score": 4,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "go hogs",
+            "position_type": "ahead_of_reporter",
+            "text": "Go Hogs ahead by a couple of feet Ambush Wizard We had 1 novice",
+            "author": "George Darling",
+            "timestamp": "2025-09-10 07:27 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "count": 1,
+            "text": "Go Hogs ahead by a couple of feet Ambush Wizard We had 1 novice",
+            "author": "George Darling",
+            "timestamp": "2025-09-10 07:27 PM",
+            "boat": "UNKNOWN"
+          },
+          {
+            "type": "placement",
+            "boat": "j-80",
+            "position_type": "ahead_of_reporter",
+            "text": "Psychokiller ahead, hogs behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-09-10 07:32 PM",
+            "aliases_used": [
+              "psychokiller"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "go hogs",
+            "position_type": "behind_reporter",
+            "text": "Psychokiller ahead, hogs behind",
+            "author": "Sam Beckman",
+            "timestamp": "2025-09-10 07:32 PM",
+            "aliases_used": [
+              "hogs"
+            ]
+          },
+          {
+            "type": "novice",
+            "count": 2,
+            "text": "Danger Zone 2 novices",
+            "author": "Sam Beckman",
+            "timestamp": "2025-09-10 07:33 PM",
+            "boat": "danger zone"
+          },
+          {
+            "type": "placement",
+            "boat": "go hogs danger zone",
+            "position_type": "ahead_of_reporter",
+            "text": "Go Hogs Danger Zone ahead",
+            "author": "George Heintz",
+            "timestamp": "2025-09-10 08:24 PM",
+            "aliases_used": []
+          },
+          {
+            "type": "placement",
+            "boat": "ambush",
+            "position_type": "behind_reporter",
+            "text": "Ambush behind",
+            "author": "George Heintz",
+            "timestamp": "2025-09-10 08:24 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      },
+      {
+        "date": "2025-09-17",
+        "starters": [
+          "j-80",
+          "psycho killer ahead ambush fred or caper"
+        ],
+        "results": [
+          {
+            "boat": "j-80",
+            "pos": 1,
+            "novices": 0,
+            "status": "FIN",
+            "score": 1,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer ahead ambush fred or caper",
+            "pos": 2,
+            "novices": 0,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": []
+          }
+        ],
+        "evidence": [
+          {
+            "type": "placement",
+            "boat": "j-80",
+            "position_type": "ahead_of_reporter",
+            "text": "Psycho Killer ahead Ambush Fred or Caper behind (not sure how that played out)",
+            "author": "Jackson",
+            "timestamp": "2025-09-17 07:29 PM",
+            "aliases_used": [
+              "psycho killer"
+            ]
+          },
+          {
+            "type": "placement",
+            "boat": "psycho killer ahead ambush fred or caper",
+            "position_type": "behind_reporter",
+            "text": "Psycho Killer ahead Ambush Fred or Caper behind (not sure how that played out)",
+            "author": "Jackson",
+            "timestamp": "2025-09-17 07:29 PM",
+            "aliases_used": []
+          }
+        ],
+        "ambiguity": null
+      }
+    ],
+    "scoring": {},
+    "standings": []
+  }
+}
