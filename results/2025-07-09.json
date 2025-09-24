@@ -7,8 +7,8 @@
     {"boat": "Itch", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Itch"], "inferred": true, "inference_note": "Finish position supplied authoritatively; chat had only relative 'Itch ahead go hogs go behind'."},
     {"boat": "Fred", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Fred"], "inferred": true, "inference_note": "Authoritative order places Fred 2nd."},
     {"boat": "Caper", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Caper", "Max"], "inferred": true, "inference_note": "Authoritative order; chat shows Caper (Max) finished behind Fred after correcting course."},
-    {"boat": "Scooter", "pos": null, "range": [4,5], "novices": 1, "status": "DNF", "score": 6, "aliasesSeen": ["Scooter"], "inferred": true, "inference_note": "Missed a mark per multiple messages; authoritative order classifies as DNF."},
-    {"boat": "Go Hogs Go", "pos": null, "range": [4,5], "novices": 1, "status": "DNF", "score": 6, "aliasesSeen": ["Go hogs", "Go Hogs"], "inferred": true, "inference_note": "Initially reported DSQ; later guidance and authoritative order treat as DNF (scored starters+1)."}
+  {"boat": "Scooter", "pos": null, "range": [4,5], "novices": 1, "status": "DNF", "score": 5, "aliasesSeen": ["Scooter"], "inferred": true, "inference_note": "Missed a mark per multiple messages; DNF base 6 minus 1 novice credit = 5."},
+  {"boat": "Go Hogs Go", "pos": null, "range": [4,5], "novices": 1, "status": "DNF", "score": 5, "aliasesSeen": ["Go hogs", "Go Hogs"], "inferred": true, "inference_note": "Initially reported DSQ; treated as DNF. Base 6 minus 1 novice credit = 5."}
   ],
   "ambiguous": false,
   "ambiguity": null,
@@ -30,7 +30,7 @@
     {"boat": "Fred", "type": "placement", "text": "Authoritative final order supplied (2nd)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true},
     {"boat": "Caper", "type": "placement", "text": "Authoritative final order supplied (3rd)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true},
     {"boat": "Scooter", "type": "status", "text": "Authoritative final order supplied (DNF)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true},
-    {"boat": "Go Hogs Go", "type": "status", "text": "Authoritative final order supplied (DNF)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true}
+  {"boat": "Go Hogs Go", "type": "status", "text": "Authoritative final order supplied (DNF; novice credit applied lowering penalty)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true}
   ],
   "generated_at": "2025-09-24T06:25:00Z"
 }
