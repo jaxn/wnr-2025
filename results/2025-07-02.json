@@ -2,6 +2,7 @@
   "date": "2025-07-02",
   "source_chat": "results/2025-07-02.chat.txt",
   "boats_seen": [
+    "danger zone",
     "fred",
     "ambush",
     "scalded dawg",
@@ -12,6 +13,7 @@
     "go hogs go"
   ],
   "starters": [
+    "danger zone",
     "fred",
     "ambush",
     "scalded dawg",
@@ -22,38 +24,42 @@
     "go hogs go"
   ],
   "results": [
-    {"boat": "fred", "pos": null, "range": [1,6], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["fred"]},
-    {"boat": "ambush", "pos": null, "range": [2,7], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["ambush"]},
-    {"boat": "scalded dawg", "pos": null, "range": [3,8], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["scalded dawg"]},
-    {"boat": "scooter", "pos": null, "range": [1,5], "novices": 2, "status": "FIN", "score": null, "aliasesSeen": ["scooter"]},
-    {"boat": "dandelion", "pos": null, "range": [2,6], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["dandelion"]},
-    {"boat": "wizard", "pos": null, "range": [3,7], "novices": 1, "status": "FIN", "score": null, "aliasesSeen": ["wizard"]},
-    {"boat": "caper", "pos": null, "range": [4,8], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["max"]},
-    {"boat": "go hogs go", "pos": null, "range": [1,8], "novices": 1, "status": "FIN", "score": null, "aliasesSeen": ["gohogs"]}
+    {"boat": "danger zone", "pos": null, "range": [1,6], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["danger zone"]},
+    {"boat": "fred", "pos": null, "range": [2,7], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["fred"]},
+    {"boat": "ambush", "pos": null, "range": [3,8], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["ambush"]},
+    {"boat": "scalded dawg", "pos": null, "range": [4,9], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["scalded dawg"]},
+    {"boat": "scooter", "pos": null, "range": [1,6], "novices": 2, "status": "FIN", "score": null, "aliasesSeen": ["scooter"]},
+    {"boat": "dandelion", "pos": null, "range": [2,7], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["dandelion"]},
+    {"boat": "wizard", "pos": null, "range": [3,8], "novices": 1, "status": "FIN", "score": null, "aliasesSeen": ["wizard"]},
+    {"boat": "caper", "pos": null, "range": [4,9], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["max"]},
+    {"boat": "go hogs go", "pos": null, "range": [1,9], "novices": 1, "status": "FIN", "score": null, "aliasesSeen": ["gohogs"]}
   ],
   "ambiguous": true,
   "ambiguity": {
-    "explanation": "Two independent ordered chains (Fred>Ambush>Scalded Dawg) and (Scooter>Dandelion>Wizard>Caper) plus an unlinked boat (Go Hogs Go). No evidence links the chains or places Go Hogs Go relative to either; one message explicitly states uncertainty between Scooter and Go Hogs Go.",
+    "explanation": "Three components: Chain A (Danger Zone>Fred>Ambush>Scalded Dawg) from two clustered messages; Chain B (Scooter>Dandelion>Wizard>Caper); and Go Hogs Go unlinked except an explicitly uncertain relation with Scooter. No bridging evidence connects the chains or locates Go Hogs Go, and one early message (Sam) conflicts with later omission of Danger Zone when declaring 'Fred in front'.",
     "boats": {
-      "fred": {"range": [1,6]},
-      "ambush": {"range": [2,7]},
-      "scalded dawg": {"range": [3,8]},
-      "scooter": {"range": [1,5]},
-      "dandelion": {"range": [2,6]},
-      "wizard": {"range": [3,7]},
-      "caper": {"range": [4,8]},
-      "go hogs go": {"range": [1,8]}
+      "danger zone": {"range": [1,6]},
+      "fred": {"range": [2,7]},
+      "ambush": {"range": [3,8]},
+      "scalded dawg": {"range": [4,9]},
+      "scooter": {"range": [1,6]},
+      "dandelion": {"range": [2,7]},
+      "wizard": {"range": [3,8]},
+      "caper": {"range": [4,9]},
+      "go hogs go": {"range": [1,9]}
     },
     "representative_orders": [
-      ["fred","ambush","scalded dawg","scooter","dandelion","wizard","caper","go hogs go"],
-      ["scooter","dandelion","wizard","caper","go hogs go","fred","ambush","scalded dawg"],
-      ["fred","scooter","ambush","dandelion","go hogs go","wizard","scalded dawg","caper"]
+      ["danger zone","fred","ambush","scalded dawg","scooter","dandelion","wizard","caper","go hogs go"],
+      ["scooter","dandelion","wizard","caper","go hogs go","danger zone","fred","ambush","scalded dawg"],
+      ["danger zone","scooter","fred","dandelion","ambush","go hogs go","wizard","scalded dawg","caper"]
     ]
   },
   "evidence": [
-    {"boat": "fred", "type": "placement", "text": "Fred in front.\nAmbush.\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-07-02 19:45:43"},
-    {"boat": "ambush", "type": "placement", "text": "Fred in front.\nAmbush.\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-07-02 19:45:43"},
-    {"boat": "scalded dawg", "type": "placement", "text": "Fred in front.\nAmbush.\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-07-02 19:45:43"},
+  {"boat": "danger zone", "type": "placement", "text": "No one in front. Fred behind.", "author": "Sam Beckman", "timestamp": "2025-07-02 19:43:36"},
+  {"boat": "fred", "type": "placement", "text": "No one in front. Fred behind.", "author": "Sam Beckman", "timestamp": "2025-07-02 19:43:36"},
+  {"boat": "fred", "type": "placement", "text": "Fred in front.\nAmbush.\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-07-02 19:45:43"},
+  {"boat": "ambush", "type": "placement", "text": "Fred in front.\nAmbush.\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-07-02 19:45:43"},
+  {"boat": "scalded dawg", "type": "placement", "text": "Fred in front.\nAmbush.\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-07-02 19:45:43"},
     {"boat": "scooter", "type": "placement", "text": "GoHogs. Scooter in Front. Dandelion Behind. 1 Novice", "author": "George Heintz", "timestamp": "2025-07-02 20:57:24"},
     {"boat": "dandelion", "type": "placement", "text": "GoHogs. Scooter in Front. Dandelion Behind. 1 Novice", "author": "George Heintz", "timestamp": "2025-07-02 20:57:24"},
     {"boat": "scooter", "type": "uncertain", "text": "Scooter then Go Hogs Go. Don’t know who finished ahead. 2 novices.", "author": "Mark Smith", "timestamp": "2025-07-02 20:59:07"},
