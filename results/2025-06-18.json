@@ -1,0 +1,91 @@
+{
+  "date": "2025-06-18",
+  "source_chat": "results/2025-06-18.chat.txt",
+  "boats_seen": [
+    "Psycho Killer",
+    "Scalded Dawg",
+    "Go Hogs Go",
+    "Scooter",
+    "Itch",
+    "Danger Zone",
+    "Wizard",
+    "Sweet Virginia",
+    "Club J22",
+    "Fred",
+    "Dandelion"
+  ],
+  "starters": [
+    "Psycho Killer",
+    "Scalded Dawg",
+    "Go Hogs Go",
+    "Scooter",
+    "Itch",
+    "Danger Zone",
+    "Wizard",
+    "Sweet Virginia",
+    "Club J22",
+    "Fred",
+    "Dandelion"
+  ],
+  "results": [
+    {"boat": "Psycho Killer", "pos": null, "range": [1,5], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["J80"]},
+    {"boat": "Scalded Dawg", "pos": null, "range": [2,6], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Dawg", "Dawgs"]},
+    {"boat": "Go Hogs Go", "pos": null, "range": [3,7], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Go hogs", "Go Hogs"]},
+    {"boat": "Scooter", "pos": null, "range": [4,8], "novices": 2, "status": "FIN", "score": null, "aliasesSeen": ["Scooter"]},
+    {"boat": "Itch", "pos": null, "range": [5,9], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Itch"]},
+    {"boat": "Danger Zone", "pos": null, "range": [1,11], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Danger Zone"]},
+    {"boat": "Wizard", "pos": null, "range": [6,11], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Wizard"]},
+    {"boat": "Sweet Virginia", "pos": null, "range": [7,11], "novices": 2, "status": "FIN", "score": null, "aliasesSeen": ["Sweet virginia"]},
+    {"boat": "Club J22", "pos": null, "range": [1,10], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["club boat", "club j22"]},
+    {"boat": "Fred", "pos": null, "range": [1,10], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Fast Freddie", "Fred"]},
+    {"boat": "Dandelion", "pos": null, "range": [2,11], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Dandelion"]}
+  ],
+  "ambiguous": true,
+  "ambiguity": {
+    "explanation": "Conflicting adjacency: Sam asserts Itch > Wizard directly; Jackson chain inserts Danger Zone between (Scooter > Itch > Danger Zone > Wizard > Sweet Virginia?). Unconstrained placements for Club J22 and Fred/Dandelion (only mutual edge Fred > Dandelion) create broad positional ranges.",
+    "boats": {
+      "Psycho Killer": {"range": [1,5]},
+      "Scalded Dawg": {"range": [2,6]},
+      "Go Hogs Go": {"range": [3,7]},
+      "Scooter": {"range": [4,8]},
+      "Itch": {"range": [5,9]},
+      "Danger Zone": {"range": [1,11]},
+      "Wizard": {"range": [6,11]},
+      "Sweet Virginia": {"range": [7,11]},
+      "Club J22": {"range": [1,10]},
+      "Fred": {"range": [1,10]},
+      "Dandelion": {"range": [2,11]}
+    },
+    "representative_orders": [
+      ["Psycho Killer", "Scalded Dawg", "Go Hogs Go", "Scooter", "Itch", "Danger Zone", "Wizard", "Sweet Virginia", "Club J22", "Fred", "Dandelion"],
+      ["Club J22", "Fred", "Dandelion", "Psycho Killer", "Scalded Dawg", "Go Hogs Go", "Scooter", "Itch", "Wizard", "Sweet Virginia", "Danger Zone"],
+      ["Fred", "Psycho Killer", "Scalded Dawg", "Go Hogs Go", "Club J22", "Scooter", "Itch", "Danger Zone", "Wizard", "Sweet Virginia", "Dandelion"]
+    ]
+  },
+  "evidence": [
+    {"boat": "Ambush", "type": "status", "text": "Ambush is out tonight :(", "author": "Jackson", "timestamp": "2025-06-18 10:59:35", "note": "DNS (excluded from starters)"},
+    {"boat": "Itch", "type": "status", "text": "Itch is in.", "author": "Bill Elders", "timestamp": "2025-06-18 11:08:26"},
+    {"boat": "Sweet Virginia", "type": "status", "text": "Sweet virginia is in", "author": "Jeremy Odom", "timestamp": "2025-06-18 11:38:39"},
+    {"boat": "Fred", "type": "status", "text": "I'm in", "author": "Fred Bartrom", "timestamp": "2025-06-18 12:19:39"},
+    {"boat": "Go Hogs Go", "type": "status", "text": "Go Hogs is in. Can take at least 1", "author": "George Heintz", "timestamp": "2025-06-18 12:20:27"},
+    {"boat": "Dandelion", "type": "status", "text": "Dandelion is in", "author": "Robby", "timestamp": "2025-06-18 12:22:03"},
+    {"boat": "Scalded Dawg", "type": "status", "text": "Dawgs in", "author": "James ODell", "timestamp": "2025-06-18 12:54:38"},
+    {"boat": "Scooter", "type": "status", "text": "Scooter is in", "author": "David Curtze", "timestamp": "2025-06-18 12:55:44"},
+    {"boat": "Club J22", "type": "status", "text": "I'm in! Planning on taking out the club boat.", "author": "Ania", "timestamp": "2025-06-18 11:06:48"},
+    {"boat": "Wizard", "type": "status", "text": "Wizard is in", "author": "Alicia Noble", "timestamp": "2025-06-18 12:56:46"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Go hogs. Dawg ahead scooter behind.", "author": "George Heintz", "timestamp": "2025-06-18 20:09:43", "note": "Interpreted: Scalded Dawg > Go Hogs Go > Scooter"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "J80, scaled Dawg,  go hogs go, Scooter,  then ?", "author": "David Curtze", "timestamp": "2025-06-18 20:11:39"},
+    {"boat": "Scooter", "type": "novice", "text": "Scooter had 2nv", "author": "David Curtze", "timestamp": "2025-06-18 20:12:10"},
+    {"boat": "Sweet Virginia", "type": "placement", "text": "Sweet Virginia behind club j22 i think. We had 2 novices", "author": "Jeremy Odom", "timestamp": "2025-06-18 20:34:10"},
+    {"boat": "Sweet Virginia", "type": "novice", "text": "Sweet Virginia behind club j22 i think. We had 2 novices", "author": "Jeremy Odom", "timestamp": "2025-06-18 20:34:10"},
+    {"boat": "Itch", "type": "placement", "text": "Itch in front. Wizard behind", "author": "Sam Beckman", "timestamp": "2025-06-18 20:55:56"},
+    {"boat": "Scooter", "type": "placement", "text": "Scooter -> Itch -> Danger Zone -> Wizard -> Sweet Virginia?", "author": "Jackson", "timestamp": "2025-06-18 21:08:59", "note": "Chain with uncertainty marker '?'"},
+    {"boat": "Itch", "type": "placement", "text": "Scooter -> Itch -> Danger Zone -> Wizard -> Sweet Virginia?", "author": "Jackson", "timestamp": "2025-06-18 21:08:59"},
+    {"boat": "Danger Zone", "type": "placement", "text": "Scooter -> Itch -> Danger Zone -> Wizard -> Sweet Virginia?", "author": "Jackson", "timestamp": "2025-06-18 21:08:59"},
+    {"boat": "Wizard", "type": "placement", "text": "Scooter -> Itch -> Danger Zone -> Wizard -> Sweet Virginia?", "author": "Jackson", "timestamp": "2025-06-18 21:08:59"},
+    {"boat": "Sweet Virginia", "type": "placement", "text": "Scooter -> Itch -> Danger Zone -> Wizard -> Sweet Virginia?", "author": "Jackson", "timestamp": "2025-06-18 21:08:59"},
+    {"boat": "Fred", "type": "status", "text": "Was Fast Freddy, Dandelion, Caper out?", "author": "Jackson", "timestamp": "2025-06-18 21:09:37", "note": "Query only; not used as placement"},
+    {"boat": "Dandelion", "type": "placement", "text": "Dandelion closely behind fast Freddie", "author": "Robby", "timestamp": "2025-06-18 21:59:38", "note": "Fred > Dandelion adjacency"}
+  ],
+  "generated_at": "2025-09-24T04:40:00Z"
+}
