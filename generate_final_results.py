@@ -64,6 +64,8 @@ def generate_markdown_table(df: pd.DataFrame, data: Dict) -> str:
     lines = []
     lines.append("# 2025 Wednesday Night Racing - Final Results")
     lines.append("")
+    lines.append("<!-- markdownlint-disable MD013 -->")
+    lines.append("")
     lines.append("This table shows each boat's performance across all race weeks.")
     lines.append("Format: Position(Score) or Status(Score) where Status = DNC/DSQ/DNF")
     lines.append("")
@@ -141,6 +143,7 @@ def generate_markdown_table(df: pd.DataFrame, data: Dict) -> str:
         lines.append("")
     
     lines.append(f"Generated from results.json containing {len(data['series']['weeks'])} race weeks.")
+    lines.append("")
     
     return "\n".join(lines)
 
