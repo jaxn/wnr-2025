@@ -26,38 +26,19 @@
     "Dandelion"
   ],
   "results": [
-    {"boat": "Psycho Killer", "pos": null, "range": [1,7], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["J80"]},
-    {"boat": "Scalded Dawg", "pos": null, "range": [2,8], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Dawg", "Dawgs"]},
-    {"boat": "Go Hogs Go", "pos": null, "range": [3,9], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Go hogs", "Go Hogs"]},
-    {"boat": "Scooter", "pos": null, "range": [4,10], "novices": 2, "status": "FIN", "score": null, "aliasesSeen": ["Scooter"]},
-    {"boat": "Itch", "pos": null, "range": [1,9], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Itch"]},
-    {"boat": "Wizard", "pos": null, "range": [2,10], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Wizard"]},
-    {"boat": "Sweet Virginia", "pos": null, "range": [2,10], "novices": 2, "status": "FIN", "score": null, "aliasesSeen": ["Sweet virginia"]},
-    {"boat": "Club J22", "pos": null, "range": [1,9], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["club boat", "club j22"]},
-    {"boat": "Fred", "pos": null, "range": [1,9], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Fast Freddie", "Fred"]},
-    {"boat": "Dandelion", "pos": null, "range": [2,10], "novices": 0, "status": "FIN", "score": null, "aliasesSeen": ["Dandelion"]}
+    {"boat": "Psycho Killer", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["J80"]},
+    {"boat": "Scalded Dawg", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Dawg", "Dawgs"]},
+    {"boat": "Go Hogs Go", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Go hogs", "Go Hogs"]},
+    {"boat": "Scooter", "pos": 4, "range": [4,4], "novices": 2, "status": "FIN", "score": 2, "aliasesSeen": ["Scooter"]},
+    {"boat": "Fred", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Fast Freddie", "Fred"]},
+    {"boat": "Dandelion", "pos": 6, "range": [6,6], "novices": 0, "status": "FIN", "score": 6, "aliasesSeen": ["Dandelion"]},
+    {"boat": "Sweet Virginia", "pos": 7, "range": [7,7], "novices": 2, "status": "FIN", "score": 5, "aliasesSeen": ["Sweet virginia"]},
+    {"boat": "Itch", "pos": null, "range": [8,10], "novices": 0, "status": "DNF", "score": 11, "aliasesSeen": ["Itch"], "inferred": true, "inference_note": "Omitted from authoritative finish order; treated as DNF"},
+    {"boat": "Wizard", "pos": null, "range": [8,10], "novices": 0, "status": "DNF", "score": 11, "aliasesSeen": ["Wizard"], "inferred": true, "inference_note": "Omitted from authoritative finish order; treated as DNF"},
+    {"boat": "Club J22", "pos": null, "range": [8,10], "novices": 0, "status": "DNF", "score": 11, "aliasesSeen": ["club boat", "club j22"], "inferred": true, "inference_note": "Omitted from authoritative finish order; treated as DNF"}
   ],
-  "ambiguous": true,
-  "ambiguity": {
-    "explanation": "Jackson chain (clarification request) excluded. Remaining independent chains: (Psycho Killer > Scalded Dawg > Go Hogs Go > Scooter), (Itch > Wizard), (Club J22 > Sweet Virginia), (Fred > Dandelion). No cross-chain relations => wide interleaving ambiguity.",
-    "boats": {
-      "Psycho Killer": {"range": [1,7]},
-      "Scalded Dawg": {"range": [2,8]},
-      "Go Hogs Go": {"range": [3,9]},
-      "Scooter": {"range": [4,10]},
-      "Itch": {"range": [1,9]},
-      "Wizard": {"range": [2,10]},
-      "Sweet Virginia": {"range": [2,10]},
-      "Club J22": {"range": [1,9]},
-      "Fred": {"range": [1,9]},
-      "Dandelion": {"range": [2,10]}
-    },
-    "representative_orders": [
-      ["Psycho Killer", "Scalded Dawg", "Go Hogs Go", "Scooter", "Itch", "Wizard", "Club J22", "Sweet Virginia", "Fred", "Dandelion"],
-      ["Club J22", "Sweet Virginia", "Itch", "Wizard", "Psycho Killer", "Scalded Dawg", "Go Hogs Go", "Scooter", "Fred", "Dandelion"],
-      ["Fred", "Dandelion", "Itch", "Wizard", "Club J22", "Sweet Virginia", "Psycho Killer", "Scalded Dawg", "Go Hogs Go", "Scooter"]
-    ]
-  },
+  "ambiguous": false,
+  "ambiguity": null,
   "evidence": [
     {"boat": "Ambush", "type": "status", "text": "Ambush is out tonight :(", "author": "Jackson", "timestamp": "2025-06-18 10:59:35", "note": "DNS (excluded from starters)"},
     {"boat": "Itch", "type": "status", "text": "Itch is in.", "author": "Bill Elders", "timestamp": "2025-06-18 11:08:26"},
@@ -78,5 +59,5 @@
   {"boat": "Fred", "type": "status", "text": "Was Fast Freddy, Dandelion, Caper out?", "author": "Jackson", "timestamp": "2025-06-18 21:09:37", "note": "Query only; excluded from constraints"},
   {"boat": "Dandelion", "type": "placement", "text": "Dandelion closely behind fast Freddie", "author": "Robby", "timestamp": "2025-06-18 21:59:38", "note": "Fred > Dandelion adjacency"}
   ],
-  "generated_at": "2025-09-24T04:40:00Z"
+  "generated_at": "2025-09-24T05:05:00Z"
 }
