@@ -104,12 +104,25 @@ def create_results_table(results_data: Dict) -> pd.DataFrame:
     all_boats = set()
     race_dates = sorted(results_data.keys())
     
-    # Collect all boat names from all races
+    # Collect all boat names from all races and normalize case
+    boat_name_mapping = {}  # Maps lowercase to proper case name
     for race_data in results_data.values():
         for result in race_data['results']:
-            all_boats.add(result['boat'])
+            boat_name = result['boat']
+            boat_lower = boat_name.lower()
+            
+            # Use the first occurrence as the canonical name, or prefer proper case
+            if boat_lower not in boat_name_mapping:
+                boat_name_mapping[boat_lower] = boat_name
+            else:
+                # If we have a version with proper capitalization, prefer it
+                existing = boat_name_mapping[boat_lower]
+                if boat_name != existing:
+                    # Choose the one with more capitals (better formatting)
+                    if sum(1 for c in boat_name if c.isupper()) > sum(1 for c in existing if c.isupper()):
+                        boat_name_mapping[boat_lower] = boat_name
     
-    all_boats = sorted(all_boats)
+    all_boats = sorted(boat_name_mapping.values())
     
     # Create a DataFrame with boats as index and race dates as columns
     df = pd.DataFrame(index=all_boats, columns=race_dates)
@@ -117,25 +130,28 @@ def create_results_table(results_data: Dict) -> pd.DataFrame:
     # Fill in the scores for each boat in each race
     for date, race_data in results_data.items():
         for result in race_data['results']:
-            boat = result['boat']
+            # Normalize boat name to canonical version
+            boat_lower = result['boat'].lower()
+            canonical_boat = boat_name_mapping[boat_lower]
+            
             pos = result.get('pos')
             score = result.get('score', '')
             status = result.get('status', 'FIN')
             
             # Format the display value
             if status == 'DNC':
-                df.loc[boat, date] = f"DNC({score})"
+                df.loc[canonical_boat, date] = f"DNC({score})"
             elif status == 'DSQ':
-                df.loc[boat, date] = f"DSQ({score})"
+                df.loc[canonical_boat, date] = f"DSQ({score})"
             elif status == 'DNF':
-                df.loc[boat, date] = f"DNF({score})"
+                df.loc[canonical_boat, date] = f"DNF({score})"
             elif pos is not None:
-                df.loc[boat, date] = f"{pos}({score})"
+                df.loc[canonical_boat, date] = f"{pos}({score})"
             else:
-                df.loc[boat, date] = str(score) if score != '' else '-'
+                df.loc[canonical_boat, date] = str(score) if score != '' else 'DNC'
     
-    # Fill NaN values with '-' for races where boat didn't participate
-    df = df.fillna('-')
+    # Fill NaN values with 'DNC' for races where boat didn't participate
+    df = df.fillna('DNC')
     
     return df
 
@@ -190,7 +206,7 @@ def generate_markdown_table(df: pd.DataFrame, results_data: Dict) -> str:
     lines.append("- **DNC(Score)**: Did Not Compete - boat registered for series but absent")  
     lines.append("- **DSQ(Score)**: Disqualified")
     lines.append("- **DNF(Score)**: Did Not Finish")
-    lines.append("- **-**: Boat did not participate in this race")
+    lines.append("- **DNC**: Boat did not participate in this race")
     lines.append("")
     
     lines.append("## Scoring System")
@@ -225,12 +241,20 @@ def main():
     print("Generating markdown...")
     markdown = generate_markdown_table(df, results_data)
     
-    # Write to file
-    output_file = 'final_results.md'
-    with open(output_file, 'w', encoding='utf-8') as f:
+    # Write markdown file
+    output_file_md = 'final_results.md'
+    with open(output_file_md, 'w', encoding='utf-8') as f:
         f.write(markdown)
+    print(f"Final results written to {output_file_md}")
     
-    print(f"Final results written to {output_file}")
+    # Write CSV file
+    output_file_csv = 'final_results.csv'
+    # Add boat name as first column for CSV
+    df_csv = df.copy()
+    df_csv.insert(0, 'Boat', df_csv.index)
+    df_csv.to_csv(output_file_csv, index=False)
+    print(f"Final results written to {output_file_csv}")
+    
     print(f"Table dimensions: {len(df)} boats × {len(df.columns)} races")
 
 if __name__ == "__main__":
