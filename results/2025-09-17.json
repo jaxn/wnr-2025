@@ -1,0 +1,28 @@
+{
+  "date": "2025-09-17",
+  "source_chat": "results/2025-09-17.chat.txt",
+  "boats_seen": ["Psycho Killer","Ambush","Fred","Caper","Beat It","Dandelion","Wizard","Go Hogs Go","Sweet Virginia","Itch"],
+  "starters": ["Psycho Killer","Ambush","Fred","Caper","Beat It"],
+  "results": [
+    {"boat":"Psycho Killer","pos":1,"range":[1,1],"novices":0,"status":"FIN","score":1,"aliasesSeen":["Psycho Killer"]},
+    {"boat":"Ambush","pos":2,"range":[2,2],"novices":0,"status":"FIN","score":2,"aliasesSeen":["Ambush"]},
+    {"boat":"Fred","pos":3,"range":[3,3],"novices":0,"status":"FIN","score":3,"aliasesSeen":["Fred"]},
+    {"boat":"Caper","pos":4,"range":[4,4],"novices":0,"status":"FIN","score":4,"aliasesSeen":["Caper"]},
+    {"boat":"Beat It","pos":5,"range":[5,5],"novices":0,"status":"FIN","score":5,"aliasesSeen":["Beat It"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat":"Ambush","type":"status","status":"starter","text":"Ambush is in","author":"Jackson","timestamp":"2025-09-17 11:18:01"},
+    {"boat":"Psycho Killer","type":"placement","text":"Psycho Killer ahead","author":"Jackson","timestamp":"2025-09-17 19:29:13"},
+    {"boat":"Ambush","type":"placement","text":"Psycho Killer ahead / Ambush","author":"Jackson","timestamp":"2025-09-17 19:29:13"},
+    {"boat":"Fred","type":"placement","text":"Fred or Caper behind (not sure how that played out)","author":"Jackson","timestamp":"2025-09-17 19:29:13"},
+    {"boat":"Caper","type":"placement","text":"Fred or Caper behind (not sure how that played out)","author":"Jackson","timestamp":"2025-09-17 19:29:13"},
+    {"boat":"Ambush","type":"placement","text":"ambush ahead","author":"Fred Bartrom","timestamp":"2025-09-18 08:03:13"},
+    {"boat":"Caper","type":"placement","text":"Ambush ahead & Caper behind (or did Robbie take him?)","author":"Brian Smokler","timestamp":"2025-09-18 10:43:50"},
+    {"boat":"Beat It","type":"status","status":"starter","text":"Beat It ready for more shakeout","author":"Chris Berkey","timestamp":"2025-09-17 11:46:48"},
+    {"boat":"Beat It","type":"placement","text":"Beat It bringing up the rear again after deciding to use the downwind journey to figure out our spinnaker...","author":"Chris Berkey","timestamp":"2025-09-18 10:40:09"},
+    {"boat":"AUTHORITATIVE","type":"placement","text":"Psycho Killer > Ambush > Fred > Caper > Beat It (user-supplied final order)","author":"(override)","timestamp":"2025-09-24 00:35:00","inferred":true,"inference_note":"Authoritative order resolves Fred vs Caper ambiguity; non-finish boats omitted."}
+  ],
+  "generated_at": "2025-09-24T00:35:00Z"
+}

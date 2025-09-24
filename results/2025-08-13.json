@@ -1,0 +1,53 @@
+{
+  "date": "2025-08-13",
+  "source_chat": "results/2025-08-13.chat.txt",
+  "boats_seen": [
+    "Itch",
+    "Ambush",
+    "Scalded Dawg",
+    "Go Hogs Go",
+    "Scooter",
+    "Fred",
+    "Sweet Virginia"
+  ],
+  "starters": [
+    "Itch",
+    "Ambush",
+    "Scalded Dawg",
+    "Go Hogs Go",
+    "Scooter",
+    "Fred",
+    "Sweet Virginia"
+  ],
+  "results": [
+    {"boat":"Itch","pos":1,"range":[1,1],"novices":0,"status":"FIN","score":1,"aliasesSeen":["Itch","Itchin’"]},
+    {"boat":"Ambush","pos":2,"range":[2,2],"novices":0,"status":"FIN","score":2,"aliasesSeen":["Ambush"]},
+    {"boat":"Scalded Dawg","pos":3,"range":[3,3],"novices":1,"status":"FIN","score":3,"aliasesSeen":["Dawg","Scalded Dawg"]},
+    {"boat":"Go Hogs Go","pos":4,"range":[4,4],"novices":1,"status":"FIN","score":3,"aliasesSeen":["GoHogs","Gog hogs","Go Hogs Go"]},
+  {"boat":"Scooter","pos":5,"range":[5,5],"novices":2,"status":"FIN","score":3,"aliasesSeen":["Scooter"]},
+    {"boat":"Fred","pos":6,"range":[6,6],"novices":1,"status":"FIN","score":5,"aliasesSeen":["Fred","Fast Freddie"]},
+    {"boat":"Sweet Virginia","pos":7,"range":[7,7],"novices":0,"status":"FIN","score":7,"aliasesSeen":["Sweet virginia","Sweet Virginia"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat":"Itch","type":"placement","text":"Itch ahead. / Ambush / Dawg behind","author":"Jackson","timestamp":"2025-08-13 19:39:28"},
+    {"boat":"Ambush","type":"placement","text":"Itch ahead. / Ambush / Dawg behind","author":"Jackson","timestamp":"2025-08-13 19:39:28"},
+    {"boat":"Scalded Dawg","type":"placement","text":"Itch ahead. / Ambush / Dawg behind","author":"Jackson","timestamp":"2025-08-13 19:39:28"},
+    {"boat":"Scalded Dawg","type":"placement","text":"GoHogs / Dawg ahead / Scooter behind / 1 novice","author":"George Heintz","timestamp":"2025-08-13 19:52:20"},
+    {"boat":"Scalded Dawg","type":"novice","novices":1,"text":"Dawg had 1 novice","author":"James ODell","timestamp":"2025-08-14 05:51:31"},
+    {"boat":"Go Hogs Go","type":"placement","text":"GoHogs / Dawg ahead / Scooter behind / 1 novice","author":"George Heintz","timestamp":"2025-08-13 19:52:20"},
+    {"boat":"Scooter","type":"placement","text":"GoHogs / Dawg ahead / Scooter behind / 1 novice","author":"George Heintz","timestamp":"2025-08-13 19:52:20"},
+    {"boat":"Go Hogs Go","type":"placement","text":"Gog hogs, Scooter, Fast Freddie. 2 NV","author":"David Curtze","timestamp":"2025-08-13 19:55:01"},
+    {"boat":"Scooter","type":"placement","text":"Gog hogs, Scooter, Fast Freddie. 2 NV","author":"David Curtze","timestamp":"2025-08-13 19:55:01"},
+    {"boat":"Fred","type":"placement","text":"Gog hogs, Scooter, Fast Freddie. 2 NV","author":"David Curtze","timestamp":"2025-08-13 19:55:01"},
+  {"boat":"Scooter","type":"novice","novices":2,"text":"User clarification: Scooter had 2 novices (lines: 'Gog hogs, Scooter, Fast Freddie. 2 NV' + 'Scooter, Fast Freddie, Caper: 1 novice')","author":"(override)","timestamp":"2025-09-24 00:00:00","inferred":true,"inference_note":"Combined evidence + user clarification sets total to 2."},
+    {"boat":"Fred","type":"novice","novices":1,"text":"Scooter, Fast Freddie, Caper: 1 novice","author":"Brian Dougherty","timestamp":"2025-08-14 07:08:27"},
+    {"boat":"Go Hogs Go","type":"novice","novices":1,"text":"GoHogs / Dawg ahead / Scooter behind / 1 novice (interpreted novice for Go Hogs Go)","author":"George Heintz","timestamp":"2025-08-13 19:52:20","inferred":true,"inference_note":"Ambiguous assignment; early line with '1 novice' not clearly tied to which boat. Assigned to Go Hogs Go pending clarification."},
+    {"boat":"Fred","type":"status","status":"starter","text":"im in","author":"Fred Bartrom","timestamp":"2025-08-13 14:45:43"},
+    {"boat":"Sweet Virginia","type":"status","status":"starter","text":"Sweet virginia is in and can take 1","author":"Jeremy Odom","timestamp":"2025-08-13 12:08:58"},
+    {"boat":"Sweet Virginia","type":"placement","text":"Behind everyone","author":"Jeremy Odom","timestamp":"2025-08-13 20:08:48"},
+    {"boat":"AUTHORITATIVE","type":"placement","text":"Itch > Ambush > Scalded Dawg > Go Hogs Go > Scooter > Fred > Sweet Virginia (user-supplied final order)","author":"(override)","timestamp":"2025-09-24 00:00:00","inferred":true,"inference_note":"Authoritative final order resolves ordering beyond partial chains."}
+  ],
+  "generated_at": "2025-09-24T00:00:00Z"
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2025-08-27",
+  "source_chat": "results/2025-08-27.chat.txt",
+  "boats_seen": ["Psycho Killer","Go Hogs Go","Danger Zone","Scalded Dawg","Itch","Caper","Sweet Virginia","Fred","Wizard","Dandelion","Ambush","Scooter"],
+  "starters": ["Psycho Killer","Go Hogs Go","Danger Zone","Scalded Dawg","Itch","Caper","Sweet Virginia","Fred","Wizard","Dandelion"],
+  "results": [
+    {"boat":"Psycho Killer","pos":1,"range":[1,1],"novices":0,"status":"FIN","score":1,"aliasesSeen":["Psycho"]},
+    {"boat":"Go Hogs Go","pos":2,"range":[2,2],"novices":0,"status":"FIN","score":2,"aliasesSeen":["Hogs"]},
+    {"boat":"Danger Zone","pos":3,"range":[3,3],"novices":0,"status":"FIN","score":3,"aliasesSeen":["Danger Zone","Dang3r Zone"]},
+    {"boat":"Scalded Dawg","pos":4,"range":[4,4],"novices":0,"status":"FIN","score":4,"aliasesSeen":["Dawg"]},
+    {"boat":"Itch","pos":5,"range":[5,5],"novices":0,"status":"FIN","score":5,"aliasesSeen":["Itch","Itchin’"]},
+    {"boat":"Caper","pos":6,"range":[6,6],"novices":0,"status":"FIN","score":6,"aliasesSeen":["Max"]},
+    {"boat":"Sweet Virginia","pos":7,"range":[7,7],"novices":0,"status":"FIN","score":7,"aliasesSeen":["Sweet Virginia"]},
+    {"boat":"Fred","pos":8,"range":[8,8],"novices":1,"status":"FIN","score":7,"aliasesSeen":["Fred"]},
+    {"boat":"Wizard","pos":9,"range":[9,9],"novices":0,"status":"FIN","score":9,"aliasesSeen":["Wizard"]},
+    {"boat":"Dandelion","pos":10,"range":[10,10],"novices":0,"status":"FIN","score":10,"aliasesSeen":["Dandelion"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat":"Go Hogs Go","type":"status","status":"starter","text":"Hogs in.  Don’t know about crew yet","author":"George Heintz","timestamp":"2025-08-27 07:39:58"},
+    {"boat":"Itch","type":"status","status":"starter","text":"Itchin’","author":"Bill Elders","timestamp":"2025-08-27 08:13:57"},
+    {"boat":"Scooter","type":"status","status":"dns","text":"Scooter is out due to issue with boat.  Scooter will be pulled out today for repair.","author":"David Curtze","timestamp":"2025-08-27 08:16:40"},
+    {"boat":"Dandelion","type":"status","status":"starter","text":"Dandelion is in 👍","author":"Robby","timestamp":"2025-08-27 08:23:01"},
+    {"boat":"Wizard","type":"status","status":"starter","text":"Wizard is in","author":"Alicia Noble","timestamp":"2025-08-27 08:45:37"},
+    {"boat":"Sweet Virginia","type":"status","status":"starter","text":"Sweet Virginia is in","author":"Jeremy Odom","timestamp":"2025-08-27 08:47:19"},
+    {"boat":"Caper","type":"status","status":"starter","text":"I’m in","author":"Max Sadler","timestamp":"2025-08-27 08:26:55"},
+    {"boat":"Ambush","type":"status","status":"dns","text":"Ambush is out this week.","author":"Jackson","timestamp":"2025-08-27 07:39:43"},
+    {"boat":"Psycho Killer","type":"placement","text":"Psycho in front","author":"George Heintz","timestamp":"2025-08-27 21:14:28"},
+    {"boat":"Danger Zone","type":"placement","text":"Dang3r Zone behind.","author":"George Heintz","timestamp":"2025-08-27 21:14:28"},
+    {"boat":"Danger Zone","type":"placement","text":"Danger zone ahead, Itch behind.","author":"James ODell","timestamp":"2025-08-27 21:18:37"},
+    {"boat":"Itch","type":"placement","text":"Danger zone ahead, Itch behind.","author":"James ODell","timestamp":"2025-08-27 21:18:37"},
+    {"boat":"Caper","type":"placement","text":"- max ahead","author":"Jeremy Odom","timestamp":"2025-08-27 21:23:09","inferred":true,"inference_note":"Ambiguous partial list; not used as hard constraint"},
+    {"boat":"Sweet Virginia","type":"placement","text":"- sweet Virginia","author":"Jeremy Odom","timestamp":"2025-08-27 21:23:09","inferred":true,"inference_note":"Ambiguous partial list; not used as hard constraint"},
+    {"boat":"Fred","type":"novice","novices":1,"text":"one novice, we were between the packs","author":"Fred Bartrom","timestamp":"2025-08-27 21:23:52"},
+    {"boat":"Fred","type":"placement","text":"Fred ahead,  Dandelion behind or we’ll call it a tie 😉","author":"Alicia Noble","timestamp":"2025-08-28 06:45:00"},
+    {"boat":"Dandelion","type":"placement","text":"Fred ahead,  Dandelion behind or we’ll call it a tie 😉","author":"Alicia Noble","timestamp":"2025-08-28 06:45:00"},
+    {"boat":"AUTHORITATIVE","type":"placement","text":"Psycho Killer > Go Hogs Go > Danger Zone > Scalded Dawg > Itch > Caper > Sweet Virginia > Fred > Wizard > Dandelion (user-supplied final order)","author":"(override)","timestamp":"2025-09-24 00:05:00","inferred":true,"inference_note":"Authoritative order used for final ranking; Scalded Dawg only present via this entry."}
+  ],
+  "generated_at": "2025-09-24T00:05:00Z"
+}

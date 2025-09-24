@@ -1,0 +1,39 @@
+{
+  "date": "2025-09-10",
+  "source_chat": "results/2025-09-10.chat.txt",
+  "boats_seen": ["Psycho Killer","Danger Zone","Go Hogs Go","Ambush","Wizard","Itch","Beat It","Scalded Dawg"],
+  "starters": ["Psycho Killer","Danger Zone","Go Hogs Go","Ambush","Wizard","Itch","Beat It"],
+  "results": [
+    {"boat":"Psycho Killer","pos":1,"range":[1,1],"novices":0,"status":"FIN","score":1,"aliasesSeen":["Psychokiller"]},
+    {"boat":"Danger Zone","pos":2,"range":[2,2],"novices":2,"status":"FIN","score":1,"aliasesSeen":["Danger Zone"]},
+    {"boat":"Go Hogs Go","pos":3,"range":[3,3],"novices":1,"status":"FIN","score":2,"aliasesSeen":["Hogs"]},
+    {"boat":"Ambush","pos":4,"range":[4,4],"novices":0,"status":"FIN","score":4,"aliasesSeen":["Ambush"]},
+    {"boat":"Wizard","pos":5,"range":[5,5],"novices":0,"status":"FIN","score":5,"aliasesSeen":["Wizard"]},
+    {"boat":"Itch","pos":6,"range":[6,6],"novices":1,"status":"FIN","score":5,"aliasesSeen":["Itch"]},
+    {"boat":"Beat It","pos":7,"range":[7,7],"novices":0,"status":"DNF","score":8,"aliasesSeen":["Beatit"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat":"Itch","type":"status","status":"starter","text":"Itchin with a nerdy vibe (just for tonight)","author":"Mark Smith","timestamp":"2025-09-10 09:50:23"},
+    {"boat":"Go Hogs Go","type":"status","status":"starter","text":"Hogs is in. Can use crew.","author":"George Heintz","timestamp":"2025-09-10 10:40:46"},
+    {"boat":"Ambush","type":"status","status":"starter","text":"Ambush is in.","author":"George Darling","timestamp":"2025-09-10 13:45:33"},
+    {"boat":"Beat It","type":"status","status":"starter","text":"Jump on Beat It Chris needs aforedeck","author":"James ODell","timestamp":"2025-09-10 10:03:47"},
+    {"boat":"Beat It","type":"status","status":"starter","text":"Brad (and anyone else), you are welcome to sail on S2 BeatIt...","author":"Chris Berkey","timestamp":"2025-09-10 11:01:17"},
+    {"boat":"Go Hogs Go","type":"placement","text":"Go Hogs ahead by a couple of feet / Ambush / Wizard / We had 1 novice","author":"George Darling","timestamp":"2025-09-10 19:27:49"},
+    {"boat":"Go Hogs Go","type":"novice","novices":1,"text":"We had 1 novice","author":"George Darling","timestamp":"2025-09-10 19:27:49"},
+    {"boat":"Psycho Killer","type":"placement","text":"Psychokiller ahead, hogs behind.","author":"Sam Beckman","timestamp":"2025-09-10 19:32:42"},
+    {"boat":"Go Hogs Go","type":"placement","text":"Psychokiller ahead, hogs behind.","author":"Sam Beckman","timestamp":"2025-09-10 19:32:42"},
+    {"boat":"Danger Zone","type":"novice","novices":2,"text":"Danger Zone 2 novices","author":"Sam Beckman","timestamp":"2025-09-10 19:33:02"},
+    {"boat":"Ambush","type":"placement","text":"Ambush ahead, Wizard, Itch behind.","author":"Alicia Noble","timestamp":"2025-09-11 06:32:27"},
+    {"boat":"Wizard","type":"placement","text":"Ambush ahead, Wizard, Itch behind.","author":"Alicia Noble","timestamp":"2025-09-11 06:32:27"},
+    {"boat":"Itch","type":"placement","text":"Ambush ahead, Wizard, Itch behind.","author":"Alicia Noble","timestamp":"2025-09-11 06:32:27"},
+    {"boat":"Itch","type":"novice","novices":1,"text":"Itch, unknown ahead and behind. 1 novice.","author":"Mark Smith","timestamp":"2025-09-11 05:48:34"},
+    {"boat":"Beat It","type":"status","status":"DNF","text":"Beatit: Dnf due to late start, dead battery, so no lights to stay out on course with.","author":"Chris Berkey","timestamp":"2025-09-11 09:55:09"},
+    {"boat":"Danger Zone","type":"placement","text":"Go Hogs Danger Zone ahead. Ambush behind.","author":"George Heintz","timestamp":"2025-09-10 20:24:12"},
+    {"boat":"Go Hogs Go","type":"placement","text":"Go Hogs Danger Zone ahead. Ambush behind.","author":"George Heintz","timestamp":"2025-09-10 20:24:12"},
+    {"boat":"Ambush","type":"placement","text":"Go Hogs Danger Zone ahead. Ambush behind.","author":"George Heintz","timestamp":"2025-09-10 20:24:12"},
+    {"boat":"AUTHORITATIVE","type":"placement","text":"Psycho Killer > Danger Zone > Go Hogs Go > Ambush > Wizard > Itch > Beat It (DNF) (user-supplied final order)","author":"(override)","timestamp":"2025-09-24 00:25:00","inferred":true,"inference_note":"Authoritative order used for final ranking and Danger Zone > Go Hogs relation."}
+  ],
+  "generated_at": "2025-09-24T00:25:00Z"
+}

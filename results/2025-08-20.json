@@ -1,0 +1,48 @@
+{
+  "date": "2025-08-20",
+  "source_chat": "results/2025-08-20.chat.txt",
+  "boats_seen": [
+    "Danger Zone","Scalded Dawg","Psycho Killer","Ambush","Itch","Go Hogs Go","Fred","Wizard","Dandelion","Sweet Virginia"
+  ],
+  "starters": [
+    "Danger Zone","Scalded Dawg","Psycho Killer","Ambush","Itch","Go Hogs Go","Fred","Wizard","Dandelion","Sweet Virginia"
+  ],
+  "results": [
+    {"boat":"Danger Zone","pos":1,"range":[1,1],"novices":0,"status":"FIN","score":1,"aliasesSeen":["Danger Zone"]},
+    {"boat":"Scalded Dawg","pos":2,"range":[2,2],"novices":1,"status":"FIN","score":2,"aliasesSeen":["Dawg","Scalded Dawg"]},
+    {"boat":"Psycho Killer","pos":3,"range":[3,3],"novices":0,"status":"FIN","score":3,"aliasesSeen":["Psycho Killer"]},
+    {"boat":"Ambush","pos":4,"range":[4,4],"novices":0,"status":"FIN","score":4,"aliasesSeen":["Ambush"]},
+    {"boat":"Itch","pos":5,"range":[5,5],"novices":1,"status":"FIN","score":4,"aliasesSeen":["Itch"]},
+    {"boat":"Go Hogs Go","pos":6,"range":[6,6],"novices":0,"status":"FIN","score":6,"aliasesSeen":["Hogs","GoHogs","Go Hogs Go"]},
+    {"boat":"Fred","pos":7,"range":[7,7],"novices":1,"status":"FIN","score":6,"aliasesSeen":["Fred","Fast Freddy"]},
+  {"boat":"Wizard","pos":8,"range":[8,8],"novices":0,"status":"FIN","score":8,"aliasesSeen":["Wizard"]},
+    {"boat":"Dandelion","pos":9,"range":[9,9],"novices":0,"status":"FIN","score":9,"aliasesSeen":["Dandelion"]},
+    {"boat":"Sweet Virginia","pos":10,"range":[10,10],"novices":1,"status":"FIN","score":9,"aliasesSeen":["Sweet Virginia"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat":"Psycho Killer","type":"placement","text":"Psycho Killer ahead / Ambush / Itch behind","author":"Jackson","timestamp":"2025-08-20 19:40:44"},
+    {"boat":"Danger Zone","type":"placement","text":"No one ahead. Dawg behind. Go team Danger Zone!","author":"Sam Beckman","timestamp":"2025-08-20 19:52:26"},
+    {"boat":"Scalded Dawg","type":"placement","text":"Danger Zone ahead, Dawg, Psycho behind.","author":"Iain Montgomery","timestamp":"2025-08-20 19:55:20"},
+    {"boat":"Psycho Killer","type":"placement","text":"Danger Zone ahead, Dawg, Psycho behind.","author":"Iain Montgomery","timestamp":"2025-08-20 19:55:20"},
+    {"boat":"Scalded Dawg","type":"novice","novices":1,"text":"1 novice on Dawg","author":"Iain Montgomery","timestamp":"2025-08-20 19:58:22"},
+    {"boat":"Itch","type":"placement","text":"Psycho Killer ahead / Ambush / Itch behind","author":"Jackson","timestamp":"2025-08-20 19:40:44"},
+    {"boat":"Ambush","type":"placement","text":"Psycho Killer ahead / Ambush / Itch behind","author":"Jackson","timestamp":"2025-08-20 19:40:44"},
+    {"boat":"Fred","type":"placement","text":"GoHogs. Itch ahead / Fast Freddy behind 1 novice","author":"George Heintz","timestamp":"2025-08-20 19:57:24"},
+    {"boat":"Fred","type":"novice","novices":1,"text":"Fast Freddy behind 1 novice","author":"George Heintz","timestamp":"2025-08-20 19:57:24"},
+    {"boat":"Itch","type":"novice","novices":1,"text":"Team Itch  1nv","author":"David Curtze","timestamp":"2025-08-20 20:23:20"},
+    {"boat":"Ambush","type":"placement","text":"Team Itch  1nv / Ambush ahead go hogs go behind","author":"David Curtze","timestamp":"2025-08-20 20:23:20"},
+    {"boat":"Go Hogs Go","type":"placement","text":"Team Itch  1nv / Ambush ahead go hogs go behind","author":"David Curtze","timestamp":"2025-08-20 20:23:20"},
+    {"boat":"Sweet Virginia","type":"placement","text":"Finished last (1 novice)","author":"Jeremy Odom","timestamp":"2025-08-20 20:19:26"},
+    {"boat":"Sweet Virginia","type":"novice","novices":1,"text":"Finished last (1 novice)","author":"Jeremy Odom","timestamp":"2025-08-20 20:19:26"},
+    {"boat":"Sweet Virginia","type":"placement","text":"Two in front of Sweet Virginia . Not sure who was ahead and behind. 1 novice.","author":"Alicia Noble","timestamp":"2025-08-21 06:32:56"},
+    {"boat":"Wizard","type":"status","status":"starter","text":"In, not sure about crew yet.","author":"Alicia Noble","timestamp":"2025-08-20 10:44:52"},
+    {"boat":"Dandelion","type":"status","status":"starter","text":"Dandelion is in 👍","author":"Robby","timestamp":"2025-08-20 10:51:17"},
+    {"boat":"Go Hogs Go","type":"status","status":"starter","text":"Hogs is in.","author":"George Heintz","timestamp":"2025-08-20 11:10:21"},
+    {"boat":"Fred","type":"status","status":"starter","text":"im in","author":"Fred Bartrom","timestamp":"2025-08-20 14:32:01"},
+  {"boat":"Wizard","type":"novice","novices":0,"text":"No novice message for Wizard; set to 0 per evidence review","author":"(inferred)","timestamp":"2025-09-24 00:00:01","inferred":true,"inference_note":"No explicit novice line in chat transcript."},
+    {"boat":"AUTHORITATIVE","type":"placement","text":"Danger Zone > Scalded Dawg > Psycho Killer > Ambush > Itch > Go Hogs Go > Fred > Wizard > Dandelion > Sweet Virginia (user-supplied final order)","author":"(override)","timestamp":"2025-09-24 00:00:00","inferred":true,"inference_note":"Authoritative order used for final ranking."}
+  ],
+  "generated_at": "2025-09-24T00:00:00Z"
+}

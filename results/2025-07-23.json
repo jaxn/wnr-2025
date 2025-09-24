@@ -1,0 +1,79 @@
+{
+  "date": "2025-07-23",
+  "source_chat": "results/2025-07-23.chat.txt",
+  "boats_seen": [
+    "Ambush",
+    "Itch",
+    "Caper",
+    "Go Hogs Go",
+    "Wizard",
+    "Scalded Dawg",
+    "Scooter",
+    "Psycho Killer",
+    "Danger Zone",
+    "Fred"
+  ],
+  "starters": [
+    "Ambush",
+    "Itch",
+    "Caper",
+    "Go Hogs Go",
+    "Wizard",
+    "Scalded Dawg",
+    "Scooter",
+    "Psycho Killer",
+    "Danger Zone",
+    "Fred"
+  ],
+  "results": [
+    {"boat":"Ambush","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Ambush"]},
+    {"boat":"Itch","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Itchin’","Itch"]},
+    {"boat":"Caper","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Caper"]},
+    {"boat":"Go Hogs Go","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Go Hogs"]},
+    {"boat":"Wizard","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Wizard"]},
+    {"boat":"Scalded Dawg","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Dawgs"]},
+    {"boat":"Scooter","pos":null,"range":[1,10],"novices":2,"status":"DNF","score":9,"aliasesSeen":["Scooters","Scooter"]},
+    {"boat":"Psycho Killer","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Psycho"]},
+    {"boat":"Danger Zone","pos":null,"range":[1,10],"novices":0,"status":"DNF","score":11,"aliasesSeen":["Danger Zone"]},
+    {"boat":"Fred","pos":null,"range":[1,10],"novices":2,"status":"DNF","score":9,"aliasesSeen":["Fred"]}
+  ],
+  "ambiguous": true,
+  "ambiguity": {
+    "explanation": "Mass DNF ruling: all starters scored DNF regardless of observed ordering (course/start procedure issue). Position ranges reflect unconstrained ordering.",
+    "boats": {
+      "Ambush": {"range":[1,10]},
+      "Itch": {"range":[1,10]},
+      "Caper": {"range":[1,10]},
+      "Go Hogs Go": {"range":[1,10]},
+      "Wizard": {"range":[1,10]},
+      "Scalded Dawg": {"range":[1,10]},
+      "Scooter": {"range":[1,10]},
+      "Psycho Killer": {"range":[1,10]},
+      "Danger Zone": {"range":[1,10]},
+      "Fred": {"range":[1,10]}
+    },
+    "representative_orders": []
+  },
+  "evidence": [
+    {"boat":"Ambush","type":"status","status":"starter","text":"Who is planning to sail tonight? / Ambush is in.","author":"Jackson","timestamp":"2025-07-23 11:51:36"},
+    {"boat":"Ambush","type":"placement","text":"No one in front. / Ambush. / Wizard behind (I think, it was close)","author":"Jackson","timestamp":"2025-07-23 21:29:33"},
+    {"boat":"Itch","type":"status","status":"starter","text":"Itchin’","author":"Bill Elders","timestamp":"2025-07-23 11:56:19"},
+    {"boat":"Itch","type":"placement","text":"Ambush in front, Itch behind","author":"Alicia Noble","timestamp":"2025-07-23 21:32:33"},
+    {"boat":"Caper","type":"status","status":"starter","text":"I’m in.","author":"Max Sadler","timestamp":"2025-07-23 12:08:13"},
+    {"boat":"Caper","type":"placement","text":"Scooter 2NV. Caper behind","author":"David Curtze","timestamp":"2025-07-23 20:24:21"},
+    {"boat":"Go Hogs Go","type":"status","status":"starter","text":"Go Hogs is in.","author":"George Heintz","timestamp":"2025-07-23 12:18:57"},
+    {"boat":"Go Hogs Go","type":"placement","text":"George in front. Scooter behind","author":"Sam Beckman","timestamp":"2025-07-23 20:25:03"},
+    {"boat":"Wizard","type":"status","status":"starter","text":"Wizard is in. Will need 1 for crew.","author":"Alicia Noble","timestamp":"2025-07-23 12:59:52"},
+    {"boat":"Wizard","type":"placement","text":"No one in front. / Ambush. / Wizard behind (I think, it was close)","author":"Jackson","timestamp":"2025-07-23 21:29:33"},
+    {"boat":"Scalded Dawg","type":"status","status":"starter","text":"Dawgs in","author":"James ODell","timestamp":"2025-07-23 13:00:31"},
+    {"boat":"Scooter","type":"status","status":"starter","text":"Scooters in","author":"David Curtze","timestamp":"2025-07-23 15:35:19"},
+    {"boat":"Scooter","type":"novice","novices":2,"text":"Scooter 2NV. Caper behind","author":"David Curtze","timestamp":"2025-07-23 20:24:21"},
+    {"boat":"Scooter","type":"placement","text":"George in front. Scooter behind","author":"Sam Beckman","timestamp":"2025-07-23 20:25:03"},
+    {"boat":"Psycho Killer","type":"placement","text":"Psycho in front  - Danger Zone behind.","author":"George Heintz","timestamp":"2025-07-23 21:47:21"},
+    {"boat":"Danger Zone","type":"placement","text":"Psycho in front  - Danger Zone behind.","author":"George Heintz","timestamp":"2025-07-23 21:47:21"},
+    {"boat":"Fred","type":"status","status":"DNF","text":"I am DNF for rules violation. We had two novices on board.","author":"Fred Bartrom","timestamp":"2025-07-24 16:09:54"},
+    {"boat":"Fred","type":"novice","novices":2,"text":"I am DNF for rules violation. We had two novices on board.","author":"Fred Bartrom","timestamp":"2025-07-24 16:09:54"},
+    {"boat":"ALL","type":"status","status":"DNF","text":"Since I did poorly, i think we should follow the rules and score everyone DNF.","author":"Sam Beckman","timestamp":"2025-07-24 07:09:44","inferred":true,"inference_note":"Mass DNF applied to all starters"}
+  ],
+  "generated_at": "2025-09-24T00:00:00Z"
+}

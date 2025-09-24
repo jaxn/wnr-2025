@@ -1,0 +1,27 @@
+{
+  "date": "2025-08-06",
+  "source_chat": "results/2025-08-06.chat.txt",
+  "boats_seen": ["Fred","Scooter","Itch","Sweet Virginia","Ambush"],
+  "starters": ["Fred","Scooter","Itch","Sweet Virginia","Ambush"],
+  "results": [
+    {"boat":"Fred","pos":1,"range":[1,1],"novices":0,"status":"FIN","score":1,"aliasesSeen":["Fred","Fast Freddy"]},
+    {"boat":"Scooter","pos":2,"range":[2,2],"novices":0,"status":"FIN","score":2,"aliasesSeen":["Scooter"]},
+  {"boat":"Itch","pos":3,"range":[3,3],"novices":0,"status":"FIN","score":3,"aliasesSeen":["Itch","Itchin’"]},
+    {"boat":"Sweet Virginia","pos":4,"range":[4,4],"novices":0,"status":"FIN","score":4,"aliasesSeen":["Sweet Virginia"]},
+    {"boat":"Ambush","pos":5,"range":[5,5],"novices":0,"status":"FIN","score":5,"aliasesSeen":["Ambush"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat":"Fred","type":"placement","text":"Fast Freddy ahead Scooter then  Itch ...I think","author":"David Curtze","timestamp":"2025-08-06 19:53:30"},
+    {"boat":"Scooter","type":"placement","text":"Fast Freddy ahead Scooter then  Itch ...I think","author":"David Curtze","timestamp":"2025-08-06 19:53:30"},
+    {"boat":"Itch","type":"status","status":"starter","text":"Itchin’ to sail","author":"Bill Elders","timestamp":"2025-08-06 12:00:34"},
+    {"boat":"Itch","type":"placement","text":"Fast Freddy ahead Scooter then  Itch ...I think","author":"David Curtze","timestamp":"2025-08-06 19:53:30"},
+    {"boat":"Sweet Virginia","type":"status","status":"starter","text":"Sweet Virginia is in","author":"Jeremy Odom","timestamp":"2025-08-06 11:58:35"},
+    {"boat":"Ambush","type":"placement","text":"- itch ahead  / - sweet Virginia  / - ambush behind","author":"Jeremy Odom","timestamp":"2025-08-06 20:00:18"},
+    {"boat":"Sweet Virginia","type":"placement","text":"- itch ahead  / - sweet Virginia  / - ambush behind","author":"Jeremy Odom","timestamp":"2025-08-06 20:00:18"},
+    {"boat":"Itch","type":"placement","text":"- itch ahead  / - sweet Virginia  / - ambush behind","author":"Jeremy Odom","timestamp":"2025-08-06 20:00:18"},
+  {"boat":"AUTHORITATIVE","type":"placement","text":"Fred > Scooter > Itch > Sweet Virginia > Ambush (user-supplied final order)","author":"(override)","timestamp":"2025-09-24 00:00:00","inferred":true,"inference_note":"Authoritative final order overrides any uncertainty."}
+  ],
+  "generated_at": "2025-09-24T00:00:00Z"
+}

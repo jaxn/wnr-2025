@@ -1,0 +1,60 @@
+{
+  "date": "2025-07-16",
+  "source_chat": "results/2025-07-16.chat.txt",
+  "boats_seen": [
+    "Psycho Killer",
+    "Wizard",
+    "Danger Zone",
+    "Fred",
+    "Itch",
+    "Scooter",
+    "Go Hogs Go",
+    "Ambush",
+    "Sweet Virginia"
+  ],
+  "starters": [
+    "Psycho Killer",
+    "Wizard",
+    "Danger Zone",
+    "Fred",
+    "Itch",
+    "Scooter",
+    "Go Hogs Go",
+    "Ambush",
+    "Sweet Virginia"
+  ],
+  "results": [
+    {"boat": "Psycho Killer", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Psycho killer", "psycho killer"]},
+    {"boat": "Wizard", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Wizard"]},
+    {"boat": "Danger Zone", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Danger zone", "Danger Zone"]},
+    {"boat": "Fred", "pos": 4, "range": [4,4], "novices": 0, "status": "FIN", "score": 4, "aliasesSeen": ["Fred"]},
+    {"boat": "Itch", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Itch"]},
+    {"boat": "Scooter", "pos": 6, "range": [6,6], "novices": 2, "status": "FIN", "score": 4, "aliasesSeen": ["Scooter"]},
+    {"boat": "Go Hogs Go", "pos": 7, "range": [7,7], "novices": 1, "status": "FIN", "score": 6, "aliasesSeen": ["Go hogs go", "Go hogs"]},
+    {"boat": "Ambush", "pos": 8, "range": [8,8], "novices": 1, "status": "FIN", "score": 7, "aliasesSeen": ["Ambush"]},
+    {"boat": "Sweet Virginia", "pos": 9, "range": [9,9], "novices": 1, "status": "FIN", "score": 8, "aliasesSeen": ["Sweet virginia"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Wizard", "type": "placement", "text": "Wizard in front. Fred behind.", "author": "Sam Beckman", "timestamp": "2025-07-16 19:57:34", "note": "Adjacency: Wizard > Fred"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "Psycho killer in front. Danger zone behind", "author": "Alicia Noble", "timestamp": "2025-07-16 20:07:00", "note": "Adjacency: Psycho Killer > Danger Zone"},
+    {"boat": "Itch", "type": "placement", "text": "Itch in front gog hogs go behind.  Scooter had 2 nv", "author": "David Curtze", "timestamp": "2025-07-16 20:29:20", "note": "Adjacency: Itch > Go Hogs Go; novice info for Scooter (2)"},
+    {"boat": "Scooter", "type": "novice", "text": "Itch in front gog hogs go behind.  Scooter had 2 nv", "author": "David Curtze", "timestamp": "2025-07-16 20:29:20"},
+    {"boat": "Sweet Virginia", "type": "placement", "text": "Sweet virginia last - 1 NV", "author": "Jeremy Odom", "timestamp": "2025-07-16 21:18:18", "note": "Provides novice count for Sweet Virginia and indicates tail position"},
+    {"boat": "Ambush", "type": "placement", "text": "Go hogs go ahead\nAmbush - (double handed with 1 novice)\nSweet Virginia", "author": "Jackson", "timestamp": "2025-07-16 21:20:46", "note": "Sequence: Go Hogs Go > Ambush > Sweet Virginia; novice count Ambush=1"},
+    {"boat": "Ambush", "type": "novice", "text": "Go hogs go ahead\nAmbush - (double handed with 1 novice)\nSweet Virginia", "author": "Jackson", "timestamp": "2025-07-16 21:20:46"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "For Go Hogs.  Scooter ahead, Ambush behind. 1 Novice.", "author": "George Heintz", "timestamp": "2025-07-16 21:24:13", "note": "Adjacency: Scooter > Go Hogs Go > Ambush; novice count Go Hogs Go =1"},
+    {"boat": "Go Hogs Go", "type": "novice", "text": "For Go Hogs.  Scooter ahead, Ambush behind. 1 Novice.", "author": "George Heintz", "timestamp": "2025-07-16 21:24:13"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "Authoritative final order supplied: Psycho > Wizard > Danger Zone > Fred > Itch > Scooter > Hogs > Ambush > Sweet Virginia", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Wizard", "type": "placement", "text": "Authoritative final order supplied (2nd)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Danger Zone", "type": "placement", "text": "Authoritative final order supplied (3rd)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Fred", "type": "placement", "text": "Authoritative final order supplied (4th)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Itch", "type": "placement", "text": "Authoritative final order supplied (5th)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Scooter", "type": "placement", "text": "Authoritative final order supplied (6th)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Authoritative final order supplied (7th)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Ambush", "type": "placement", "text": "Authoritative final order supplied (8th)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true},
+    {"boat": "Sweet Virginia", "type": "placement", "text": "Authoritative final order supplied (9th)", "author": "(override)", "timestamp": "2025-09-24 06:40:00", "inferred": true}
+  ],
+  "generated_at": "2025-09-24T06:40:00Z"
+}

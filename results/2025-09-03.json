@@ -1,0 +1,28 @@
+{
+  "date": "2025-09-03",
+  "source_chat": "results/2025-09-03.chat.txt",
+  "boats_seen": ["Ambush","Wizard","Go Hogs Go","Scalded Dawg","Caper","Fred","Sweet Virginia","Itch"],
+  "starters": [],
+  "results": [],
+  "ambiguous": true,
+  "ambiguity": {
+    "explanation": "Race abandoned at 17:55:16 local before any finishes; no placements valid.",
+    "boats": {},
+    "representative_orders": []
+  },
+  "evidence": [
+    {"boat":"Ambush","type":"status","status":"intent","text":"Ambush is in","author":"Jackson","timestamp":"2025-09-03 12:10:53"},
+    {"boat":"Wizard","type":"status","status":"out","text":"Wizard is out today.","author":"Alicia Noble","timestamp":"2025-09-03 12:36:44"},
+    {"boat":"Go Hogs Go","type":"status","status":"intent","text":"Hogs is in.","author":"George Heintz","timestamp":"2025-09-03 12:37:15"},
+    {"boat":"Scalded Dawg","type":"status","status":"intent","text":"Dawgs in","author":"James ODell","timestamp":"2025-09-03 12:37:45"},
+    {"boat":"Caper","type":"status","status":"intent","text":"Caper in.","author":"Max Sadler","timestamp":"2025-09-03 12:52:50"},
+    {"boat":"Fred","type":"status","status":"intent","text":"im in","author":"Fred Bartrom","timestamp":"2025-09-03 12:54:41"},
+    {"boat":"Sweet Virginia","type":"status","status":"intent","text":"Sweet virginia is in","author":"Jeremy Odom","timestamp":"2025-09-03 13:00:13"},
+    {"boat":"Itch","type":"status","status":"intent","text":"Itchin’","author":"Bill Elders","timestamp":"2025-09-03 13:17:18"},
+    {"boat":"RACE","type":"status","status":"postpone","text":"Postpone flag about to go up. Let’s give it 15 for this cell to blow by","author":"Jackson","timestamp":"2025-09-03 17:46:51"},
+    {"boat":"RACE","type":"status","status":"abandon","text":"Abandon","author":"Jackson","timestamp":"2025-09-03 17:55:16"},
+    {"boat":"Fred","type":"placement","text":"Fast Freddie: 1st to LaHa","author":"Brian Dougherty","timestamp":"2025-09-03 21:50:27","inferred":true,"inference_note":"Informal sail after abandonment; excluded"},
+    {"boat":"Ambush","type":"placement","text":"Ambush behind","author":"Brian Dougherty","timestamp":"2025-09-03 21:50:27","inferred":true,"inference_note":"Informal sail after abandonment; excluded"}
+  ],
+  "generated_at": "2025-09-24T00:15:00Z"
+}
