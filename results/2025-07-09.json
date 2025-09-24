@@ -1,0 +1,36 @@
+{
+  "date": "2025-07-09",
+  "source_chat": "results/2025-07-09.chat.txt",
+  "boats_seen": ["Itch", "Fred", "Caper", "Scooter", "Go Hogs Go"],
+  "starters": ["Itch", "Fred", "Caper", "Scooter", "Go Hogs Go"],
+  "results": [
+    {"boat": "Itch", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Itch"], "inferred": true, "inference_note": "Finish position supplied authoritatively; chat had only relative 'Itch ahead go hogs go behind'."},
+    {"boat": "Fred", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Fred"], "inferred": true, "inference_note": "Authoritative order places Fred 2nd."},
+    {"boat": "Caper", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Caper", "Max"], "inferred": true, "inference_note": "Authoritative order; chat shows Caper (Max) finished behind Fred after correcting course."},
+    {"boat": "Scooter", "pos": null, "range": [4,5], "novices": 1, "status": "DNF", "score": 6, "aliasesSeen": ["Scooter"], "inferred": true, "inference_note": "Missed a mark per multiple messages; authoritative order classifies as DNF."},
+    {"boat": "Go Hogs Go", "pos": null, "range": [4,5], "novices": 1, "status": "DNF", "score": 6, "aliasesSeen": ["Go hogs", "Go Hogs"], "inferred": true, "inference_note": "Initially reported DSQ; later guidance and authoritative order treat as DNF (scored starters+1)."}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Go Hogs Go", "type": "status", "text": "Go hogs DSQ. Missed a buoy on top end.  Thats what we get for following Scooter.  At least we had 1 Novice.", "author": "George Heintz", "timestamp": "2025-07-09 20:57:34", "note": "DSQ later normalized to DNF per series approach."},
+    {"boat": "Itch", "type": "placement", "text": "Itch ahead go hogs go behind. 1 nv.", "author": "David Curtze", "timestamp": "2025-07-09 22:02:46", "note": "Adjacency: Itch > Go Hogs Go; '1 nv' attributed to Scooter (author)."},
+    {"boat": "Scooter", "type": "placement", "text": "Scooter and go hogs  missed a mark.", "author": "David Curtze", "timestamp": "2025-07-09 22:02:46", "note": "Course error leading to DNF classification."},
+    {"boat": "Scooter", "type": "novice", "text": "Itch ahead go hogs go behind. 1 nv.", "author": "David Curtze", "timestamp": "2025-07-09 22:02:46", "note": "1 novice on Scooter (author's boat)."},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Scooter and go hogs  missed a mark.", "author": "David Curtze", "timestamp": "2025-07-09 22:02:46"},
+    {"boat": "Caper", "type": "placement", "text": "Max went back and rounded the mark. finished behind us.", "author": "Fred Bartrom", "timestamp": "2025-07-09 23:35:18", "note": "Fred > Caper adjacency; confirms Caper finished correctly after re-round."},
+    {"boat": "Fred", "type": "placement", "text": "Max went back and rounded the mark. finished behind us.", "author": "Fred Bartrom", "timestamp": "2025-07-09 23:35:18"},
+    {"boat": "Scooter", "type": "status", "text": "Dsq? Consider last and 2nd to last.", "author": "David Curtze", "timestamp": "2025-07-09 22:02:46", "note": "Contemplated DSQ later resolved as DNF."},
+    {"boat": "Go Hogs Go", "type": "status", "text": "Dsq? Consider last and 2nd to last.", "author": "David Curtze", "timestamp": "2025-07-09 22:02:46", "note": "Contemplated DSQ later resolved as DNF."},
+    {"boat": "Scooter", "type": "status", "text": "Anyone that didn’t sail the course should be scored DNF, the rules are very clear on this point.", "author": "James ODell", "timestamp": "2025-07-09 23:47:37", "note": "Supports DNF classification."},
+    {"boat": "Go Hogs Go", "type": "status", "text": "Anyone that didn’t sail the course should be scored DNF, the rules are very clear on this point.", "author": "James ODell", "timestamp": "2025-07-09 23:47:37", "note": "Supports DNF classification."},
+    {"boat": "Scooter", "type": "status", "text": "We don’t really have SIs for WNR ... it is DNF ... being scored as the number of boats finishing + 1", "author": "Jackson", "timestamp": "2025-07-10 00:29:16", "note": "Policy rationale for DNF scoring."},
+    {"boat": "Go Hogs Go", "type": "status", "text": "We don’t really have SIs for WNR ... it is DNF ... being scored as the number of boats finishing + 1", "author": "Jackson", "timestamp": "2025-07-10 00:29:16", "note": "Policy rationale for DNF scoring."},
+    {"boat": "Itch", "type": "placement", "text": "Authoritative final order: Itch > Fred > Caper > Scooter (DNF) > Go Hogs Go (DNF)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true},
+    {"boat": "Fred", "type": "placement", "text": "Authoritative final order supplied (2nd)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true},
+    {"boat": "Caper", "type": "placement", "text": "Authoritative final order supplied (3rd)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true},
+    {"boat": "Scooter", "type": "status", "text": "Authoritative final order supplied (DNF)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true},
+    {"boat": "Go Hogs Go", "type": "status", "text": "Authoritative final order supplied (DNF)", "author": "(override)", "timestamp": "2025-09-24 06:25:00", "inferred": true}
+  ],
+  "generated_at": "2025-09-24T06:25:00Z"
+}
