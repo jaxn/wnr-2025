@@ -1,0 +1,30 @@
+{
+  "date": "2025-06-04",
+  "source_chat": "results/2025-06-04.chat.txt",
+  "boats_seen": ["Go Hogs Go", "Wizard", "Fred", "Scooter", "Psycho Killer", "Scalded Dawg", "Ambush", "Danger Zone"],
+  "starters": ["Go Hogs Go", "Wizard", "Fred", "Scooter", "Psycho Killer", "Scalded Dawg", "Ambush", "Danger Zone"],
+  "results": [
+    {"boat": "Ambush", "pos": 1, "range": [1,1], "novices": 1, "status": "FIN", "score": 1, "aliasesSeen": ["Ambush"]},
+    {"boat": "Scalded Dawg", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Dawg"]},
+    {"boat": "Go Hogs Go", "pos": 3, "range": [3,3], "novices": 1, "status": "FIN", "score": 2, "aliasesSeen": ["GoHogs", "Go hogs go"]},
+    {"boat": "Scooter", "pos": 4, "range": [4,4], "novices": 2, "status": "FIN", "score": 2, "aliasesSeen": ["Scooter"]},
+    {"boat": "Psycho Killer", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Physco Killer", "Physics Killer", "Psycho Killer"]},
+    {"boat": "Wizard", "pos": 6, "range": [6,6], "novices": 0, "status": "FIN", "score": 6, "aliasesSeen": ["Wizard"]},
+    {"boat": "Fred", "pos": 7, "range": [7,7], "novices": 0, "status": "FIN", "score": 7, "aliasesSeen": ["Fast Freddy", "Fast Freddie", "Fred"]},
+    {"boat": "Danger Zone", "pos": 8, "range": [8,8], "novices": 0, "status": "FIN", "score": 8, "aliasesSeen": ["Danger Zone"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Go hogs go\nScooter\nPhysco Killer", "author": "David Curtze", "timestamp": "2025-06-04 19:50:17", "note": "Early partial list; order among these three only"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "Physics Killer\nWizard\nFast Freddy", "author": "Alicia Noble", "timestamp": "2025-06-04 20:19:09", "note": "Chain Psycho Killer > Wizard > Fred"},
+    {"boat": "Scooter", "type": "novice", "text": "Scooter had 2 nv", "author": "David Curtze", "timestamp": "2025-06-04 20:25:04"},
+    {"boat": "Go Hogs Go", "type": "novice", "text": "GoHogs. Dawg ahead Scooter behind. 1 novice.", "author": "George Heintz", "timestamp": "2025-06-04 20:28:47"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "GoHogs. Dawg ahead Scooter behind. 1 novice.", "author": "George Heintz", "timestamp": "2025-06-04 20:28:47", "note": "Dawg > Go Hogs Go > Scooter"},
+    {"boat": "Scooter", "type": "placement", "text": "GoHogs. Dawg ahead Scooter behind. 1 novice.", "author": "George Heintz", "timestamp": "2025-06-04 20:28:47"},
+    {"boat": "Ambush", "type": "placement", "text": "No one ahead\nAmbush (1 novice)\nDanger Zone", "author": "Jackson", "timestamp": "2025-06-04 20:39:04", "note": "Ambush ahead Danger Zone"},
+    {"boat": "Ambush", "type": "placement", "text": "Ambush in front. Dawg behind.", "author": "Sam Beckman", "timestamp": "2025-06-04 21:37:59", "note": "Confirms Ambush > Scalded Dawg"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "Ambush in front. Dawg behind.", "author": "Sam Beckman", "timestamp": "2025-06-04 21:37:59"}
+  ],
+  "generated_at": "2025-09-24T03:40:00Z"
+}

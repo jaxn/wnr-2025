@@ -1,0 +1,27 @@
+{
+  "date": "2025-04-23",
+  "source_chat": "results/2025-04-23.chat.txt",
+  "boats_seen": ["Scooter", "Itch", "Ambush"],
+  "starters": ["Scooter", "Itch", "Ambush"],
+  "results": [
+    {"boat": "Scooter", "pos": null, "range": [1,3], "novices": 0, "status": "DNF", "score": 4, "aliasesSeen": ["Scooter"]},
+    {"boat": "Itch", "pos": null, "range": [1,3], "novices": 0, "status": "DNF", "score": 4, "aliasesSeen": ["Itch"]},
+    {"boat": "Ambush", "pos": null, "range": [1,3], "novices": 0, "status": "DNF", "score": 4, "aliasesSeen": ["Ambush"]}
+  ],
+  "ambiguous": true,
+  "ambiguity": {
+    "explanation": "Race started by three boats then abandoned due to lightning; no finish order established. All starters DNF with irrecoverable positions.",
+    "boats": {
+      "Scooter": {"range": [1,3]},
+      "Itch": {"range": [1,3]},
+      "Ambush": {"range": [1,3]}
+    },
+    "representative_orders": []
+  },
+  "evidence": [
+    {"boat": "Scooter", "type": "status", "text": "Scooter, Itch, and Ambush went out and started the race. Only to turn back once the lightning came.", "author": "Jackson", "timestamp": "2025-04-23 18:39:36", "inferred": true, "note": "Started then abandoned => DNF"},
+    {"boat": "Itch", "type": "status", "text": "Scooter, Itch, and Ambush went out and started the race. Only to turn back once the lightning came.", "author": "Jackson", "timestamp": "2025-04-23 18:39:36", "inferred": true, "note": "Started then abandoned => DNF"},
+    {"boat": "Ambush", "type": "status", "text": "Scooter, Itch, and Ambush went out and started the race. Only to turn back once the lightning came.", "author": "Jackson", "timestamp": "2025-04-23 18:39:36", "inferred": true, "note": "Started then abandoned => DNF"}
+  ],
+  "generated_at": "2025-09-24T00:12:00Z"
+}

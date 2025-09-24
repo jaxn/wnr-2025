@@ -1,0 +1,45 @@
+{
+  "date": "2025-05-07",
+  "source_chat": "results/2025-05-07.chat.txt",
+  "boats_seen": [
+    "Danger Zone", "Ambush", "Sweet Virginia", "Go Hogs Go", "Scooter", "Scalded Dawg", "Fred", "Psycho Killer", "Itch"
+  ],
+  "starters": ["Danger Zone", "Ambush", "Sweet Virginia", "Go Hogs Go", "Scooter", "Scalded Dawg", "Fred", "Psycho Killer", "Itch"],
+  "results": [
+    {"boat": "Psycho Killer", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Psycho Killer"]},
+    {"boat": "Scalded Dawg", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Dawg", "Dog"]},
+    {"boat": "Scooter", "pos": 3, "range": [3,3], "novices": 2, "status": "FIN", "score": 1, "aliasesSeen": ["Scooter"]},
+    {"boat": "Fred", "pos": 4, "range": [4,4], "novices": 1, "status": "FIN", "score": 3, "aliasesSeen": ["Fast Freddy", "Fast Freddie", "Fred", "Freddie"]},
+    {"boat": "Go Hogs Go", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Hogs", "Hawg"]},
+    {"boat": "Danger Zone", "pos": 6, "range": [6,6], "novices": 0, "status": "FIN", "score": 6, "aliasesSeen": ["Danger Zone", "Danger-zone"]},
+    {"boat": "Ambush", "pos": 7, "range": [7,7], "novices": 0, "status": "FIN", "score": 7, "aliasesSeen": ["Ambush"]},
+    {"boat": "Sweet Virginia", "pos": 8, "range": [8,8], "novices": 0, "status": "FIN", "score": 8, "aliasesSeen": ["Sweet Virginia"]},
+    {"boat": "Itch", "pos": 9, "range": [9,9], "novices": 0, "status": "FIN", "score": 9, "aliasesSeen": ["Itch"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Go Hogs Go", "type": "status", "text": "Hogs is in", "author": "George Heintz", "timestamp": "2025-05-07 12:42:54"},
+    {"boat": "Scooter", "type": "novice", "text": "Scooters in with Mark S at helm and 3 novices", "author": "David Curtze", "timestamp": "2025-05-07 12:47:42", "note": "Credit capped at 2"},
+    {"boat": "Scooter", "type": "novice", "text": "You still only get credit for 2", "author": "George Heintz", "timestamp": "2025-05-07 12:48:07", "inferred": true, "note": "Rule confirmation"},
+    {"boat": "Danger Zone", "type": "placement", "text": "Danger Zone ahead\nAmbush\nSweet Virginia behind", "author": "Jackson", "timestamp": "2025-05-07 19:28:15", "note": "Ordered vertical list"},
+    {"boat": "Ambush", "type": "placement", "text": "Danger Zone ahead\nAmbush\nSweet Virginia behind", "author": "Jackson", "timestamp": "2025-05-07 19:28:15"},
+    {"boat": "Sweet Virginia", "type": "placement", "text": "Danger Zone ahead\nAmbush\nSweet Virginia behind", "author": "Jackson", "timestamp": "2025-05-07 19:28:15"},
+    {"boat": "Ambush", "type": "placement", "text": "Ambush ahead \nSweet Virginia", "author": "Jeremy Odom", "timestamp": "2025-05-07 19:35:03"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Hawg in front. Ambush behind.", "author": "Sam Beckman", "timestamp": "2025-05-07 19:49:22", "note": "Hawg -> Go Hogs Go"},
+    {"boat": "Ambush", "type": "placement", "text": "Hawg in front. Ambush behind.", "author": "Sam Beckman", "timestamp": "2025-05-07 19:49:22"},
+    {"boat": "Fred", "type": "novice", "text": "Fast Freddy Ahead. \nDanger Zone behind\n1 Novice.", "author": "George Heintz", "timestamp": "2025-05-07 19:59:49", "note": "1 novice for Fred"},
+    {"boat": "Danger Zone", "type": "placement", "text": "Fast Freddy Ahead. \nDanger Zone behind\n1 Novice.", "author": "George Heintz", "timestamp": "2025-05-07 19:59:49"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "Scooter:\nDog ahead\nFast Freddy behind\n2 novices", "author": "Chris Dupont", "timestamp": "2025-05-07 20:04:14"},
+    {"boat": "Scooter", "type": "placement", "text": "Scooter:\nDog ahead\nFast Freddy behind\n2 novices", "author": "Chris Dupont", "timestamp": "2025-05-07 20:04:14"},
+    {"boat": "Fred", "type": "placement", "text": "Scooter:\nDog ahead\nFast Freddy behind\n2 novices", "author": "Chris Dupont", "timestamp": "2025-05-07 20:04:14"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "Dawg:\nPsycho Killer ahead\nScooter behind", "author": "Serena Whitworth Pigue", "timestamp": "2025-05-07 20:25:23"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "Dawg:\nPsycho Killer ahead\nScooter behind", "author": "Serena Whitworth Pigue", "timestamp": "2025-05-07 20:25:23"},
+    {"boat": "Scooter", "type": "placement", "text": "Dawg:\nPsycho Killer ahead\nScooter behind", "author": "Serena Whitworth Pigue", "timestamp": "2025-05-07 20:25:23"},
+    {"boat": "Fred", "type": "novice", "text": "Fast Freddie (1 novice)\nScooter ahead\nGo Hogs Go or Danger-zone behind", "author": "Brian Dougherty", "timestamp": "2025-05-07 21:48:39", "note": "Used for Fred novice count; ordering clarified using George's earlier message placing Danger Zone behind Fred and Sam placing Hawg ahead Ambush chain."},
+    {"boat": "Scooter", "type": "placement", "text": "Fast Freddie (1 novice)\nScooter ahead\nGo Hogs Go or Danger-zone behind", "author": "Brian Dougherty", "timestamp": "2025-05-07 21:48:39", "note": "Disjunctive resolved via George Heintz message: Danger Zone behind Fred and Hawg behind Fred sequence => choose Go Hogs Go behind Fred then Danger Zone"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Fast Freddie (1 novice)\nScooter ahead\nGo Hogs Go or Danger-zone behind", "author": "Brian Dougherty", "timestamp": "2025-05-07 21:48:39"},
+    {"boat": "Danger Zone", "type": "placement", "text": "Fast Freddie (1 novice)\nScooter ahead\nGo Hogs Go or Danger-zone behind", "author": "Brian Dougherty", "timestamp": "2025-05-07 21:48:39"}
+  ],
+  "generated_at": "2025-09-24T02:20:00Z"
+}

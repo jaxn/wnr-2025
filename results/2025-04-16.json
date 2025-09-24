@@ -1,0 +1,27 @@
+{
+  "date": "2025-04-16",
+  "source_chat": "results/2025-04-16.chat.txt",
+  "boats_seen": ["Psycho Killer", "Scooter", "Itch", "Ambush", "Danger Zone", "Fred"],
+  "starters": ["Psycho Killer", "Scooter", "Itch", "Ambush", "Danger Zone", "Fred"],
+  "results": [
+    {"boat": "Psycho Killer", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Psycho Kitty"]},
+    {"boat": "Scooter", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Scooter"]},
+    {"boat": "Itch", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Itch"]},
+    {"boat": "Ambush", "pos": 4, "range": [4,4], "novices": 0, "status": "FIN", "score": 4, "aliasesSeen": ["Ambush"]},
+    {"boat": "Danger Zone", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Danger Zone"]},
+    {"boat": "Fred", "pos": 6, "range": [6,6], "novices": 0, "status": "FIN", "score": 6, "aliasesSeen": ["Fred", "Fast Freddy"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Psycho Killer", "type": "placement", "text": "Psycho Kitty\nScooter\nItch\nAmbush\nDanger Zone\nFast Freddy", "author": "Jackson", "timestamp": "2025-04-16 18:58:29", "note": "Interpreted as ordered finish list top-to-bottom after alias addition."},
+    {"boat": "Scooter", "type": "placement", "text": "Psycho Kitty\nScooter\nItch\nAmbush\nDanger Zone\nFast Freddy", "author": "Jackson", "timestamp": "2025-04-16 18:58:29"},
+    {"boat": "Itch", "type": "placement", "text": "Psycho Kitty\nScooter\nItch\nAmbush\nDanger Zone\nFast Freddy", "author": "Jackson", "timestamp": "2025-04-16 18:58:29"},
+    {"boat": "Ambush", "type": "placement", "text": "Psycho Kitty\nScooter\nItch\nAmbush\nDanger Zone\nFast Freddy", "author": "Jackson", "timestamp": "2025-04-16 18:58:29"},
+    {"boat": "Danger Zone", "type": "placement", "text": "Psycho Kitty\nScooter\nItch\nAmbush\nDanger Zone\nFast Freddy", "author": "Jackson", "timestamp": "2025-04-16 18:58:29"},
+    {"boat": "Fred", "type": "placement", "text": "Psycho Kitty\nScooter\nItch\nAmbush\nDanger Zone\nFast Freddy", "author": "Jackson", "timestamp": "2025-04-16 18:58:29"},
+    {"boat": "Ambush", "type": "placement", "text": "Jackson in front. Fred behind", "author": "Sam Beckman", "timestamp": "2025-04-16 18:59:02", "note": "Corroborates Ambush (Jackson) ahead of Fred consistent with list ordering."},
+    {"boat": "Fred", "type": "placement", "text": "Jackson in front. Fred behind", "author": "Sam Beckman", "timestamp": "2025-04-16 18:59:02"}
+  ],
+  "generated_at": "2025-09-24T01:05:00Z"
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2025-04-09",
+  "source_chat": "results/2025-04-09.chat.txt",
+  "boats_seen": [
+    "Danger Zone",
+    "Scalded Dawg",
+    "Psycho Killer",
+    "Scooter",
+    "Ambush",
+    "Go Hogs Go",
+    "Fred"
+  ],
+  "starters": [
+    "Danger Zone",
+    "Scalded Dawg",
+    "Psycho Killer",
+    "Scooter",
+    "Ambush",
+    "Go Hogs Go",
+    "Fred"
+  ],
+  "results": [
+    {"boat": "Danger Zone", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Danger Zone"]},
+    {"boat": "Scalded Dawg", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Scalded dog", "Dawg"]},
+    {"boat": "Psycho Killer", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Psyco Killer", "Psyco"]},
+    {"boat": "Scooter", "pos": 4, "range": [4,4], "novices": 0, "status": "FIN", "score": 4, "aliasesSeen": ["Scooter"]},
+    {"boat": "Ambush", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Ambush"]},
+    {"boat": "Go Hogs Go", "pos": 6, "range": [6,6], "novices": 0, "status": "FIN", "score": 6, "aliasesSeen": ["Go hogs go", "Go Hogs Go"]},
+    {"boat": "Fred", "pos": 7, "range": [7,7], "novices": 0, "status": "FIN", "score": 7, "aliasesSeen": ["Fast Freddy"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Danger Zone", "type": "placement", "text": "No one in front. Scalded dog behind.", "author": "Sam Beckman", "timestamp": "2025-04-09 19:56:46"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "No one in front. Scalded dog behind.", "author": "Sam Beckman", "timestamp": "2025-04-09 19:56:46"},
+  {"boat": "Ambush", "type": "placement", "text": "Ambush ahead. Fast Freddy behind.", "author": "George Heintz", "timestamp": "2025-04-09 19:57:38"},
+  {"boat": "Fred", "type": "placement", "text": "Ambush ahead. Fast Freddy behind.", "author": "George Heintz", "timestamp": "2025-04-09 19:57:38"},
+  {"boat": "Scooter", "type": "placement", "text": "Scooter ahead. Go hogs go behind", "author": "Jackson", "timestamp": "2025-04-09 22:24:37"},
+  {"boat": "Go Hogs Go", "type": "placement", "text": "Scooter ahead. Go hogs go behind", "author": "Jackson", "timestamp": "2025-04-09 22:24:37"},
+  {"boat": "Psycho Killer", "type": "placement", "text": "Psyco Killer ahead, Ambush behind.  3 novices on board.\n1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+  {"boat": "Ambush", "type": "placement", "text": "Psyco Killer ahead, Ambush behind.  3 novices on board.\n1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+    {"boat": "Danger Zone", "type": "placement", "text": "1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+    {"boat": "Scooter", "type": "placement", "text": "1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+    {"boat": "Ambush", "type": "placement", "text": "1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"},
+    {"boat": "Fred", "type": "placement", "text": "1st Danger Zone, 2nd Dawg, 3rd Psyco, 4th Scooter, 5th Ambush, 6th Go Hogs Go, 7th Fast Freddy", "author": "David Curtze", "timestamp": "2025-04-09 22:42:02"}
+  ],
+  "generated_at": "2025-09-24T00:00:00Z"
+}

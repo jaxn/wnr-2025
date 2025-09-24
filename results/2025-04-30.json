@@ -1,0 +1,40 @@
+{
+  "date": "2025-04-30",
+  "source_chat": "results/2025-04-30.chat.txt",
+  "boats_seen": [
+    "Psycho Killer",
+    "Scalded Dawg",
+    "Ambush",
+    "Scooter",
+    "Fred",
+    "Go Hogs Go",
+    "Itch"
+  ],
+  "starters": ["Psycho Killer", "Scalded Dawg", "Ambush", "Scooter", "Fred", "Go Hogs Go", "Itch"],
+  "results": [
+    {"boat": "Psycho Killer", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["J80"]},
+    {"boat": "Scalded Dawg", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Scalded Dawg"]},
+    {"boat": "Ambush", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Ambush"]},
+    {"boat": "Scooter", "pos": 4, "range": [4,4], "novices": 0, "status": "FIN", "score": 4, "aliasesSeen": ["Scooter"]},
+    {"boat": "Fred", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Fast Freddie", "Fred"]},
+    {"boat": "Go Hogs Go", "pos": 6, "range": [6,6], "novices": 0, "status": "FIN", "score": 6, "aliasesSeen": ["Go Hog Go", "Go hogs go"]},
+    {"boat": "Itch", "pos": 7, "range": [7,7], "novices": 0, "status": "FIN", "score": 7, "aliasesSeen": ["Itch"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Fred", "type": "placement", "text": "Fast Freddie J22 Finish\nBehind Scooter\nAhead Go Hog Go", "author": "Brian Dougherty", "timestamp": "2025-04-30 18:48:35", "note": "Scooter ahead Fred; Fred ahead Go Hogs Go"},
+    {"boat": "Scooter", "type": "placement", "text": "Fast Freddie J22 Finish\nBehind Scooter\nAhead Go Hog Go", "author": "Brian Dougherty", "timestamp": "2025-04-30 18:48:35"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Fast Freddie J22 Finish\nBehind Scooter\nAhead Go Hog Go", "author": "Brian Dougherty", "timestamp": "2025-04-30 18:48:35"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Go hogs go\nBehind Fred\nAhead of Itch", "author": "Paul Heinz", "timestamp": "2025-04-30 20:03:43", "note": "Fred ahead Go Hogs Go ahead Itch"},
+    {"boat": "Fred", "type": "placement", "text": "Go hogs go\nBehind Fred\nAhead of Itch", "author": "Paul Heinz", "timestamp": "2025-04-30 20:03:43"},
+    {"boat": "Itch", "type": "placement", "text": "Go hogs go\nBehind Fred\nAhead of Itch", "author": "Paul Heinz", "timestamp": "2025-04-30 20:03:43"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "J80\nScalded Dawg\nAmbush", "author": "Iain Montgomery", "timestamp": "2025-04-30 20:04:49", "note": "Interpreted as ordered list top-to-bottom"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "J80\nScalded Dawg\nAmbush", "author": "Iain Montgomery", "timestamp": "2025-04-30 20:04:49"},
+    {"boat": "Ambush", "type": "placement", "text": "J80\nScalded Dawg\nAmbush", "author": "Iain Montgomery", "timestamp": "2025-04-30 20:04:49"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "Scalded Dawg\nAmbush\nScooter", "author": "Jackson", "timestamp": "2025-04-30 20:16:51", "note": "Interpreted as next finishers sequence"},
+    {"boat": "Ambush", "type": "placement", "text": "Scalded Dawg\nAmbush\nScooter", "author": "Jackson", "timestamp": "2025-04-30 20:16:51"},
+    {"boat": "Scooter", "type": "placement", "text": "Scalded Dawg\nAmbush\nScooter", "author": "Jackson", "timestamp": "2025-04-30 20:16:51"}
+  ],
+  "generated_at": "2025-09-24T00:25:00Z"
+}

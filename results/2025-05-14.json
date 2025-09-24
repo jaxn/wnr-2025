@@ -1,0 +1,41 @@
+{
+  "date": "2025-05-14",
+  "source_chat": "results/2025-05-14.chat.txt",
+  "boats_seen": ["Sweet Virginia", "Fred", "Go Hogs Go", "Danger Zone", "Scooter", "Scalded Dawg", "Psycho Killer", "Club J22"],
+  "starters": ["Psycho Killer", "Scooter", "Scalded Dawg", "Go Hogs Go", "Fred", "Danger Zone", "Sweet Virginia", "Club J22"],
+  "results": [
+    {"boat": "Psycho Killer", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Psyco kitty"]},
+    {"boat": "Scooter", "pos": 2, "range": [2,2], "novices": 1, "status": "FIN", "score": 1, "aliasesSeen": ["Scooters", "Scooter"]},
+    {"boat": "Scalded Dawg", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Scaled Dawg", "Dawg"]},
+    {"boat": "Go Hogs Go", "pos": 4, "range": [4,4], "novices": 1, "status": "FIN", "score": 3, "aliasesSeen": ["Go hogs", "Go Hog Go", "GoHogs"]},
+    {"boat": "Fred", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Fast Freddie", "Fast Freddy", "Fred"]},
+    {"boat": "Danger Zone", "pos": 6, "range": [6,6], "novices": 0, "status": "FIN", "score": 6, "aliasesSeen": ["Danger Zone", "Sam-Danger Zone"]},
+    {"boat": "Sweet Virginia", "pos": 7, "range": [7,7], "novices": 2, "status": "FIN", "score": 5, "aliasesSeen": ["Sweet Virginia"]},
+    {"boat": "Club J22", "pos": 8, "range": [8,8], "novices": 0, "status": "FIN", "score": 8, "aliasesSeen": ["club j22"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Sweet Virginia", "type": "status", "text": "Sweet Virginia is in", "author": "Jeremy Odom", "timestamp": "2025-05-14 09:20:42"},
+    {"boat": "Fred", "type": "status", "text": "I’m on Fred’s boat. Gotta get ready for Galen!", "author": "Phillip Lehner", "timestamp": "2025-05-14 09:20:48"},
+    {"boat": "Scooter", "type": "status", "text": "Scooters in -", "author": "David Curtze", "timestamp": "2025-05-14 09:21:09"},
+    {"boat": "Go Hogs Go", "type": "status", "text": "Go hogs in. Will take one.", "author": "George Heintz", "timestamp": "2025-05-14 09:23:06"},
+    {"boat": "Scalded Dawg", "type": "status", "text": "Dawg’s in", "author": "James ODell", "timestamp": "2025-05-14 11:49:44"},
+    {"boat": "Fred", "type": "placement", "text": "Fast Freddie \nGo Hog Go: in front\nSam-Danger Zone: behind", "author": "Brian Dougherty", "timestamp": "2025-05-14 18:52:53"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Fast Freddie \nGo Hog Go: in front\nSam-Danger Zone: behind", "author": "Brian Dougherty", "timestamp": "2025-05-14 18:52:53"},
+    {"boat": "Danger Zone", "type": "placement", "text": "Fast Freddie \nGo Hog Go: in front\nSam-Danger Zone: behind", "author": "Brian Dougherty", "timestamp": "2025-05-14 18:52:53"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "Psyco kitty - Scooter (1nv) - Scaled Dawg", "author": "David Curtze", "timestamp": "2025-05-14 19:04:32"},
+    {"boat": "Scooter", "type": "placement", "text": "Psyco kitty - Scooter (1nv) - Scaled Dawg", "author": "David Curtze", "timestamp": "2025-05-14 19:04:32"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "Psyco kitty - Scooter (1nv) - Scaled Dawg", "author": "David Curtze", "timestamp": "2025-05-14 19:04:32"},
+    {"boat": "Fred", "type": "placement", "text": "Fred in front. Jeromy behind. 2 newbies", "author": "Sam Beckman", "timestamp": "2025-05-14 19:41:35", "note": "Jeromy refers to Jeremy/Sweet Virginia giving relation Fred ahead Sweet Virginia"},
+    {"boat": "Sweet Virginia", "type": "placement", "text": "Fred in front. Jeromy behind. 2 newbies", "author": "Sam Beckman", "timestamp": "2025-05-14 19:41:35"},
+  {"boat": "Sweet Virginia", "type": "novice", "text": "- sweet Virginia (2 novices)\n- \ufe0fclub j22 behind", "author": "Jeremy Odom", "timestamp": "2025-05-14 19:48:52"},
+  {"boat": "Club J22", "type": "placement", "text": "- sweet Virginia (2 novices)\n- \ufe0fclub j22 behind", "author": "Jeremy Odom", "timestamp": "2025-05-14 19:48:52", "note": "Club J22 behind Sweet Virginia"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Heintz GoHogs - 1 Novice\nDawg Ahead\nFast Freddy Behind.", "author": "George Heintz", "timestamp": "2025-05-14 20:31:23"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "Heintz GoHogs - 1 Novice\nDawg Ahead\nFast Freddy Behind.", "author": "George Heintz", "timestamp": "2025-05-14 20:31:23"},
+    {"boat": "Fred", "type": "placement", "text": "Heintz GoHogs - 1 Novice\nDawg Ahead\nFast Freddy Behind.", "author": "George Heintz", "timestamp": "2025-05-14 20:31:23"},
+    {"boat": "Go Hogs Go", "type": "novice", "text": "Heintz GoHogs - 1 Novice\nDawg Ahead\nFast Freddy Behind.", "author": "George Heintz", "timestamp": "2025-05-14 20:31:23", "note": "1 novice claimed"},
+    {"boat": "Scooter", "type": "novice", "text": "Psyco kitty - Scooter (1nv) - Scaled Dawg", "author": "David Curtze", "timestamp": "2025-05-14 19:04:32", "note": "1 novice for Scooter"}
+  ],
+  "generated_at": "2025-09-24T02:45:00Z"
+}
