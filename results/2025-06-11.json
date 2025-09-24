@@ -1,0 +1,26 @@
+{
+  "date": "2025-06-11",
+  "source_chat": "results/2025-06-11.chat.txt",
+  "boats_seen": ["Psycho Killer", "Ambush", "Fred", "Sweet Virginia", "Wizard"],
+  "starters": ["Psycho Killer", "Ambush", "Fred", "Sweet Virginia", "Wizard"],
+  "results": [
+    {"boat": "Psycho Killer", "pos": 1, "range": [1,1], "novices": 0, "status": "FIN", "score": 1, "aliasesSeen": ["Psycho killa", "Psycho Killer"]},
+    {"boat": "Ambush", "pos": 2, "range": [2,2], "novices": 0, "status": "FIN", "score": 2, "aliasesSeen": ["Ambush"]},
+    {"boat": "Fred", "pos": 3, "range": [3,3], "novices": 0, "status": "FIN", "score": 3, "aliasesSeen": ["Frediie", "Fred"]},
+    {"boat": "Sweet Virginia", "pos": 4, "range": [4,4], "novices": 0, "status": "FIN", "score": 4, "aliasesSeen": ["Sweet Virginia"]},
+    {"boat": "Wizard", "pos": null, "range": [5,5], "novices": 0, "status": "DNF", "score": 6, "aliasesSeen": ["Wizard"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Psycho Killer", "type": "placement", "text": "Psycho killa \nNo one in front\nSomeone can tell us who was 2", "author": "Cody", "timestamp": "2025-06-11 19:34:13"},
+    {"boat": "Psycho Killer", "type": "placement", "text": "Psycho Killer ahead\nAmbush\nFred behind", "author": "Jackson", "timestamp": "2025-06-11 20:22:56"},
+    {"boat": "Ambush", "type": "placement", "text": "Psycho Killer ahead\nAmbush\nFred behind", "author": "Jackson", "timestamp": "2025-06-11 20:22:56"},
+    {"boat": "Fred", "type": "placement", "text": "Psycho Killer ahead\nAmbush\nFred behind", "author": "Jackson", "timestamp": "2025-06-11 20:22:56"},
+    {"boat": "Fred", "type": "placement", "text": "Not so fast Frediie\n\nAhead of Sweet Virginia", "author": "Brian Dougherty", "timestamp": "2025-06-11 20:50:28"},
+    {"boat": "Sweet Virginia", "type": "placement", "text": "Not so fast Frediie\n\nAhead of Sweet Virginia", "author": "Brian Dougherty", "timestamp": "2025-06-11 20:50:28"},
+    {"boat": "Sweet Virginia", "type": "status", "text": "Sweet Virginia did finish!", "author": "Jeremy Odom", "timestamp": "2025-06-11 21:13:12"},
+    {"boat": "Wizard", "type": "status", "text": "Wizard gave up and motored in.", "author": "Alicia Noble", "timestamp": "2025-06-12 07:24:41"}
+  ],
+  "generated_at": "2025-09-24T04:20:00Z"
+}

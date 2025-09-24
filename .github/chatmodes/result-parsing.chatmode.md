@@ -6,6 +6,8 @@ You process exactly one race (one Wednesday) per invocation. You DO NOT compute 
 ## Ground Rules
 1. One race per Wednesday; rely on message timestamps (America/Chicago) and authors to interpret finish claims.
 2. Relative placement statements include patterns like: "A ahead of B", "B behind C", enumerated finishes ("1st BoatX, 2nd BoatY"), or implicit chains ("A finished, B right behind").
+  - DIRECT-ADJACENCY RULE (2025-09-24 update): A message of the form "X behind Y" or "Y ahead of X" is interpreted as X finishing immediately after Y (no unspecified boats in between) unless the same message (or a tightly coupled multi-line block) explicitly lists additional boats between them. This rule enables collapsing partial chains into a single linear order when sequential "behind" observations create a contiguous list.
+  - Multi-line podium style blocks (one boat per line) are treated as a contiguous ordered list; implicit "behind" or "ahead" words between consecutive lines are assumed even if omitted after the first line.
 3. Combine all non-conflicting claims into a partial order; derive a total order if unambiguous. If multiple linear extensions remain, mark **AMBIGUOUS** and provide the positional range for each boat (min/max possible finish) plus at least one example consistent ordering.
 4. Novices: A message of the form "(N) novice(s)" tied to a boat applies only to that boat for this race. Keep raw text evidence.
 5. Aliases / identity mapping: normalize using `boats.json`; retain the original surface form(s) in an `aliasesSeen` array for transparency.
@@ -17,6 +19,7 @@ You process exactly one race (one Wednesday) per invocation. You DO NOT compute 
    - If a boat is mentioned only in speculative chat (e.g., "Maybe X coming out?"), ignore it.
 7. Scoring (per race, low-point with novice credit): `score = max(1, finish_position - min(2, novices))`. Apply only to FIN/DSQ/DNF starters. DSQ/DNF get `starters + 1`. DNS / absent boats are omitted entirely (no DNC logic in single-week mode).
 8. No throw-outs computed here.
+9. DO NOT USE parse_chat.py or any other code outside this chatmode. All logic must be described here and implemented by you.
 
 ## Method (Single Week)
 1. Ingest `results/YYYY-MM-DD.chat.txt`. Each line: `[MM/DD/YY, hh:mm:ss AM/PM] Author: Message`. Ignore system / non-author lines.

@@ -1,0 +1,34 @@
+{
+  "date": "2025-05-28",
+  "source_chat": "results/2025-05-28.chat.txt",
+  "boats_seen": ["Ambush", "Scalded Dawg", "Go Hogs Go", "Wizard", "Dandelion", "Danger Zone", "Itch", "Scooter"],
+  "starters": ["Ambush", "Scalded Dawg", "Go Hogs Go", "Wizard", "Dandelion", "Danger Zone"],
+  "results": [
+    {"boat": "Ambush", "pos": 1, "range": [1,1], "novices": 1, "status": "FIN", "score": 1, "aliasesSeen": ["Ambush"]},
+    {"boat": "Scalded Dawg", "pos": 2, "range": [2,2], "novices": 1, "status": "FIN", "score": 2, "aliasesSeen": ["Scalded Dawg", "Dawg"]},
+    {"boat": "Go Hogs Go", "pos": 3, "range": [3,3], "novices": 1, "status": "FIN", "score": 2, "aliasesSeen": ["GoHogs", "Go hogs go ahead", "GoHogs."]},
+    {"boat": "Wizard", "pos": 4, "range": [4,4], "novices": 2, "status": "FIN", "score": 2, "aliasesSeen": ["Wizard"]},
+    {"boat": "Danger Zone", "pos": 5, "range": [5,5], "novices": 0, "status": "FIN", "score": 5, "aliasesSeen": ["Danger Zone", "Danger Zone-Kenny"]},
+    {"boat": "Dandelion", "pos": 6, "range": [6,6], "novices": 2, "status": "FIN", "score": 4, "aliasesSeen": ["Dandelion"]}
+  ],
+  "ambiguous": false,
+  "ambiguity": null,
+  "evidence": [
+    {"boat": "Ambush", "type": "placement", "text": "No one ahead.\nAmbush. (1 novice)\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-05-28 20:39:44"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "No one ahead.\nAmbush. (1 novice)\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-05-28 20:39:44"},
+    {"boat": "Scalded Dawg", "type": "novice", "text": "Hogs behind us, we had a novice", "author": "James ODell", "timestamp": "2025-05-28 20:42:24"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Hogs behind us, we had a novice", "author": "James ODell", "timestamp": "2025-05-28 20:42:24"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "GoHogs. Dawg ahead Wizard just behind. 1 novice.", "author": "George Heintz", "timestamp": "2025-05-28 21:22:16"},
+    {"boat": "Scalded Dawg", "type": "placement", "text": "GoHogs. Dawg ahead Wizard just behind. 1 novice.", "author": "George Heintz", "timestamp": "2025-05-28 21:22:16"},
+    {"boat": "Wizard", "type": "placement", "text": "GoHogs. Dawg ahead Wizard just behind. 1 novice.", "author": "George Heintz", "timestamp": "2025-05-28 21:22:16"},
+    {"boat": "Dandelion", "type": "placement", "text": "dandelion ahead - 2 novice", "author": "Fred Bartrom", "timestamp": "2025-05-28 22:01:26"},
+    {"boat": "Dandelion", "type": "novice", "text": "dandelion ahead - 2 novice", "author": "Fred Bartrom", "timestamp": "2025-05-28 22:01:26"},
+    {"boat": "Go Hogs Go", "type": "placement", "text": "Go hogs go ahead\nWizard\nDanger Zone-Kenny behind\n2 novices", "author": "Alicia Noble", "timestamp": "2025-05-29 07:51:19"},
+    {"boat": "Wizard", "type": "placement", "text": "Go hogs go ahead\nWizard\nDanger Zone-Kenny behind\n2 novices", "author": "Alicia Noble", "timestamp": "2025-05-29 07:51:19"},
+    {"boat": "Danger Zone", "type": "placement", "text": "Go hogs go ahead\nWizard\nDanger Zone-Kenny behind\n2 novices", "author": "Alicia Noble", "timestamp": "2025-05-29 07:51:19"},
+    {"boat": "Wizard", "type": "novice", "text": "Go hogs go ahead\nWizard\nDanger Zone-Kenny behind\n2 novices", "author": "Alicia Noble", "timestamp": "2025-05-29 07:51:19"},
+    {"boat": "Go Hogs Go", "type": "novice", "text": "GoHogs. Dawg ahead Wizard just behind. 1 novice.", "author": "George Heintz", "timestamp": "2025-05-28 21:22:16"},
+    {"boat": "Ambush", "type": "novice", "text": "No one ahead.\nAmbush. (1 novice)\nScalded Dawg behind", "author": "Jackson", "timestamp": "2025-05-28 20:39:44"}
+  ],
+  "generated_at": "2025-09-24T04:20:00Z"
+}
