@@ -3,62 +3,143 @@
 Generate final results table for WNR 2025 series.
 Creates a final_results.md file with a table where each row is a boat 
 and each column is a week's race.
+Reads data from per-week markdown files in results/ directory.
 """
 
-import json
+import os
+import re
 import pandas as pd
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
+from datetime import datetime
 
-def load_results_data(filename: str = 'results.json') -> Dict:
-    """Load the series results from JSON file."""
-    with open(filename, 'r', encoding='utf-8') as f:
-        return json.load(f)
+def load_results_from_markdown_files(results_dir: str = 'results') -> Dict:
+    """Load race results from per-week markdown files."""
+    results_data = {}
+    
+    # Find all markdown files in results directory
+    md_files = [f for f in os.listdir(results_dir) if f.endswith('.md') and re.match(r'\d{4}-\d{2}-\d{2}\.md', f)]
+    md_files.sort()
+    
+    for md_file in md_files:
+        date = md_file.replace('.md', '')
+        filepath = os.path.join(results_dir, md_file)
+        
+        try:
+            race_results = parse_markdown_results(filepath, date)
+            if race_results:
+                results_data[date] = race_results
+        except Exception as e:
+            print(f"Warning: Could not parse {md_file}: {e}")
+            
+    return results_data
 
-def create_results_table(data: Dict) -> pd.DataFrame:
+def parse_markdown_results(filepath: str, date: str) -> Optional[Dict]:
+    """Parse results from a single markdown file."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Find the Summary section and the table after it
+    # Look for "## Summary" followed by a table
+    summary_match = re.search(r'## Summary.*?\n(.*?)(?=\n##|\n$)', content, re.DOTALL)
+    
+    if not summary_match:
+        return None
+    
+    summary_content = summary_match.group(1)
+    
+    # Find the table within the summary content
+    # Look for table header with Pos, Boat, etc.
+    table_match = re.search(r'\| Pos \| Boat \| Range \| Novices \| Status \| Score \|.*?\n\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|\n((?:\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|\s*\n?)*)', summary_content, re.MULTILINE)
+    
+    if not table_match:
+        return None
+    
+    results = []
+    table_content = table_match.group(1)
+    
+    for line in table_content.strip().split('\n'):
+        if not line.strip() or not line.startswith('|'):
+            continue
+            
+        parts = [p.strip() for p in line.split('|')[1:-1]]  # Remove empty first/last parts
+        if len(parts) >= 6:
+            try:
+                pos_str = parts[0].strip()
+                boat = parts[1].strip()
+                range_str = parts[2].strip()
+                novices_str = parts[3].strip()
+                status = parts[4].strip()
+                score_str = parts[5].strip()
+                
+                # Handle position - could be a number or "?"
+                pos = int(pos_str) if pos_str.isdigit() else None
+                
+                # Handle novices
+                novices = int(novices_str) if novices_str.isdigit() else 0
+                
+                # Handle score
+                score = int(score_str) if score_str.isdigit() else None
+                
+                if boat and score is not None:
+                    results.append({
+                        'boat': boat,
+                        'pos': pos,
+                        'range': range_str,
+                        'novices': novices,
+                        'status': status,
+                        'score': score
+                    })
+            except (ValueError, IndexError):
+                continue
+    
+    return {
+        'date': date,
+        'results': results
+    } if results else None
+
+def create_results_table(results_data: Dict) -> pd.DataFrame:
     """Create a DataFrame with boats as rows and race weeks as columns."""
     
-    # Get all boats and weeks
-    all_boats = sorted(data['series']['boats_seen'])
-    weeks = data['series']['weeks']
+    # Get all boats and race dates
+    all_boats = set()
+    race_dates = sorted(results_data.keys())
+    
+    # Collect all boat names from all races
+    for race_data in results_data.values():
+        for result in race_data['results']:
+            all_boats.add(result['boat'])
+    
+    all_boats = sorted(all_boats)
     
     # Create a DataFrame with boats as index and race dates as columns
-    race_dates = [week['date'] for week in weeks]
     df = pd.DataFrame(index=all_boats, columns=race_dates)
     
     # Fill in the scores for each boat in each race
-    for week in weeks:
-        date = week['date']
-        
-        # Use 'results' key if available, otherwise 'results_provisional'
-        results_key = 'results' if 'results' in week else 'results_provisional'
-        if results_key not in week:
-            continue
-            
-        for result in week[results_key]:
+    for date, race_data in results_data.items():
+        for result in race_data['results']:
             boat = result['boat']
+            pos = result.get('pos')
             score = result.get('score', '')
+            status = result.get('status', 'FIN')
             
-            # Handle DNC (Did Not Compete) specially
-            if result.get('status') == 'DNC':
+            # Format the display value
+            if status == 'DNC':
                 df.loc[boat, date] = f"DNC({score})"
-            elif result.get('status') == 'DSQ':
+            elif status == 'DSQ':
                 df.loc[boat, date] = f"DSQ({score})"
-            elif result.get('status') == 'DNF':
+            elif status == 'DNF':
                 df.loc[boat, date] = f"DNF({score})"
+            elif pos is not None:
+                df.loc[boat, date] = f"{pos}({score})"
             else:
-                # Show position if available, otherwise just score
-                pos = result.get('pos')
-                if pos is not None:
-                    df.loc[boat, date] = f"{pos}({score})"
-                else:
-                    df.loc[boat, date] = str(score) if score != '' else '-'
+                df.loc[boat, date] = str(score) if score != '' else '-'
     
     # Fill NaN values with '-' for races where boat didn't participate
     df = df.fillna('-')
     
     return df
 
-def generate_markdown_table(df: pd.DataFrame, data: Dict) -> str:
+def generate_markdown_table(df: pd.DataFrame, results_data: Dict) -> str:
     """Generate markdown table from DataFrame."""
     
     lines = []
@@ -69,24 +150,6 @@ def generate_markdown_table(df: pd.DataFrame, data: Dict) -> str:
     lines.append("This table shows each boat's performance across all race weeks.")
     lines.append("Format: Position(Score) or Status(Score) where Status = DNC/DSQ/DNF")
     lines.append("")
-    
-    # Get standings for additional context
-    standings = data['series'].get('standings', [])
-    if standings:
-        lines.append("## Series Standings")
-        lines.append("")
-        lines.append("Final standings with throwouts applied:")
-        lines.append("")
-        lines.append("| Rank | Boat | Races | Net Score |")
-        lines.append("|---:|---|---:|---:|")
-        
-        for i, standing in enumerate(standings, 1):
-            boat = standing['boat'].title()
-            races = standing['races']
-            net = standing['net']
-            lines.append(f"| {i} | {boat} | {races} | {net} |")
-        
-        lines.append("")
     
     lines.append("## Race-by-Race Results")
     lines.append("")
@@ -99,7 +162,6 @@ def generate_markdown_table(df: pd.DataFrame, data: Dict) -> str:
     for col in df.columns:
         # Format date nicely
         try:
-            from datetime import datetime
             date_obj = datetime.strptime(col, '%Y-%m-%d')
             formatted_date = date_obj.strftime('%m/%d')
         except:
@@ -112,9 +174,8 @@ def generate_markdown_table(df: pd.DataFrame, data: Dict) -> str:
     
     # Data rows
     for boat in df.index:
-        # Clean up boat name for display
-        display_boat = boat.replace('_', ' ').title()
-        row = f"| {display_boat} |"
+        # Use boat name as-is from markdown files (proper capitalization)
+        row = f"| {boat} |"
         
         for col in df.columns:
             value = df.loc[boat, col]
@@ -129,36 +190,40 @@ def generate_markdown_table(df: pd.DataFrame, data: Dict) -> str:
     lines.append("- **DNC(Score)**: Did Not Compete - boat registered for series but absent")  
     lines.append("- **DSQ(Score)**: Disqualified")
     lines.append("- **DNF(Score)**: Did Not Finish")
-    lines.append("- **-**: Boat not yet registered for series at time of race")
+    lines.append("- **-**: Boat did not participate in this race")
     lines.append("")
     
-    scoring_info = data['series'].get('scoring', {})
-    if scoring_info:
-        lines.append("## Scoring System")
-        lines.append("")
-        lines.append(f"- **System**: {scoring_info.get('system', 'Low Point')}")
-        lines.append(f"- **Novice Credit**: {scoring_info.get('novice_credit', 'Not specified')}")
-        lines.append(f"- **DNC Penalty**: {scoring_info.get('dnc_penalty', 'Not specified')}")
-        lines.append(f"- **Throwouts**: {scoring_info.get('throwouts', 'Not specified')}")
-        lines.append("")
+    lines.append("## Scoring System")
+    lines.append("")
+    lines.append("- **System**: Low Point")
+    lines.append("- **Novice Credit**: Points = max(1, finish_position - min(2, novice_count))")
+    lines.append("- **DNC/DSQ/DNF Penalty**: Varies by race")
+    lines.append("- **Throwouts**: 1 worst per 4 races (series rule)")
+    lines.append("")
     
-    lines.append(f"Generated from results.json containing {len(data['series']['weeks'])} race weeks.")
+    lines.append(f"Generated from {len(results_data)} per-week markdown files in results/ directory.")
     lines.append("")
     
     return "\n".join(lines)
 
 def main():
     """Main function to generate final results."""
-    print("Loading results data...")
-    data = load_results_data()
+    print("Loading results from per-week markdown files...")
+    results_data = load_results_from_markdown_files()
+    
+    if not results_data:
+        print("Error: No results data found in markdown files")
+        return
+    
+    print(f"Found {len(results_data)} race weeks")
     
     print("Creating results table...")
-    df = create_results_table(data)
+    df = create_results_table(results_data)
     
     print(f"Generated table with {len(df)} boats and {len(df.columns)} races")
     
     print("Generating markdown...")
-    markdown = generate_markdown_table(df, data)
+    markdown = generate_markdown_table(df, results_data)
     
     # Write to file
     output_file = 'final_results.md'
