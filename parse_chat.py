@@ -8,9 +8,10 @@ Follows specifications in .github/instructions/chat-instructions.md
 
 import re
 import json
-from datetime import datetime, timedelta
-from typing import Dict, List, Tuple, Optional, Set
-from collections import defaultdict, namedtuple
+from datetime import datetime
+from typing import Dict, List, Tuple, Optional, Set, Iterable
+from collections import defaultdict, namedtuple, deque
+import os
 import sys
 
 # Message structure
@@ -47,6 +48,7 @@ class EnhancedChatParser:
             },
             "standings": []
         }
+        self._weekly_boats_seen: Set[str] = set()  # cumulative unique boats (for DNC scoring)
         
     def parse_chat_file(self):
         """Parse the WhatsApp chat export file"""
@@ -254,7 +256,8 @@ class EnhancedChatParser:
                         })
             
             # Look for novice mentions with numbers
-            novice_pattern = r'(\d+)\s+novice'
+            # Expanded novice patterns:  "2 novices", "2 nv", "(2 novices)" "4nv"
+            novice_pattern = r'(\d+)\s*(?:novice|novices|nv|nvs)\b'
             novice_matches = re.findall(novice_pattern, text_lower)
             
             if novice_matches:
@@ -314,40 +317,70 @@ class EnhancedChatParser:
             return list(boats), f"Ambiguous finish order: {str(e)}"
     
     def _topological_sort(self, boats: Set[str], edges: List[Tuple[str, str]]) -> List[str]:
-        """Perform topological sort on the boat positions"""
-        from collections import defaultdict, deque
-        
-        # Build adjacency list and in-degree count
+        """Perform topological sort on the boat positions.
+        If multiple valid orders exist, one valid order is returned; ranges will later
+        capture ambiguity."""
         graph = defaultdict(list)
         in_degree = defaultdict(int)
-        
-        # Initialize all boats with 0 in-degree
-        for boat in boats:
-            in_degree[boat] = 0
-        
-        # Build graph
-        for ahead, behind in edges:
-            graph[ahead].append(behind)
-            in_degree[behind] += 1
-        
-        # Find boats with no incoming edges (should finish first)
-        queue = deque([boat for boat in boats if in_degree[boat] == 0])
-        result = []
-        
+        for b in boats:
+            in_degree[b] = 0
+        for a, b in edges:
+            graph[a].append(b)
+            in_degree[b] += 1
+        queue = deque(sorted([b for b in boats if in_degree[b] == 0]))  # deterministic
+        order = []
         while queue:
-            boat = queue.popleft()
-            result.append(boat)
-            
-            # Remove this boat and update in-degrees
-            for neighbor in graph[boat]:
-                in_degree[neighbor] -= 1
-                if in_degree[neighbor] == 0:
-                    queue.append(neighbor)
-        
-        if len(result) != len(boats):
+            b = queue.popleft()
+            order.append(b)
+            for n in graph[b]:
+                in_degree[n] -= 1
+                if in_degree[n] == 0:
+                    queue.append(n)
+        if len(order) != len(boats):
             raise Exception("Circular dependency in finish order")
-        
-        return result
+        return order
+
+    def _compute_position_ranges(self, boats: Iterable[str], edges: List[Tuple[str, str]]) -> Dict[str, Tuple[int, int]]:
+        """Given a (possibly) partially ordered set of boats (edges a->b means a ahead b),
+        compute possible position range [min,max] for each boat (1-indexed)."""
+        boats = list(boats)
+        n = len(boats)
+        graph_fwd = defaultdict(set)
+        graph_rev = defaultdict(set)
+        for a, b in edges:
+            graph_fwd[a].add(b)
+            graph_rev[b].add(a)
+
+        def ancestors(b: str) -> Set[str]:
+            seen = set()
+            stack = [b]
+            while stack:
+                cur = stack.pop()
+                for p in graph_rev[cur]:
+                    if p not in seen:
+                        seen.add(p)
+                        stack.append(p)
+            return seen
+
+        def descendants(b: str) -> Set[str]:
+            seen = set()
+            stack = [b]
+            while stack:
+                cur = stack.pop()
+                for c in graph_fwd[cur]:
+                    if c not in seen:
+                        seen.add(c)
+                        stack.append(c)
+            return seen
+
+        ranges = {}
+        for b in boats:
+            anc = ancestors(b)
+            desc = descendants(b)
+            min_pos = len(anc) + 1
+            max_pos = n - len(desc)
+            ranges[b] = (min_pos, max_pos)
+        return ranges
     
     def is_valid_boat_name(self, boat_name: str) -> bool:
         """Check if a boat name is valid (not a parsing artifact)"""
@@ -414,32 +447,116 @@ class EnhancedChatParser:
             }
         
         return results
+
+    def _apply_dnc(self, week_results: Dict, cumulative_boats: Set[str]):
+        """Add DNC entries for boats that previously raced but are absent this week.
+        DNC score = unique boats that have raced in series up to this point + 1."""
+        starters = set(week_results.get('starters', []))
+        prior_series_boats = set(cumulative_boats)  # copy
+        dnc_boats = prior_series_boats - starters
+        if not dnc_boats:
+            return
+        series_boats_after = prior_series_boats | starters
+        dnc_score = len(series_boats_after) + 1
+
+        # Ensure a concrete 'results' list exists (merge provisional if necessary)
+        if 'results' not in week_results:
+            # Convert provisional to definitive list for augmentation (retain provisional copy)
+            provisional = week_results.get('results_provisional', [])
+            week_results['results'] = [dict(r) for r in provisional]
+
+        for boat in sorted(dnc_boats):
+            week_results['results'].append({
+                'boat': boat,
+                'pos': None,
+                'novices': 0,
+                'status': 'DNC',
+                'score': dnc_score,
+                'aliasesUsed': []
+            })
+        week_results['results'].sort(key=lambda r: (r['pos'] is None, r['pos'] if r['pos'] is not None else 999, r['boat']))
     
     def process_weekly_race(self, date: str, messages: List[Message]) -> Dict:
-        """Process a single week's race"""
+        """Process a single week's race including ambiguity ranges and DNC.
+
+        Returns week dict with either definitive 'results' or 'results_provisional' if ambiguous.
+        """
         claims = self.extract_individual_claims(messages)
         finish_order, ambiguity = self.build_finish_order(claims)
-        
+
         if not finish_order:
             return {
                 'date': date,
                 'starters': [],
                 'results': [],
                 'evidence': claims,
-                'ambiguity': ambiguity or "No race data found"
+                'ambiguity': ambiguity or "No race data found",
+                'status': 'NO_RACE'
             }
-        
+
+        # Build relative graph edges for ranges
+        edges = []
+        for c in claims:
+            if c.get('type') == 'relative_position':
+                edges.append((c['boat_ahead'], c['boat_behind']))
+
+        # Compute ranges (even if unambiguous, helpful for transparency)
+        ranges = self._compute_position_ranges(finish_order, edges)
+
         boat_results = self.calculate_scores(finish_order, claims)
-        results_list = [boat_results[boat] for boat in finish_order if boat in boat_results]
-        valid_starters = [boat for boat in finish_order if self.is_valid_boat_name(boat)]
-        
-        return {
-            'date': date,
-            'starters': valid_starters,
-            'results': results_list,
-            'evidence': claims,
-            'ambiguity': ambiguity
-        }
+        valid_starters = [b for b in finish_order if self.is_valid_boat_name(b)]
+
+        # If ambiguity note present (cycle or partial), store provisional with ranges
+        if ambiguity:
+            provisional = []
+            for b in finish_order:
+                if b not in boat_results:  # skip invalid
+                    continue
+                min_p, max_p = ranges[b]
+                # Representative pos used in scoring = current (topological) index +1
+                representative_pos = boat_results[b]['pos']
+                provisional.append({
+                    'boat': b,
+                    'pos': representative_pos,
+                    'range': f"{min_p}-{max_p}",
+                    'novices': boat_results[b]['novices'],
+                    'status': boat_results[b]['status'],
+                    'score': boat_results[b]['score']
+                })
+            week = {
+                'date': date,
+                'starters': valid_starters,
+                'results_provisional': provisional,
+                'evidence': claims,
+                'ambiguity': {
+                    'description': ambiguity,
+                    'ranges': {b: {'min': ranges[b][0], 'max': ranges[b][1]} for b in finish_order}
+                },
+                'status': 'AMBIGUOUS'
+            }
+        else:
+            results_list = []
+            for b in finish_order:
+                if b not in boat_results:
+                    continue
+                min_p, max_p = ranges[b]
+                r = boat_results[b].copy()
+                r['range'] = f"{min_p}-{max_p}"  # identical bounds if unambiguous
+                results_list.append(r)
+            week = {
+                'date': date,
+                'starters': valid_starters,
+                'results': results_list,
+                'evidence': claims,
+                'ambiguity': None,
+                'status': 'OK'
+            }
+
+        # Track cumulative boats for DNC scoring later (only if there were starters)
+        if valid_starters:
+            self._weekly_boats_seen |= set(valid_starters)
+
+        return week
     
     def generate_results(self) -> Dict:
         """Generate the complete results JSON"""
@@ -447,18 +564,92 @@ class EnhancedChatParser:
         
         # Process each Wednesday race
         boats_with_results = set()
+        weeks = []
+        cumulative_series_boats: Set[str] = set()
         for date in sorted(self.weekly_races.keys()):
             week_data = self.process_weekly_race(date, self.weekly_races[date])
-            if week_data['results']:  # Only include weeks with actual race results
-                self.series_data['weeks'].append(week_data)
-                # Only track boats that actually raced
-                for result in week_data['results']:
-                    boats_with_results.add(result['boat'])
-        
-        # Only include boats that actually participated in races
+            # Determine if we treat as a scored race (starters > 0 and have some result info)
+            has_results = bool(week_data.get('results')) or bool(week_data.get('results_provisional'))
+            if has_results and week_data.get('starters'):
+                # Apply DNC scoring BEFORE adding this week's starters to cumulative set for next week
+                self._apply_dnc(week_data if 'results' in week_data else week_data, cumulative_series_boats)
+                cumulative_series_boats |= set(week_data['starters'])
+                weeks.append(week_data)
+                for section in ['results', 'results_provisional']:
+                    if section in week_data:
+                        for result in week_data[section]:
+                            if result.get('status') not in ('DNC',) and result.get('boat'):
+                                boats_with_results.add(result['boat'])
+
+        self.series_data['weeks'] = weeks
         self.series_data['boats_seen'] = sorted(list(boats_with_results))
-        
+
+        # Compute standings
+        self._compute_standings()
         return {"series": self.series_data}
+
+    def _compute_standings(self):
+        """Compute series standings with throwouts (1 worst per 4 races)."""
+        # Collect scores per boat
+        boat_scores: Dict[str, List[int]] = defaultdict(list)
+        race_count = 0
+        for w in self.series_data['weeks']:
+            # Only count races with starters
+            if not w.get('starters'):
+                continue
+            race_count += 1
+            # Choose appropriate results key
+            key = 'results' if 'results' in w else 'results_provisional'
+            for r in w[key]:
+                if r['status'] == 'DNC':
+                    boat_scores[r['boat']].append(r['score'])
+                elif r.get('pos') is not None:
+                    boat_scores[r['boat']].append(r['score'])
+
+        throwouts = race_count // 4
+        standings = []
+        for boat, scores in boat_scores.items():
+            sorted_scores = sorted(scores, reverse=True)  # worst first
+            dropped = sorted_scores[:throwouts]
+            kept = sorted_scores[throwouts:]
+            standings.append({
+                'boat': boat,
+                'races': len(scores),
+                'raw_total': sum(scores),
+                'dropped': dropped,
+                'net': sum(kept)
+            })
+        standings.sort(key=lambda x: (x['net'], x['raw_total']))
+        self.series_data['standings'] = standings
+
+    # ------------------------------ Output Helpers ------------------------------
+    def write_week_files(self):
+        """Emit per-week JSON and Markdown files in results/ directory."""
+        os.makedirs('results', exist_ok=True)
+        for w in self.series_data['weeks']:
+            date = w['date']
+            json_path = os.path.join('results', f"{date}.auto.json")
+            md_path = os.path.join('results', f"{date}.auto.md")
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(w, f, indent=2, ensure_ascii=False)
+            # Markdown table
+            lines = [f"# {date} Results (Auto Parsed)", ""]
+            if w.get('ambiguity'):
+                lines.append(f"Ambiguity: {w['ambiguity']['description'] if isinstance(w['ambiguity'], dict) else w['ambiguity']}")
+                lines.append("")
+            header = "| Pos | Boat | Range | Novices | Status | Score |"
+            lines += [header, "|---:|---|---|---:|---|---:|"]
+            key = 'results' if 'results' in w else 'results_provisional'
+            for r in w[key]:
+                pos_display = r['pos'] if r.get('pos') is not None else ''
+                rng = r.get('range', '') if 'range' in r else r.get('range', '')
+                lines.append(f"| {pos_display} | {r['boat']} | {rng} | {r.get('novices',0)} | {r.get('status','FIN')} | {r.get('score','')} |")
+            lines.append("")
+            lines.append("## Evidence")
+            for ev in w.get('evidence', []):
+                lines.append(f"- [{ev.get('timestamp','')}] {ev.get('author','')} — {ev.get('text','').replace('|','/')}" )
+            with open(md_path, 'w', encoding='utf-8') as f:
+                f.write("\n".join(lines))
 
 def main():
     if len(sys.argv) > 1:

@@ -34,7 +34,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-6"
           },
           {
             "boat": "scalded dawg",
@@ -42,7 +43,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 2,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-7"
           },
           {
             "boat": "psycho killer",
@@ -50,7 +52,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 3,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-7"
           },
           {
             "boat": "scooter",
@@ -58,7 +61,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 4,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-4"
           },
           {
             "boat": "ambush",
@@ -66,7 +70,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 5,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-5"
           },
           {
             "boat": "go hogs go",
@@ -74,7 +79,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 6,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "3-6"
           },
           {
             "boat": "fred",
@@ -82,7 +88,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 7,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "4-7"
           }
         ],
         "evidence": [
@@ -151,21 +158,22 @@
             "timestamp": "2025-04-09 10:42 PM"
           }
         ],
-        "ambiguity": null
+        "ambiguity": null,
+        "status": "OK"
       },
       {
         "date": "2025-04-30",
         "starters": [
           "go hogs go"
         ],
-        "results": [
+        "results_provisional": [
           {
             "boat": "go hogs go",
             "pos": 1,
+            "range": "2-0",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           }
         ],
         "evidence": [
@@ -190,57 +198,124 @@
             "aliases_used": []
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
-      },
-      {
-        "date": "2025-05-07",
-        "starters": [
-          "ambush",
-          "fred",
-          "go hogs go",
-          "danger zone",
-          "sweet virginia"
-        ],
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "go hogs go": {
+              "min": 2,
+              "max": 0
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
         "results": [
           {
-            "boat": "ambush",
-            "pos": 1,
-            "novices": 0,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "fred",
-            "pos": 2,
-            "novices": 0,
-            "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
-          },
-          {
             "boat": "go hogs go",
-            "pos": 3,
-            "novices": 1,
+            "pos": 1,
+            "range": "2-0",
+            "novices": 0,
             "status": "FIN",
-            "score": 2,
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 8,
             "aliasesUsed": []
           },
           {
             "boat": "danger zone",
-            "pos": 4,
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 8,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 8,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 8,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 8,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 8,
+            "aliasesUsed": []
+          }
+        ]
+      },
+      {
+        "date": "2025-05-07",
+        "starters": [
+          "go hogs go",
+          "ambush",
+          "fred",
+          "danger zone",
+          "sweet virginia"
+        ],
+        "results_provisional": [
+          {
+            "boat": "go hogs go",
+            "pos": 1,
+            "range": "2-2",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "5-2",
             "novices": 0,
             "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
+            "score": 2
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "range": "1-1",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "danger zone",
+            "pos": 4,
+            "range": "5-2",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
           },
           {
             "boat": "sweet virginia",
             "pos": 5,
+            "range": "5-5",
             "novices": 0,
             "status": "FIN",
-            "score": 5,
-            "aliasesUsed": []
+            "score": 5
           }
         ],
         "evidence": [
@@ -327,7 +402,98 @@
             "timestamp": "2025-05-07 09:48 PM"
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "go hogs go": {
+              "min": 2,
+              "max": 2
+            },
+            "ambush": {
+              "min": 5,
+              "max": 2
+            },
+            "fred": {
+              "min": 1,
+              "max": 1
+            },
+            "danger zone": {
+              "min": 5,
+              "max": 2
+            },
+            "sweet virginia": {
+              "min": 5,
+              "max": 5
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
+        "results": [
+          {
+            "boat": "go hogs go",
+            "pos": 1,
+            "range": "2-2",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "5-2",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "range": "1-1",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "danger zone",
+            "pos": 4,
+            "range": "5-2",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 5,
+            "range": "5-5",
+            "novices": 0,
+            "status": "FIN",
+            "score": 5
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
+            "aliasesUsed": []
+          }
+        ]
       },
       {
         "date": "2025-05-14",
@@ -336,33 +502,41 @@
           "danger zone",
           "sweet virginia"
         ],
-        "results": [
+        "results_provisional": [
           {
             "boat": "go hogs go",
             "pos": 1,
+            "range": "2-4",
             "novices": 1,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           },
           {
             "boat": "danger zone",
             "pos": 2,
+            "range": "1-4",
             "novices": 0,
             "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 2
           },
           {
             "boat": "sweet virginia",
             "pos": 3,
+            "range": "1-4",
             "novices": 2,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           }
         ],
         "evidence": [
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 1,
+            "text": "Psyco kitty - Scooter (1nv) - Scaled Dawg",
+            "author": "David Curtze",
+            "timestamp": "2025-05-14 07:04 PM"
+          },
           {
             "type": "relative_position",
             "boat_ahead": "danger zone",
@@ -420,75 +594,166 @@
             "timestamp": "2025-05-14 08:31 PM"
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
-      },
-      {
-        "date": "2025-05-21",
-        "starters": [
-          "psycho killer",
-          "scooter",
-          "ambush",
-          "wizard",
-          "go hogs go",
-          "danger zone",
-          "sweet virginia"
-        ],
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "go hogs go": {
+              "min": 2,
+              "max": 4
+            },
+            "danger zone": {
+              "min": 1,
+              "max": 4
+            },
+            "jeromy": {
+              "min": 2,
+              "max": 5
+            },
+            "sweet virginia": {
+              "min": 1,
+              "max": 4
+            },
+            "- club j22": {
+              "min": 2,
+              "max": 5
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
         "results": [
           {
-            "boat": "psycho killer",
+            "boat": "go hogs go",
             "pos": 1,
+            "range": "2-4",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "danger zone",
+            "pos": 2,
+            "range": "1-4",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
+            "score": 2
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 3,
+            "range": "1-4",
+            "novices": 2,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
             "aliasesUsed": []
           },
           {
             "boat": "scooter",
-            "pos": 2,
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 9,
+            "aliasesUsed": []
+          }
+        ]
+      },
+      {
+        "date": "2025-05-21",
+        "starters": [
+          "scooter",
+          "go hogs go",
+          "ambush",
+          "danger zone",
+          "wizard",
+          "sweet virginia",
+          "psycho killer"
+        ],
+        "results_provisional": [
+          {
+            "boat": "scooter",
+            "pos": 1,
+            "range": "2-11",
             "novices": 4,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 2,
+            "range": "2-11",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
           },
           {
             "boat": "ambush",
             "pos": 3,
+            "range": "2-11",
             "novices": 0,
             "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "wizard",
-            "pos": 4,
-            "novices": 0,
-            "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "go hogs go",
-            "pos": 5,
-            "novices": 1,
-            "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
+            "score": 3
           },
           {
             "boat": "danger zone",
-            "pos": 6,
+            "pos": 4,
+            "range": "4-12",
             "novices": 0,
             "status": "FIN",
-            "score": 6,
-            "aliasesUsed": []
+            "score": 4
+          },
+          {
+            "boat": "wizard",
+            "pos": 5,
+            "range": "3-11",
+            "novices": 2,
+            "status": "FIN",
+            "score": 3
           },
           {
             "boat": "sweet virginia",
-            "pos": 7,
+            "pos": 6,
+            "range": "2-9",
             "novices": 1,
             "status": "FIN",
-            "score": 6,
-            "aliasesUsed": []
+            "score": 5
+          },
+          {
+            "boat": "psycho killer",
+            "pos": 7,
+            "range": "3-12",
+            "novices": 0,
+            "status": "FIN",
+            "score": 7
           }
         ],
         "evidence": [
@@ -609,59 +874,202 @@
             "author": "Alicia Noble",
             "timestamp": "2025-05-21 09:12 PM",
             "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "boat": "wizard",
+            "count": 2,
+            "text": "Sweet Virginia ahead Wizard (2novices) Danger zone behind",
+            "author": "Alicia Noble",
+            "timestamp": "2025-05-21 09:12 PM"
+          },
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 4,
+            "text": "I assume now that Fast Freddy in front. Scooter (4nv) then club j22.",
+            "author": "David Curtze",
+            "timestamp": "2025-05-21 10:06 PM"
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
-      },
-      {
-        "date": "2025-05-28",
-        "starters": [
-          "ambush",
-          "scalded dawg",
-          "fred",
-          "dandelion",
-          "go hogs go"
-        ],
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "scooter": {
+              "min": 2,
+              "max": 11
+            },
+            "go hogs go": {
+              "min": 2,
+              "max": 11
+            },
+            "ambush": {
+              "min": 2,
+              "max": 11
+            },
+            "club boat": {
+              "min": 3,
+              "max": 12
+            },
+            "- wizard": {
+              "min": 3,
+              "max": 12
+            },
+            "no one": {
+              "min": 1,
+              "max": 10
+            },
+            "not sure who": {
+              "min": 1,
+              "max": 10
+            },
+            "danger zone": {
+              "min": 4,
+              "max": 12
+            },
+            "wizard": {
+              "min": 3,
+              "max": 11
+            },
+            "sweet virginia": {
+              "min": 2,
+              "max": 9
+            },
+            "psycho killer": {
+              "min": 3,
+              "max": 12
+            },
+            "- club j22": {
+              "min": 1,
+              "max": 8
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
         "results": [
           {
-            "boat": "ambush",
+            "boat": "scooter",
             "pos": 1,
+            "range": "2-11",
+            "novices": 4,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 2,
+            "range": "2-11",
             "novices": 1,
             "status": "FIN",
-            "score": 1,
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 3,
+            "range": "2-11",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "danger zone",
+            "pos": 4,
+            "range": "4-12",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "wizard",
+            "pos": 5,
+            "range": "3-11",
+            "novices": 2,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 6,
+            "range": "2-9",
+            "novices": 1,
+            "status": "FIN",
+            "score": 5
+          },
+          {
+            "boat": "psycho killer",
+            "pos": 7,
+            "range": "3-12",
+            "novices": 0,
+            "status": "FIN",
+            "score": 7
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 10,
             "aliasesUsed": []
           },
           {
             "boat": "scalded dawg",
-            "pos": 2,
+            "pos": null,
             "novices": 0,
-            "status": "FIN",
-            "score": 2,
+            "status": "DNC",
+            "score": 10,
             "aliasesUsed": []
+          }
+        ]
+      },
+      {
+        "date": "2025-05-28",
+        "starters": [
+          "go hogs go",
+          "ambush",
+          "fred",
+          "dandelion",
+          "scalded dawg"
+        ],
+        "results_provisional": [
+          {
+            "boat": "go hogs go",
+            "pos": 1,
+            "range": "5-4",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "2-4",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
           },
           {
             "boat": "fred",
             "pos": 3,
+            "range": "2-6",
             "novices": 2,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           },
           {
             "boat": "dandelion",
             "pos": 4,
+            "range": "1-5",
             "novices": 0,
             "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
+            "score": 4
           },
           {
-            "boat": "go hogs go",
+            "boat": "scalded dawg",
             "pos": 5,
-            "novices": 1,
+            "range": "5-4",
+            "novices": 0,
             "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
+            "score": 5
           }
         ],
         "evidence": [
@@ -739,51 +1147,170 @@
             "timestamp": "2025-05-28 10:01 PM"
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "go hogs go": {
+              "min": 5,
+              "max": 4
+            },
+            "ambush": {
+              "min": 2,
+              "max": 4
+            },
+            "fred": {
+              "min": 2,
+              "max": 6
+            },
+            "no one": {
+              "min": 1,
+              "max": 3
+            },
+            "dandelion": {
+              "min": 1,
+              "max": 5
+            },
+            "scalded dawg": {
+              "min": 5,
+              "max": 4
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
+        "results": [
+          {
+            "boat": "go hogs go",
+            "pos": 1,
+            "range": "5-4",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "2-4",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "range": "2-6",
+            "novices": 2,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "dandelion",
+            "pos": 4,
+            "range": "1-5",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 5,
+            "range": "5-4",
+            "novices": 0,
+            "status": "FIN",
+            "score": 5
+          },
+          {
+            "boat": "danger zone",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          }
+        ]
       },
       {
         "date": "2025-06-04",
         "starters": [
-          "ambush",
-          "scalded dawg",
           "go hogs go",
-          "danger zone"
+          "ambush",
+          "danger zone",
+          "scalded dawg"
         ],
-        "results": [
-          {
-            "boat": "ambush",
-            "pos": 1,
-            "novices": 1,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "scalded dawg",
-            "pos": 2,
-            "novices": 0,
-            "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
-          },
+        "results_provisional": [
           {
             "boat": "go hogs go",
-            "pos": 3,
+            "pos": 1,
+            "range": "4-3",
             "novices": 1,
             "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "2-5",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
           },
           {
             "boat": "danger zone",
-            "pos": 4,
+            "pos": 3,
+            "range": "1-3",
             "novices": 0,
             "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
+            "score": 3
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 4,
+            "range": "4-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
           }
         ],
         "evidence": [
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 2,
+            "text": "Scooter had 2 nv",
+            "author": "David Curtze",
+            "timestamp": "2025-06-04 08:25 PM"
+          },
           {
             "type": "relative_position",
             "boat_ahead": "scalded dawg",
@@ -843,30 +1370,137 @@
             ]
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
-      },
-      {
-        "date": "2025-06-11",
-        "starters": [
-          "ambush",
-          "psycho killer"
-        ],
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "go hogs go": {
+              "min": 4,
+              "max": 3
+            },
+            "ambush": {
+              "min": 2,
+              "max": 5
+            },
+            "no one": {
+              "min": 1,
+              "max": 4
+            },
+            "danger zone": {
+              "min": 1,
+              "max": 3
+            },
+            "scalded dawg": {
+              "min": 4,
+              "max": 3
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
         "results": [
           {
-            "boat": "ambush",
+            "boat": "go hogs go",
             "pos": 1,
+            "range": "4-3",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "2-5",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "danger zone",
+            "pos": 3,
+            "range": "1-3",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
+            "score": 3
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 4,
+            "range": "4-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
             "aliasesUsed": []
           },
           {
             "boat": "psycho killer",
-            "pos": 2,
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          }
+        ]
+      },
+      {
+        "date": "2025-06-11",
+        "starters": [
+          "psycho killer",
+          "ambush"
+        ],
+        "results_provisional": [
+          {
+            "boat": "psycho killer",
+            "pos": 1,
+            "range": "3-0",
             "novices": 0,
             "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "3-0",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
           }
         ],
         "evidence": [
@@ -891,66 +1525,161 @@
             ]
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
-      },
-      {
-        "date": "2025-06-18",
-        "starters": [
-          "scalded dawg",
-          "wizard",
-          "dandelion",
-          "go hogs go",
-          "danger zone",
-          "sweet virginia"
-        ],
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "psycho killer": {
+              "min": 3,
+              "max": 0
+            },
+            "ambush": {
+              "min": 3,
+              "max": 0
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
         "results": [
           {
-            "boat": "scalded dawg",
+            "boat": "psycho killer",
             "pos": 1,
+            "range": "3-0",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           },
           {
-            "boat": "wizard",
+            "boat": "ambush",
             "pos": 2,
+            "range": "3-0",
             "novices": 0,
             "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 2
           },
           {
             "boat": "dandelion",
-            "pos": 3,
+            "pos": null,
             "novices": 0,
-            "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "go hogs go",
-            "pos": 4,
-            "novices": 0,
-            "status": "FIN",
-            "score": 4,
+            "status": "DNC",
+            "score": 11,
             "aliasesUsed": []
           },
           {
             "boat": "danger zone",
-            "pos": 5,
+            "pos": null,
             "novices": 0,
-            "status": "FIN",
-            "score": 5,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
             "aliasesUsed": []
           },
           {
             "boat": "sweet virginia",
-            "pos": 6,
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          }
+        ]
+      },
+      {
+        "date": "2025-06-18",
+        "starters": [
+          "go hogs go",
+          "danger zone",
+          "wizard",
+          "dandelion",
+          "sweet virginia",
+          "scalded dawg"
+        ],
+        "results_provisional": [
+          {
+            "boat": "go hogs go",
+            "pos": 1,
+            "range": "3-4",
+            "novices": 0,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "danger zone",
+            "pos": 2,
+            "range": "1-5",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "wizard",
+            "pos": 3,
+            "range": "2-6",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "dandelion",
+            "pos": 4,
+            "range": "2-5",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 5,
+            "range": "2-5",
             "novices": 2,
             "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
+            "score": 3
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 6,
+            "range": "3-4",
+            "novices": 0,
+            "status": "FIN",
+            "score": 6
           }
         ],
         "evidence": [
@@ -975,6 +1704,14 @@
             "aliases_used": [
               "dawg ahead scooter"
             ]
+          },
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 2,
+            "text": "Scooter had 2nv",
+            "author": "David Curtze",
+            "timestamp": "2025-06-18 08:12 PM"
           },
           {
             "type": "relative_position",
@@ -1014,17 +1751,128 @@
             ]
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "go hogs go": {
+              "min": 3,
+              "max": 4
+            },
+            "danger zone": {
+              "min": 1,
+              "max": 5
+            },
+            "wizard": {
+              "min": 2,
+              "max": 6
+            },
+            "dandelion": {
+              "min": 2,
+              "max": 5
+            },
+            "sweet virginia": {
+              "min": 2,
+              "max": 5
+            },
+            "scalded dawg": {
+              "min": 3,
+              "max": 4
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
+        "results": [
+          {
+            "boat": "go hogs go",
+            "pos": 1,
+            "range": "3-4",
+            "novices": 0,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "danger zone",
+            "pos": 2,
+            "range": "1-5",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "wizard",
+            "pos": 3,
+            "range": "2-6",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "dandelion",
+            "pos": 4,
+            "range": "2-5",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 5,
+            "range": "2-5",
+            "novices": 2,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 6,
+            "range": "3-4",
+            "novices": 0,
+            "status": "FIN",
+            "score": 6
+          },
+          {
+            "boat": "ambush",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          }
+        ]
       },
       {
         "date": "2025-07-02",
         "starters": [
           "ambush",
-          "go hogs go",
           "danger zone",
+          "go hogs go",
           "scalded dawg",
-          "dandelion",
-          "fred"
+          "fred",
+          "dandelion"
         ],
         "results": [
           {
@@ -1033,23 +1881,26 @@
             "novices": 1,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "go hogs go",
-            "pos": 2,
-            "novices": 1,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-5"
           },
           {
             "boat": "danger zone",
-            "pos": 3,
+            "pos": 2,
             "novices": 0,
             "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
+            "score": 2,
+            "aliasesUsed": [],
+            "range": "1-5"
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 3,
+            "novices": 1,
+            "status": "FIN",
+            "score": 2,
+            "aliasesUsed": [],
+            "range": "1-5"
           },
           {
             "boat": "scalded dawg",
@@ -1057,22 +1908,57 @@
             "novices": 0,
             "status": "FIN",
             "score": 4,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-6"
           },
           {
-            "boat": "dandelion",
+            "boat": "fred",
             "pos": 5,
             "novices": 0,
             "status": "FIN",
             "score": 5,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-6"
           },
           {
-            "boat": "fred",
+            "boat": "dandelion",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
             "score": 6,
+            "aliasesUsed": [],
+            "range": "2-6"
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 11,
             "aliasesUsed": []
           }
         ],
@@ -1137,40 +2023,44 @@
             "timestamp": "2025-07-02 09:16 PM"
           }
         ],
-        "ambiguity": null
+        "ambiguity": null,
+        "status": "OK"
       },
       {
         "date": "2025-07-09",
         "starters": [
-          "itch",
           "fred",
+          "itch",
           "scooter",
           "go hogs go"
         ],
         "results": [
           {
-            "boat": "itch",
+            "boat": "fred",
             "pos": 1,
             "novices": 0,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-4"
           },
           {
-            "boat": "fred",
+            "boat": "itch",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
             "score": 2,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-3"
           },
           {
             "boat": "scooter",
             "pos": 3,
-            "novices": 0,
+            "novices": 1,
             "status": "DSQ",
             "score": 5,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-4"
           },
           {
             "boat": "go hogs go",
@@ -1178,6 +2068,63 @@
             "novices": 1,
             "status": "DSQ",
             "score": 5,
+            "aliasesUsed": [],
+            "range": "3-5"
+          },
+          {
+            "boat": "ambush",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 12,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 12,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 12,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 12,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 12,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 12,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 12,
             "aliasesUsed": []
           }
         ],
@@ -1219,6 +2166,14 @@
             ]
           },
           {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 1,
+            "text": "Itch ahead go hogs go behind. 1 nv. Scooter and go hogs  missed a mark. Dsq? Consider last and 2nd to last.  If max also missed the mark, then last, 2nd to last and 3rd to last. Thuse marks move around so much,  you never know where they are.",
+            "author": "David Curtze",
+            "timestamp": "2025-07-09 10:02 PM"
+          },
+          {
             "type": "penalty",
             "boat": "scooter",
             "penalty_type": "DSQ",
@@ -1244,7 +2199,8 @@
             "timestamp": "2025-07-09 11:47 PM"
           }
         ],
-        "ambiguity": null
+        "ambiguity": null,
+        "status": "OK"
       },
       {
         "date": "2025-07-16",
@@ -1261,10 +2217,11 @@
           {
             "boat": "scooter",
             "pos": 1,
-            "novices": 0,
+            "novices": 2,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-4"
           },
           {
             "boat": "wizard",
@@ -1272,7 +2229,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 2,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-5"
           },
           {
             "boat": "itch in front gog hogs go",
@@ -1280,7 +2238,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 3,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-7"
           },
           {
             "boat": "go hogs go",
@@ -1288,7 +2247,8 @@
             "novices": 1,
             "status": "FIN",
             "score": 3,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-6"
           },
           {
             "boat": "danger zone",
@@ -1296,7 +2256,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 5,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-6"
           },
           {
             "boat": "ambush",
@@ -1304,7 +2265,8 @@
             "novices": 1,
             "status": "FIN",
             "score": 5,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "3-7"
           },
           {
             "boat": "fred",
@@ -1312,6 +2274,47 @@
             "novices": 0,
             "status": "FIN",
             "score": 7,
+            "aliasesUsed": [],
+            "range": "3-7"
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 13,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 13,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 13,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 13,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 13,
             "aliasesUsed": []
           }
         ],
@@ -1342,6 +2345,22 @@
             "author": "David Curtze",
             "timestamp": "2025-07-16 08:29 PM",
             "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 2,
+            "text": "Itch in front gog hogs go behind.  Scooter had 2 nv",
+            "author": "David Curtze",
+            "timestamp": "2025-07-16 08:29 PM"
+          },
+          {
+            "type": "novice",
+            "boat": "sweet virginia",
+            "count": 1,
+            "text": "Sweet virginia last - 1 NV",
+            "author": "Jeremy Odom",
+            "timestamp": "2025-07-16 09:18 PM"
           },
           {
             "type": "relative_position",
@@ -1387,17 +2406,18 @@
             "timestamp": "2025-07-16 09:24 PM"
           }
         ],
-        "ambiguity": null
+        "ambiguity": null,
+        "status": "OK"
       },
       {
         "date": "2025-07-23",
         "starters": [
           "ambush",
-          "go hogs go",
           "danger zone",
+          "go hogs go",
           "wizard",
-          "psycho killer",
           "scooter",
+          "psycho killer",
           "itch",
           "caper"
         ],
@@ -1408,23 +2428,26 @@
             "novices": 0,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-6"
           },
           {
-            "boat": "go hogs go",
+            "boat": "danger zone",
             "pos": 2,
             "novices": 0,
             "status": "FIN",
             "score": 2,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-6"
           },
           {
-            "boat": "danger zone",
+            "boat": "go hogs go",
             "pos": 3,
             "novices": 0,
             "status": "FIN",
             "score": 3,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-7"
           },
           {
             "boat": "wizard",
@@ -1432,23 +2455,26 @@
             "novices": 0,
             "status": "FIN",
             "score": 4,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "psycho killer",
-            "pos": 5,
-            "novices": 0,
-            "status": "FIN",
-            "score": 5,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-7"
           },
           {
             "boat": "scooter",
+            "pos": 5,
+            "novices": 2,
+            "status": "FIN",
+            "score": 3,
+            "aliasesUsed": [],
+            "range": "2-7"
+          },
+          {
+            "boat": "psycho killer",
             "pos": 6,
             "novices": 0,
             "status": "FIN",
             "score": 6,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-8"
           },
           {
             "boat": "itch",
@@ -1456,7 +2482,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 7,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "3-8"
           },
           {
             "boat": "caper",
@@ -1464,6 +2491,47 @@
             "novices": 0,
             "status": "FIN",
             "score": 8,
+            "aliasesUsed": [],
+            "range": "3-8"
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
             "aliasesUsed": []
           }
         ],
@@ -1476,6 +2544,14 @@
             "author": "David Curtze",
             "timestamp": "2025-07-23 08:24 PM",
             "aliases_used": []
+          },
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 2,
+            "text": "Scooter 2NV. Caper behind",
+            "author": "David Curtze",
+            "timestamp": "2025-07-23 08:24 PM"
           },
           {
             "type": "relative_position",
@@ -1516,66 +2592,67 @@
             ]
           }
         ],
-        "ambiguity": null
+        "ambiguity": null,
+        "status": "OK"
       },
       {
         "date": "2025-07-30",
         "starters": [
+          "go hogs go",
           "ambush",
-          "scalded dawg",
           "fred",
           "wizard",
-          "go hogs go",
-          "sweet virginia"
+          "sweet virginia",
+          "scalded dawg"
         ],
-        "results": [
+        "results_provisional": [
           {
-            "boat": "ambush",
+            "boat": "go hogs go",
             "pos": 1,
+            "range": "6-7",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           },
           {
-            "boat": "scalded dawg",
+            "boat": "ambush",
             "pos": 2,
+            "range": "2-9",
             "novices": 0,
             "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 2
           },
           {
             "boat": "fred",
             "pos": 3,
+            "range": "1-8",
             "novices": 0,
             "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
+            "score": 3
           },
           {
             "boat": "wizard",
             "pos": 4,
+            "range": "2-7",
             "novices": 1,
             "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "go hogs go",
-            "pos": 5,
-            "novices": 0,
-            "status": "FIN",
-            "score": 5,
-            "aliasesUsed": []
+            "score": 3
           },
           {
             "boat": "sweet virginia",
-            "pos": 6,
+            "pos": 5,
+            "range": "6-7",
             "novices": 1,
             "status": "FIN",
-            "score": 5,
-            "aliasesUsed": []
+            "score": 4
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 6,
+            "range": "1-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 6
           }
         ],
         "evidence": [
@@ -1676,39 +2753,186 @@
             "timestamp": "2025-07-30 08:53 PM"
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "go hogs go": {
+              "min": 6,
+              "max": 7
+            },
+            "ambush": {
+              "min": 2,
+              "max": 9
+            },
+            "fred": {
+              "min": 1,
+              "max": 8
+            },
+            "519": {
+              "min": 2,
+              "max": 9
+            },
+            "- wizard": {
+              "min": 1,
+              "max": 7
+            },
+            "wizard": {
+              "min": 2,
+              "max": 7
+            },
+            "sweet virginia": {
+              "min": 6,
+              "max": 7
+            },
+            "scalded dawg": {
+              "min": 1,
+              "max": 8
+            },
+            "not sure who was": {
+              "min": 1,
+              "max": 6
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
+        "results": [
+          {
+            "boat": "go hogs go",
+            "pos": 1,
+            "range": "6-7",
+            "novices": 0,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "2-9",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "range": "1-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "wizard",
+            "pos": 4,
+            "range": "2-7",
+            "novices": 1,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 5,
+            "range": "6-7",
+            "novices": 1,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 6,
+            "range": "1-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 6
+          },
+          {
+            "boat": "caper",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          }
+        ]
       },
       {
         "date": "2025-08-06",
         "starters": [
           "scooter",
-          "fred",
-          "sweet virginia"
+          "sweet virginia",
+          "fred"
         ],
-        "results": [
+        "results_provisional": [
           {
             "boat": "scooter",
             "pos": 1,
+            "range": "2-4",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "fred",
-            "pos": 2,
-            "novices": 0,
-            "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 1
           },
           {
             "boat": "sweet virginia",
-            "pos": 3,
+            "pos": 2,
+            "range": "3-3",
             "novices": 0,
             "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
+            "score": 2
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "range": "1-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
           }
         ],
         "evidence": [
@@ -1744,48 +2968,175 @@
             ]
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
-      },
-      {
-        "date": "2025-08-13",
-        "starters": [
-          "ambush",
-          "scalded dawg",
-          "itch",
-          "go hogs go"
-        ],
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "scooter": {
+              "min": 2,
+              "max": 4
+            },
+            "- itch": {
+              "min": 1,
+              "max": 3
+            },
+            "sweet virginia": {
+              "min": 3,
+              "max": 3
+            },
+            "fred": {
+              "min": 1,
+              "max": 3
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
         "results": [
           {
-            "boat": "ambush",
+            "boat": "scooter",
             "pos": 1,
+            "range": "2-4",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           },
           {
-            "boat": "scalded dawg",
+            "boat": "sweet virginia",
             "pos": 2,
+            "range": "3-3",
             "novices": 0,
             "status": "FIN",
-            "score": 2,
+            "score": 2
+          },
+          {
+            "boat": "fred",
+            "pos": 3,
+            "range": "1-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "ambush",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
             "aliasesUsed": []
           },
           {
-            "boat": "itch",
-            "pos": 3,
+            "boat": "caper",
+            "pos": null,
             "novices": 0,
-            "status": "FIN",
-            "score": 3,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
             "aliasesUsed": []
           },
           {
             "boat": "go hogs go",
-            "pos": 4,
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          }
+        ]
+      },
+      {
+        "date": "2025-08-13",
+        "starters": [
+          "scalded dawg",
+          "go hogs go",
+          "itch",
+          "ambush"
+        ],
+        "results_provisional": [
+          {
+            "boat": "scalded dawg",
+            "pos": 1,
+            "range": "3-4",
+            "novices": 0,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 2,
+            "range": "2-3",
             "novices": 1,
             "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
+            "score": 1
+          },
+          {
+            "boat": "itch",
+            "pos": 3,
+            "range": "1-2",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "ambush",
+            "pos": 4,
+            "range": "2-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
           }
         ],
         "evidence": [
@@ -1838,86 +3189,221 @@
             "text": "GoHogs Dawg ahead Scooter behind 1 novice",
             "author": "George Heintz",
             "timestamp": "2025-08-13 07:52 PM"
+          },
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 2,
+            "text": "Gog hogs, Scooter, Fast Freddie. 2 NV",
+            "author": "David Curtze",
+            "timestamp": "2025-08-13 07:55 PM"
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
-      },
-      {
-        "date": "2025-08-20",
-        "starters": [
-          "psycho killer",
-          "scooter",
-          "ambush",
-          "itch",
-          "scalded dawg",
-          "fred",
-          "go hogs go",
-          "danger zone"
-        ],
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "scalded dawg": {
+              "min": 3,
+              "max": 4
+            },
+            "go hogs go": {
+              "min": 2,
+              "max": 3
+            },
+            "itch": {
+              "min": 1,
+              "max": 2
+            },
+            "ambush": {
+              "min": 2,
+              "max": 3
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
         "results": [
           {
-            "boat": "psycho killer",
-            "pos": 1,
-            "novices": 0,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "scooter",
-            "pos": 2,
-            "novices": 0,
-            "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "ambush",
-            "pos": 3,
-            "novices": 0,
-            "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "itch",
-            "pos": 4,
-            "novices": 0,
-            "status": "FIN",
-            "score": 4,
-            "aliasesUsed": []
-          },
-          {
             "boat": "scalded dawg",
-            "pos": 5,
+            "pos": 1,
+            "range": "3-4",
             "novices": 0,
             "status": "FIN",
-            "score": 5,
-            "aliasesUsed": []
-          },
-          {
-            "boat": "fred",
-            "pos": 6,
-            "novices": 0,
-            "status": "FIN",
-            "score": 6,
-            "aliasesUsed": []
+            "score": 1
           },
           {
             "boat": "go hogs go",
-            "pos": 7,
+            "pos": 2,
+            "range": "2-3",
             "novices": 1,
             "status": "FIN",
-            "score": 6,
+            "score": 1
+          },
+          {
+            "boat": "itch",
+            "pos": 3,
+            "range": "1-2",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "ambush",
+            "pos": 4,
+            "range": "2-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "caper",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
             "aliasesUsed": []
           },
           {
             "boat": "danger zone",
-            "pos": 8,
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "psycho killer",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          }
+        ]
+      },
+      {
+        "date": "2025-08-20",
+        "starters": [
+          "scooter",
+          "ambush",
+          "go hogs go",
+          "fred",
+          "itch",
+          "danger zone",
+          "scalded dawg",
+          "psycho killer"
+        ],
+        "results_provisional": [
+          {
+            "boat": "scooter",
+            "pos": 1,
+            "range": "2-8",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "3-8",
             "novices": 0,
             "status": "FIN",
-            "score": 8,
-            "aliasesUsed": []
+            "score": 2
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 3,
+            "range": "4-9",
+            "novices": 1,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "fred",
+            "pos": 4,
+            "range": "5-10",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "itch",
+            "pos": 5,
+            "range": "1-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 5
+          },
+          {
+            "boat": "danger zone",
+            "pos": 6,
+            "range": "2-9",
+            "novices": 0,
+            "status": "FIN",
+            "score": 6
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 7,
+            "range": "3-10",
+            "novices": 0,
+            "status": "FIN",
+            "score": 7
+          },
+          {
+            "boat": "psycho killer",
+            "pos": 8,
+            "range": "3-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 8
           }
         ],
         "evidence": [
@@ -2024,9 +3510,168 @@
             "aliases_used": [
               "team itch  1nv ambush ahead go hogs go"
             ]
+          },
+          {
+            "type": "novice",
+            "boat": "scooter",
+            "count": 1,
+            "text": "Team Itch  1nv Ambush ahead go hogs go behind",
+            "author": "David Curtze",
+            "timestamp": "2025-08-20 08:23 PM"
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "scooter": {
+              "min": 2,
+              "max": 8
+            },
+            "ambush": {
+              "min": 3,
+              "max": 8
+            },
+            "go hogs go": {
+              "min": 4,
+              "max": 9
+            },
+            "fred": {
+              "min": 5,
+              "max": 10
+            },
+            "no one": {
+              "min": 1,
+              "max": 8
+            },
+            "team itch 1nv ambush": {
+              "min": 1,
+              "max": 7
+            },
+            "itch": {
+              "min": 1,
+              "max": 8
+            },
+            "danger zone": {
+              "min": 2,
+              "max": 9
+            },
+            "scalded dawg": {
+              "min": 3,
+              "max": 10
+            },
+            "psycho killer": {
+              "min": 3,
+              "max": 8
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
+        "results": [
+          {
+            "boat": "scooter",
+            "pos": 1,
+            "range": "2-8",
+            "novices": 1,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "3-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 3,
+            "range": "4-9",
+            "novices": 1,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "fred",
+            "pos": 4,
+            "range": "5-10",
+            "novices": 0,
+            "status": "FIN",
+            "score": 4
+          },
+          {
+            "boat": "itch",
+            "pos": 5,
+            "range": "1-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 5
+          },
+          {
+            "boat": "danger zone",
+            "pos": 6,
+            "range": "2-9",
+            "novices": 0,
+            "status": "FIN",
+            "score": 6
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": 7,
+            "range": "3-10",
+            "novices": 0,
+            "status": "FIN",
+            "score": 7
+          },
+          {
+            "boat": "psycho killer",
+            "pos": 8,
+            "range": "3-8",
+            "novices": 0,
+            "status": "FIN",
+            "score": 8
+          },
+          {
+            "boat": "caper",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          }
+        ]
       },
       {
         "date": "2025-08-27",
@@ -2035,30 +3680,30 @@
           "go hogs go",
           "sweet virginia"
         ],
-        "results": [
+        "results_provisional": [
           {
             "boat": "psycho killer",
             "pos": 1,
+            "range": "2-4",
             "novices": 0,
             "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
+            "score": 1
           },
           {
             "boat": "go hogs go",
             "pos": 2,
+            "range": "1-3",
             "novices": 0,
             "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 2
           },
           {
             "boat": "sweet virginia",
             "pos": 3,
+            "range": "3-3",
             "novices": 0,
             "status": "FIN",
-            "score": 3,
-            "aliasesUsed": []
+            "score": 3
           }
         ],
         "evidence": [
@@ -2094,7 +3739,134 @@
             ]
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "psycho killer": {
+              "min": 2,
+              "max": 4
+            },
+            "- max": {
+              "min": 1,
+              "max": 3
+            },
+            "go hogs go": {
+              "min": 1,
+              "max": 3
+            },
+            "sweet virginia": {
+              "min": 3,
+              "max": 3
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
+        "results": [
+          {
+            "boat": "psycho killer",
+            "pos": 1,
+            "range": "2-4",
+            "novices": 0,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "go hogs go",
+            "pos": 2,
+            "range": "1-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": 3,
+            "range": "3-3",
+            "novices": 0,
+            "status": "FIN",
+            "score": 3
+          },
+          {
+            "boat": "ambush",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "caper",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          }
+        ]
       },
       {
         "date": "2025-09-10",
@@ -2111,7 +3883,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "1-1"
           },
           {
             "boat": "danger zone",
@@ -2119,7 +3892,8 @@
             "novices": 2,
             "status": "FIN",
             "score": 1,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "2-2"
           },
           {
             "boat": "go hogs go",
@@ -2127,7 +3901,8 @@
             "novices": 0,
             "status": "FIN",
             "score": 3,
-            "aliasesUsed": []
+            "aliasesUsed": [],
+            "range": "3-3"
           },
           {
             "boat": "ambush",
@@ -2135,6 +3910,79 @@
             "novices": 0,
             "status": "FIN",
             "score": 4,
+            "aliasesUsed": [],
+            "range": "4-4"
+          },
+          {
+            "boat": "caper",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
             "aliasesUsed": []
           }
         ],
@@ -2198,30 +4046,31 @@
             "aliases_used": []
           }
         ],
-        "ambiguity": null
+        "ambiguity": null,
+        "status": "OK"
       },
       {
         "date": "2025-09-17",
         "starters": [
-          "ambush",
-          "psycho killer"
+          "psycho killer",
+          "ambush"
         ],
-        "results": [
-          {
-            "boat": "ambush",
-            "pos": 1,
-            "novices": 0,
-            "status": "FIN",
-            "score": 1,
-            "aliasesUsed": []
-          },
+        "results_provisional": [
           {
             "boat": "psycho killer",
-            "pos": 2,
+            "pos": 1,
+            "range": "3-0",
             "novices": 0,
             "status": "FIN",
-            "score": 2,
-            "aliasesUsed": []
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "3-0",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
           }
         ],
         "evidence": [
@@ -2246,7 +4095,126 @@
             ]
           }
         ],
-        "ambiguity": "Ambiguous finish order: Circular dependency in finish order"
+        "ambiguity": {
+          "description": "Ambiguous finish order: Circular dependency in finish order",
+          "ranges": {
+            "psycho killer": {
+              "min": 3,
+              "max": 0
+            },
+            "ambush": {
+              "min": 3,
+              "max": 0
+            }
+          }
+        },
+        "status": "AMBIGUOUS",
+        "results": [
+          {
+            "boat": "psycho killer",
+            "pos": 1,
+            "range": "3-0",
+            "novices": 0,
+            "status": "FIN",
+            "score": 1
+          },
+          {
+            "boat": "ambush",
+            "pos": 2,
+            "range": "3-0",
+            "novices": 0,
+            "status": "FIN",
+            "score": 2
+          },
+          {
+            "boat": "caper",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "dandelion",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "danger zone",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "fred",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "go hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "itch in front gog hogs go",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scalded dawg",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "scooter",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "sweet virginia",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          },
+          {
+            "boat": "wizard",
+            "pos": null,
+            "novices": 0,
+            "status": "DNC",
+            "score": 14,
+            "aliasesUsed": []
+          }
+        ]
       }
     ],
     "scoring": {
@@ -2256,6 +4224,176 @@
       "dnc_penalty": "boats_in_series + 1",
       "throwouts": "1 worst per 4 races"
     },
-    "standings": []
+    "standings": [
+      {
+        "boat": "go hogs go",
+        "races": 20,
+        "raw_total": 74,
+        "dropped": [
+          14,
+          14,
+          11,
+          6,
+          5
+        ],
+        "net": 24
+      },
+      {
+        "boat": "itch",
+        "races": 10,
+        "raw_total": 100,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 30
+      },
+      {
+        "boat": "caper",
+        "races": 8,
+        "raw_total": 106,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 36
+      },
+      {
+        "boat": "ambush",
+        "races": 20,
+        "raw_total": 103,
+        "dropped": [
+          14,
+          14,
+          12,
+          11,
+          9
+        ],
+        "net": 43
+      },
+      {
+        "boat": "itch in front gog hogs go",
+        "races": 9,
+        "raw_total": 115,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 45
+      },
+      {
+        "boat": "danger zone",
+        "races": 20,
+        "raw_total": 144,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 74
+      },
+      {
+        "boat": "wizard",
+        "races": 16,
+        "raw_total": 155,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 85
+      },
+      {
+        "boat": "sweet virginia",
+        "races": 18,
+        "raw_total": 162,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 92
+      },
+      {
+        "boat": "fred",
+        "races": 20,
+        "raw_total": 164,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 94
+      },
+      {
+        "boat": "scooter",
+        "races": 20,
+        "raw_total": 167,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 97
+      },
+      {
+        "boat": "psycho killer",
+        "races": 20,
+        "raw_total": 165,
+        "dropped": [
+          14,
+          14,
+          14,
+          13,
+          12
+        ],
+        "net": 98
+      },
+      {
+        "boat": "dandelion",
+        "races": 15,
+        "raw_total": 173,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 103
+      },
+      {
+        "boat": "scalded dawg",
+        "races": 20,
+        "raw_total": 177,
+        "dropped": [
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "net": 107
+      }
+    ]
   }
 }
