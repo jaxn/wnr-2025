@@ -1,0 +1,36 @@
+{
+  "date": "2025-06-25",
+  "source_chat": "results/2025-06-25.chat.txt",
+  "boats_seen": [
+    "Wizard",
+    "Go Hogs Go",
+    "Scooter",
+    "Scalded Dawg",
+    "Sweet Virginia",
+    "Danger Zone",
+    "Psycho Killer",
+    "Fred",
+    "Dandelion"
+  ],
+  "starters": [],
+  "results": [],
+  "ambiguous": true,
+  "ambiguity": {
+    "explanation": "No placement or finish reports on 2025-06-25. All messages are boats declaring 'out' or uncertainty; no evidence any boat started. Stub produced with no starters/results.",
+    "boats": {},
+    "representative_orders": []
+  },
+  "evidence": [
+    {"boat": "Wizard", "type": "status", "text": "Wizard is out.", "author": "Alicia Noble", "timestamp": "2025-06-25 09:30:34"},
+    {"boat": "Go Hogs Go", "type": "status", "text": "GoHogs is maybe but will need crew.", "author": "George Heintz", "timestamp": "2025-06-25 09:43:14"},
+    {"boat": "Scooter", "type": "status", "text": "Team Scooter ... locked and loaded if we can get some other boats out there.", "author": "Mark Smith", "timestamp": "2025-06-25 11:07:21", "note": "Expression of conditional intent, not a start."},
+    {"boat": "Scalded Dawg", "type": "status", "text": "Dawg’s out.", "author": "James ODell", "timestamp": "2025-06-25 11:24:39"},
+    {"boat": "Go Hogs Go", "type": "status", "text": "Hogs Out.  We should warn folks that signed up to crew.", "author": "George Heintz", "timestamp": "2025-06-25 11:52:03"},
+    {"boat": "Sweet Virginia", "type": "status", "text": "Sweet Virginia is out today and next Wednesday.", "author": "~ John Calvano", "timestamp": "2025-06-25 12:59:31"},
+    {"boat": "Psycho Killer", "type": "status", "text": "Psycho killer will happily be out.", "author": "~ Mark Girone", "timestamp": "2025-06-25 13:06:40"},
+    {"boat": "Scooter", "type": "status", "text": "Scooter is out!", "author": "David Curtze", "timestamp": "2025-06-25 14:48:24"},
+    {"boat": "Fred", "type": "status", "text": "I'm out too.", "author": "Fred Bartrom", "timestamp": "2025-06-25 14:52:09"},
+    {"boat": "Danger Zone", "type": "status", "text": "DangerZone out", "author": "Sam Beckman", "timestamp": "2025-06-25 16:46:54"}
+  ],
+  "generated_at": "2025-09-24T05:15:00Z"
+}
